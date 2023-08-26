@@ -1,4 +1,4 @@
-# Seminar on the Seas
+# JJCX
 
 ## Overview
 
