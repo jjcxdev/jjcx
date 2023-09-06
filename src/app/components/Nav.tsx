@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useRef, useState } from "react";
 import { MenuToggle } from "./Toggle";
 import { motion, useCycle } from "framer-motion";
+import PrimaryButton from "./button";
 
 const sidebar = {
   open: { display: "block" },
@@ -26,7 +27,7 @@ export default function NavBar({ isAboutAtTop }: { isAboutAtTop: boolean }) {
   } ${isAboutAtTop ? "" : ""}`;
 
   const navSectionClass = navbar
-    ? "backdrop-blur-md bg-neutral-900/90 transition duration-300"
+    ? "backdrop-blur-md bg-neutral-900/90 transition duration-500"
     : "";
 
   const menuVariants = {
@@ -40,16 +41,26 @@ export default function NavBar({ isAboutAtTop }: { isAboutAtTop: boolean }) {
         className={`w-full fixed top-0 z-40 ${navSectionClass}`}
         initial={false}
         animate={navbar ? "open" : "closed"}
-        ref={containerRef}
-      >
+        ref={containerRef}>
         <nav className={finalClass}>
           <div className="2xl:w-4/5 max-w-7xl mx-auto w-11/12">
-            <div className="grid grid-cols-3">
-              <div className="flex items-center md:hidden">
+            <div className="flex flex-row items-center justify-between">
+              <div className="flex w-1/3 items-center md:hidden">
                 <MenuToggle toggle={toggleMenu} />
               </div>
+              <div className="hidden md:flex gap-4 w-1/3">
+                <Link className="text-cyan-500 hover:text-white" href="/about">
+                  About
+                </Link>
+                <Link className="text-cyan-500 hover:text-white" href="/work">
+                  Work
+                </Link>
+                <Link className="text-cyan-500 hover:text-white" href="/Resume">
+                  Resume
+                </Link>
+              </div>
 
-              <div className="flex items-center justify-center">
+              <div className="flex items-center w-1/3 justify-center">
                 <Image
                   src="/jjcx_logo.svg"
                   width={75}
@@ -60,15 +71,8 @@ export default function NavBar({ isAboutAtTop }: { isAboutAtTop: boolean }) {
                 />
               </div>
 
-              <div className="flex items-center justify-end">
-                <Link href="mailto:j@jjcx.dev">
-                  <button
-                    type="button"
-                    className=" border-2 py-1 px-3 hover:bg-dark text-dark border-cyan-500 hover:text-cyan-500 hover:border-cyan-500 bg-cyan-500 transition duration-300 text-sm text-center whitespace-nowrap"
-                  >
-                    contact
-                  </button>
-                </Link>
+              <div className="flex items-center justify-end w-1/3">
+                <PrimaryButton href="mailto:j@jjcx.dev" text="contact" />
               </div>
             </div>
           </div>
@@ -84,18 +88,31 @@ export default function NavBar({ isAboutAtTop }: { isAboutAtTop: boolean }) {
         animate={navbar ? "open" : "closed"}
         variants={menuVariants}
         transition={{ duration: 0.5 }}
-        onClick={() => toggleMenu()}
-      >
+        onClick={() => toggleMenu()}>
         <div className={menuParentClass}>
-          <div className="flex flex-col uppercase py-2 justify-cente">
-            <div className="hover:text-cyan-500 pl-6 py-1 transition duration-500  hover:bg-cyan-500">
-              <Link href="/about">About</Link>
+          <div className="flex flex-col uppercase py-2 justify-center">
+            <div className="block">
+              <Link href="/about">
+                <div className="text-cyan-500 pl-6 py-1 transition duration-500 hover:text-dark hover:bg-cyan-500">
+                  About
+                </div>
+              </Link>
             </div>
-            <div className="hover:text-cyan-500 pl-6 py-1 transition duration-500  hover:bg-cyan-500">
-              <Link href="/work"> Work</Link>
+
+            <div className="block">
+              <Link href="/work">
+                <div className="text-cyan-500 pl-6 py-1 transition duration-500 hover:text-dark hover:bg-cyan-500">
+                  Work
+                </div>
+              </Link>
             </div>
-            <div className="hover:text-cyan-500 pl-6 py-1 transition duration-500  hover:bg-cyan-500">
-              <Link href="/resume"> Resume</Link>
+
+            <div className="block">
+              <Link href="/resume">
+                <div className="text-cyan-500 pl-6 py-1 transition duration-500 hover:text-dark hover:bg-cyan-500">
+                  Resume
+                </div>
+              </Link>
             </div>
           </div>
         </div>

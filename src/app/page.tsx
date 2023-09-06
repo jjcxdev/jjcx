@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Footer from "./components/Footer";
 import About from "./components/About";
+import PrimaryButton from "./components/button";
 
 export default function Home() {
   const [isClient, setIsClient] = useState(false);
@@ -47,27 +48,18 @@ export default function Home() {
     <main>
       {/* Hero section */}
       <section
-        className="h-screen w-full flex flex-col justify-center py-28 sticky top-0 z-1"
-        id="hero-heading"
-      >
+        className="h-screen bg-cyan-500 w-full flex flex-col justify-center py-28 sticky top-0 z-1"
+        id="hero-heading">
         <div className="2xl:w-4/5 max-w-7xl mx-auto w-11/12">
           <div className="flex items-center justify-center flex-col">
             <h1
               id="hero-heading"
-              className="font-bold uppercase leading-tight lg:leading-tight lg:text-8xl md:leading-tight md:text-7xl text-5xl text-center"
-            >
+              className="font-bold uppercase leading-tight lg:leading-tight lg:text-8xl md:leading-tight md:text-7xl text-5xl text-center">
               Front End Developer
             </h1>
           </div>
           <div className="flex justify-center mt-12">
-            <Link href="mailto:j@jjcx.dev">
-              <button
-                type="button"
-                className=" border-2 py-3 px-6 hover:bg-dark text-dark border-cyan-500 hover:text-cyan-500 hover:border-cyan-500 bg-cyan-500 transition duration-300 text-sm text-center whitespace-nowrap"
-              >
-                contact
-              </button>
-            </Link>
+            <PrimaryButton href="mailto:j@jjcx.dev" text="contact" />
           </div>
         </div>
       </section>
@@ -76,7 +68,7 @@ export default function Home() {
       </section>
 
       {/* New sections */}
-      <section className="h-screen bg-red-300 z-20 relative">
+      <section className="h-screen bg-customblue z-20 relative">
         <h1>About Me</h1>
         {/* Content */}
       </section>

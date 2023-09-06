@@ -9,7 +9,7 @@ const Path = (
   <motion.path
     fill="transparent"
     strokeWidth="3"
-    stroke="hsl(0, 0%, 18%)"
+    stroke="#06B6D4"
     strokeLinecap="round"
     {...props}
   />
@@ -30,8 +30,7 @@ export const MenuToggle: React.FC<MenuToggleProps> = ({ toggle }) => (
     onKeyDown={() => {
       console.log("Key pressed");
       toggle();
-    }}
-  >
+    }}>
     <svg width="23" height="23" viewBox="0 0 23 23">
       <Path
         variants={{
