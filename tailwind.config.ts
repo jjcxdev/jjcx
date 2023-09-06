@@ -8,6 +8,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontSize: {
+      'clamp-xl': 'clamp(1.25rem, 4vw, 4.5rem)',  // Largest size
+      'clamp-lg': 'clamp(1.15rem, 3.5vw, 3.5rem)', // Smaller
+      'clamp-md': 'clamp(1.05rem, 3vw, 2.5rem)',   // Even smaller
+      'clamp-sm': 'clamp(0.95rem, 2.5vw, 1.75rem)', // Smallest
+      'clamp-xs': 'clamp(0.8rem, 2vw, 1.25rem)',   // Smallest
+      'clamp-2xs': 'clamp(0.7rem, 1.5vw, 1rem)',  // Even smaller than xs
+      'clamp-3xs': 'clamp(0.6rem, 1vw, 0.75rem)', // Smallest size
+    },
       colors: {
         'accent': 'rgb(106, 207, 199)',
         'dark': 'rgb(19, 29, 32)'

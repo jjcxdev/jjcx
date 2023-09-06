@@ -23,13 +23,12 @@ export default function About() {
     <>
       <div
         id="about-section"
-        className="z-20 relative h-full md:h-screen text-white bg-dark flex flex-col py-10 font-extralight items-center justify-center flex-wrap w-full ">
+        className="z-20 relative h-full md:h-screen text-dark bg-white flex flex-col py-10 font-extralight items-center justify-center flex-wrap w-full ">
         <div className="flex flex-col w-full items-center py-12">
-          <h1>About</h1>
-
-          <div className="w-11/12 max-w-5xl gap-4">
+          <div className="w-11/12 max-w-5xl">
             <div className="flex flex-col gap-4">
               <div>
+                <h2 className="text-clamp-lg items-start flex">About</h2>
                 Hey, I'm Justin. For most of my adult life, I've been behind the
                 camera, shooting and producing big projects in film and TV. But
                 I've always been a tech and design enthusiast at heart. So, I've

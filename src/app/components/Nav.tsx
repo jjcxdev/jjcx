@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useRef, useState } from "react";
 import { MenuToggle } from "./Toggle";
 import { motion, useCycle } from "framer-motion";
-import PrimaryButton from "./button";
+import PrimaryButton from "./PrimaryButton";
 
 const sidebar = {
   open: { display: "block" },
@@ -18,7 +18,8 @@ export default function NavBar({ isAboutAtTop }: { isAboutAtTop: boolean }) {
     setNavbar(!navbar);
   };
 
-  const baseClass = " py-2 transition duration-600  backdrop-blur-md";
+  const baseClass =
+    " py-2 transition duration-600 border-b border-cyan-600 bg-neutral-900/50 backdrop-blur-md";
   const conditionalClass = isAboutAtTop ? "bg-cyan-600/10" : "";
   const finalClass = `${baseClass} ${conditionalClass}`;
 

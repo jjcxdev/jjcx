@@ -1,11 +1,11 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Link from "next/link";
-import Image from "next/image";
 import Footer from "./components/Footer";
 import About from "./components/About";
-import PrimaryButton from "./components/button";
+import SecondaryButton from "./components/SecondaryButton";
+import Hero from "./components/Hero";
+import Work from "./components/Work";
 
 export default function Home() {
   const [isClient, setIsClient] = useState(false);
@@ -52,33 +52,19 @@ export default function Home() {
         id="hero-heading">
         <div className="2xl:w-4/5 max-w-7xl mx-auto w-11/12">
           <div className="flex items-center justify-center flex-col">
-            <h1
-              id="hero-heading"
-              className="font-bold uppercase leading-tight lg:leading-tight lg:text-8xl md:leading-tight md:text-7xl text-5xl text-center">
-              Front End Developer
-            </h1>
+            <Hero />
           </div>
           <div className="flex justify-center mt-12">
-            <PrimaryButton href="mailto:j@jjcx.dev" text="contact" />
+            <SecondaryButton href="mailto:j@jjcx.dev" text="contact" />
           </div>
         </div>
       </section>
       <section id="about-section">
         <About />
       </section>
-
-      {/* New sections */}
-      <section className="h-screen bg-customblue z-20 relative">
-        <h1>About Me</h1>
-        {/* Content */}
+      <section id="work-section">
+        <Work />
       </section>
-
-      <section className="h-screen bg-blue-300 z-20 relative">
-        <h1>Work</h1>
-        {/* Content */}
-      </section>
-
-      {/* ... More sections ... */}
 
       <Footer />
     </main>

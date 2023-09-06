@@ -5,16 +5,16 @@ import { BsGithub, BsMedium } from "react-icons/bs";
 export default function Footer() {
   return (
     <>
-      <footer className="z-20 relative h-screen bg-dark flex flex-col py-10 font-extralight items-center justify-center flex-wrap mx-auto w-11/12 max-w-7xl 2xl:w-4/5">
+      <footer className="z-20 relative h-screen bg-white text-dark flex flex-col py-10 font-extralight items-center justify-center flex-wrap mx-auto w-full">
         <div className="flex items-center py-12">
           <Link href="/">
-            {/* <Image
-              src="/jjcx_logo.svg"
+            <Image
+              src="/jjcx_logo_dk.svg"
               width={75}
               height={75}
               alt="jjcx logo"
               style={{ width: "75px", height: "75px" }}
-            /> */}
+            />
           </Link>
         </div>
         <div className="h-px w-3/4 border-0 bg-gradient-to-r from-transparent via-cyan-800 to-transparent"></div>
