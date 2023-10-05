@@ -18,8 +18,8 @@ const config: Config = {
       'clamp-3xs': 'clamp(0.6rem, 1vw, 0.75rem)', // Smallest size
     },
       colors: {
-        'accent': 'rgb(106, 207, 199)',
-        'dark': 'rgb(19, 29, 32)'
+        'accent': 'rgb(94, 187, 246)',
+        'dark': 'rgb(21, 21, 21)'
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

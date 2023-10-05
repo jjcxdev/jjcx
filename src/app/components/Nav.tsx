@@ -19,8 +19,8 @@ export default function NavBar({ isAboutAtTop }: { isAboutAtTop: boolean }) {
   };
 
   const baseClass =
-    " py-2 transition duration-600 border-b border-cyan-600 bg-neutral-900/50 backdrop-blur-md";
-  const conditionalClass = isAboutAtTop ? "bg-cyan-600/10" : "";
+    " py-2 transition duration-600 border-b border-accent bg-neutral-900/50 backdrop-blur-md";
+  const conditionalClass = isAboutAtTop ? "bg-accent/10" : "";
   const finalClass = `${baseClass} ${conditionalClass}`;
 
   const menuParentClass = `bg-neutral-900/90 transition duration-300 backdrop-blur-md md:hidden ${
@@ -50,13 +50,13 @@ export default function NavBar({ isAboutAtTop }: { isAboutAtTop: boolean }) {
                 <MenuToggle toggle={toggleMenu} />
               </div>
               <div className="hidden md:flex gap-4 w-1/3">
-                <Link className="text-cyan-500 hover:text-white" href="/about">
+                <Link className="text-accent hover:text-white" href="/about">
                   About
                 </Link>
-                <Link className="text-cyan-500 hover:text-white" href="/work">
+                <Link className="text-accent hover:text-white" href="/work">
                   Work
                 </Link>
-                <Link className="text-cyan-500 hover:text-white" href="/Resume">
+                <Link className="text-accent hover:text-white" href="/Resume">
                   Resume
                 </Link>
               </div>
@@ -94,7 +94,7 @@ export default function NavBar({ isAboutAtTop }: { isAboutAtTop: boolean }) {
           <div className="flex flex-col uppercase py-2 justify-center">
             <div className="block">
               <Link href="/about">
-                <div className="text-cyan-500 pl-6 py-1 transition duration-500 hover:text-dark hover:bg-cyan-500">
+                <div className="text-accent pl-6 py-1 transition duration-500 hover:text-dark hover:bg-accent">
                   About
                 </div>
               </Link>
@@ -102,7 +102,7 @@ export default function NavBar({ isAboutAtTop }: { isAboutAtTop: boolean }) {
 
             <div className="block">
               <Link href="/work">
-                <div className="text-cyan-500 pl-6 py-1 transition duration-500 hover:text-dark hover:bg-cyan-500">
+                <div className="text-accent pl-6 py-1 transition duration-500 hover:text-dark hover:bg-accent">
                   Work
                 </div>
               </Link>
@@ -110,7 +110,7 @@ export default function NavBar({ isAboutAtTop }: { isAboutAtTop: boolean }) {
 
             <div className="block">
               <Link href="/resume">
-                <div className="text-cyan-500 pl-6 py-1 transition duration-500 hover:text-dark hover:bg-cyan-500">
+                <div className="text-accent pl-6 py-1 transition duration-500 hover:text-dark hover:bg-accent">
                   Resume
                 </div>
               </Link>

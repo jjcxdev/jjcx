@@ -17,18 +17,21 @@ import {
   SiNextdotjs,
   SiTailwindcss,
 } from "react-icons/si";
+import Skill from "./Skill";
 
 export default function About() {
   return (
     <>
       <div
         id="about-section"
-        className="z-20 relative h-full md:h-screen text-dark bg-white flex flex-col py-10 font-extralight items-center justify-center flex-wrap w-full ">
+        className="z-20 relative h-full  text-white bg-dark flex flex-col py-10 font-extralight items-center justify-center flex-wrap w-full ">
         <div className="flex flex-col w-full items-center py-12">
           <div className="w-11/12 max-w-5xl">
             <div className="flex flex-col gap-4">
-              <div>
-                <h2 className="text-clamp-lg items-start flex">About</h2>
+              <div className="text-clamp-xs">
+                <h2 className="text-clamp-lg font-bold uppercase items-start flex">
+                  About
+                </h2>
                 Hey, I'm Justin. For most of my adult life, I've been behind the
                 camera, shooting and producing big projects in film and TV. But
                 I've always been a tech and design enthusiast at heart. So, I've
@@ -37,8 +40,97 @@ export default function About() {
                 managing the big picture while sweating the small, pixel-perfect
                 details.
               </div>
+              <div className="w-full">
+                <h3 className="text-clamp-lg font-bold uppercase items-start flex">
+                  Technical Skills
+                </h3>
+                <div className="flex flex-col gap-4">
+                  <div className="flex w-full justify-around">
+                    <Skill
+                      title="HTML5"
+                      icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                      value={90}
+                    />
+                    <Skill
+                      title="CSS"
+                      icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                      value={90}
+                    />
+                    <Skill
+                      title="Figma"
+                      icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                      value={75}
+                    />
+                    <Skill
+                      title="Illustrator"
+                      icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg"
+                      value={90}
+                    />
+                  </div>
+                  <div className="flex w-full justify-around">
+                    <Skill
+                      title="Photoshop"
+                      icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg"
+                      value={90}
+                    />
+                    <Skill
+                      title="Typescript"
+                      icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                      value={50}
+                    />
+                    <Skill
+                      title="React"
+                      icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                      value={50}
+                    />
+                    <Skill
+                      title="Next"
+                      icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+                      value={50}
+                    />
+                  </div>
+                  <div className="flex w-full justify-around">
+                    <Skill
+                      title="TailwindCSS"
+                      icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+                      value={80}
+                    />
+                    <Skill
+                      title="Javascript"
+                      icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                      value={50}
+                    />
+                    <Skill
+                      title="Python"
+                      icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                      value={25}
+                    />
+                    <Skill
+                      title="Swift"
+                      icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg"
+                      value={10}
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <h3 className="text-clamp-lg font-bold uppercase items-start flex">
+                  Personal Skills
+                </h3>
+                <div>
+                  <ul className="text-clamp-xs">
+                    <li>Leadership</li>
+                    <li>Communication</li>
+                    <li>Teamwork</li>
+                    <li>Problem Solving</li>
+                    <li>Project Management</li>
+                  </ul>
+                </div>
+              </div>
+
               <div className="flex flex-col items-center gap-8">
-                <Box
+                {/* <Box
                   title="Like most developers, I have a number of languages and
                       tools that are almost second nature to me."
                   info={
@@ -95,7 +187,7 @@ export default function About() {
                       </div>
                     </>
                   }
-                />
+                /> */}
               </div>
             </div>
           </div>

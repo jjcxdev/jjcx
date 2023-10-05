@@ -48,7 +48,7 @@ export default function Home() {
     <main>
       {/* Hero section */}
       <section
-        className="h-screen bg-cyan-500 w-full flex flex-col justify-center py-28 sticky top-0 z-1"
+        className="h-screen bg-[#151515] w-full flex flex-col justify-center py-28 sticky top-0 z-1"
         id="hero-heading">
         <div className="2xl:w-4/5 max-w-7xl mx-auto w-11/12">
           <div className="flex items-center justify-center flex-col">
