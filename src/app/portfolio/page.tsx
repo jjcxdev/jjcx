@@ -48,7 +48,7 @@ export default function Sots() {
               <div className="">
                 <TertiaryButton
                   aria-label="GitHub"
-                  href={"http://github.com/jjcxdev/jjcx"}
+                  href={"http://github.com/jjcxdev/underconstruction"}
                   icon={<SiGithub />}
                   text={"GitHub"}
                 />
