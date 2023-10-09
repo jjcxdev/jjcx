@@ -37,28 +37,25 @@ export default function RootLayout({
     };
   }, []);
 
+  // Server-side rendered part
   if (!isMounted) {
-    // Server-side rendered part here
     return (
       <html lang="en">
-        {/* server-side static elements */}
         <body className={inter.className}>
-          {/* Any static version of Nav and children */}
+          {isAboutAtTop && <Nav isAboutAtTop={isAboutAtTop} />}
+          {/* Rest of the static components */}
         </body>
       </html>
     );
   }
 
-  // Client-side rendered part here
+  // Client-side rendered part
   return (
     <html lang="en">
-      {/* Client-side dynamic elements */}
       <body className={inter.className}>
-        <Nav />
+        {isAboutAtTop && <Nav isAboutAtTop={isAboutAtTop} />}
         {children}
       </body>
     </html>
   );
 }
-
-// isAboutAtTop={isAboutAtTop}

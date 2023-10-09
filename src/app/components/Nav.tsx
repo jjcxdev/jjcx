@@ -2,13 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRef, useState } from "react";
 import { MenuToggle } from "./Toggle";
-import { motion, useCycle } from "framer-motion";
+import { motion } from "framer-motion";
 import PrimaryButton from "./PrimaryButton";
-
-const sidebar = {
-  open: { display: "block" },
-  closed: { display: "none" },
-};
 
 export default function NavBar({ isAboutAtTop }: { isAboutAtTop: boolean }) {
   const [navbar, setNavbar] = useState(false);
@@ -36,12 +31,14 @@ export default function NavBar({ isAboutAtTop }: { isAboutAtTop: boolean }) {
     closed: { opacity: 0, y: "-100%" },
   };
 
+  const navOpacity = isAboutAtTop ? 1 : 0;
+
   return (
     <>
       <motion.header
         className={`w-full fixed top-0 z-40 ${navSectionClass}`}
-        initial={false}
-        animate={navbar ? "open" : "closed"}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: navOpacity, transition: { duration: 0.3 } }}
         ref={containerRef}>
         <nav className={finalClass}>
           <div className="2xl:w-4/5 max-w-7xl mx-auto w-11/12">
@@ -50,13 +47,19 @@ export default function NavBar({ isAboutAtTop }: { isAboutAtTop: boolean }) {
                 <MenuToggle toggle={toggleMenu} />
               </div>
               <div className="hidden md:flex gap-4 w-1/3">
-                <Link className="text-accent hover:text-white" href="/about">
+                <Link
+                  className="text-accent hover:text-white"
+                  href="#about-section">
                   About
                 </Link>
-                <Link className="text-accent hover:text-white" href="/work">
+                <Link
+                  className="text-accent hover:text-white"
+                  href="#work-section">
                   Work
                 </Link>
-                <Link className="text-accent hover:text-white" href="/Resume">
+                <Link
+                  className="text-accent hover:text-white"
+                  href="./justinchambers_resume_2023.pdf">
                   Resume
                 </Link>
               </div>
@@ -93,7 +96,7 @@ export default function NavBar({ isAboutAtTop }: { isAboutAtTop: boolean }) {
         <div className={menuParentClass}>
           <div className="flex flex-col uppercase py-2 justify-center">
             <div className="block">
-              <Link href="/about">
+              <Link href="#about-section">
                 <div className="text-accent pl-6 py-1 transition duration-500 hover:text-dark hover:bg-accent">
                   About
                 </div>
@@ -101,7 +104,7 @@ export default function NavBar({ isAboutAtTop }: { isAboutAtTop: boolean }) {
             </div>
 
             <div className="block">
-              <Link href="/work">
+              <Link href="#work-section">
                 <div className="text-accent pl-6 py-1 transition duration-500 hover:text-dark hover:bg-accent">
                   Work
                 </div>
@@ -109,7 +112,7 @@ export default function NavBar({ isAboutAtTop }: { isAboutAtTop: boolean }) {
             </div>
 
             <div className="block">
-              <Link href="/resume">
+              <Link href="./justinchambers_resume_2023.pdf">
                 <div className="text-accent pl-6 py-1 transition duration-500 hover:text-dark hover:bg-accent">
                   Resume
                 </div>

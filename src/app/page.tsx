@@ -6,6 +6,7 @@ import About from "./components/About";
 import SecondaryButton from "./components/SecondaryButton";
 import Hero from "./components/Hero";
 import Work from "./components/Work";
+import Skills from "./components/Skills";
 
 export default function Home() {
   const [isClient, setIsClient] = useState(false);
@@ -48,7 +49,7 @@ export default function Home() {
     <main>
       {/* Hero section */}
       <section
-        className="h-screen bg-[#151515] w-full flex flex-col justify-center py-28 sticky top-0 z-1"
+        className="h-screen bg-dark w-full flex flex-col justify-center py-28 sticky top-0 z-1"
         id="hero-heading">
         <div className="2xl:w-4/5 max-w-7xl mx-auto w-11/12">
           <div className="flex items-center justify-center flex-col">
@@ -61,6 +62,9 @@ export default function Home() {
       </section>
       <section id="about-section">
         <About />
+      </section>
+      <section id="skills-section">
+        <Skills />
       </section>
       <section id="work-section">
         <Work />
