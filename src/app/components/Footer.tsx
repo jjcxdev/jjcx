@@ -19,17 +19,45 @@ export default function Footer() {
         </div>
         <div className="h-px w-3/4 border-0 bg-gradient-to-r from-transparent via-cyan-800 to-transparent"></div>
 
-        <div className="flex items-center gap-6 py-12 uppercase">
-          <Link href="#">Home</Link>
-          <Link href="#about-section">About</Link>
-          <Link href="#work-section">Work</Link>
-          <Link href="./justinchambers_resume_2023.pdf">Resume</Link>
+        <div className="flex items-center gap-6 py-12">
+          <Link className="hover:text-accent transition duration-300" href="#">
+            home
+          </Link>
+          <Link
+            className="hover:text-accent transition duration-300"
+            href="#about-section">
+            about
+          </Link>
+          <Link
+            className="hover:text-accent transition duration-300"
+            href="#work-section">
+            work
+          </Link>
+          <Link
+            className="hover:text-accent transition duration-300"
+            href="./justinchambers_resume_2023.pdf">
+            resume
+          </Link>
         </div>
         <div className="h-px w-3/4 border-0 bg-gradient-to-r from-transparent via-cyan-800 to-transparent "></div>
         <div className="flex flex-col items-center py-12 text-2xl">
           <div className="flex items-center py-6 text-2xl gap-2">
-            <BsGithub />
-            <BsMedium />
+            <div>
+              <Link
+                aria-label="Visit my GitHub"
+                className="hover:text-accent transition duration-300"
+                href="https://www.github.com/jjcxdev">
+                <BsGithub />
+              </Link>
+            </div>
+            <div>
+              <Link
+                aria-label="Read my Medium articles"
+                className="hover:text-accent transition duration-300"
+                href="https://medium.com/@jjcx">
+                <BsMedium />
+              </Link>
+            </div>
           </div>
           <div className="text-sm"> © jjcx 2023</div>
         </div>

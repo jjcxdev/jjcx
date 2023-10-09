@@ -7,6 +7,7 @@ import PrimaryButton from "./PrimaryButton";
 
 export default function NavBar({ isAboutAtTop }: { isAboutAtTop: boolean }) {
   const [navbar, setNavbar] = useState(false);
+  console.log("Navbar state:", navbar);
   const containerRef = useRef(null);
 
   const toggleMenu = () => {
@@ -50,17 +51,17 @@ export default function NavBar({ isAboutAtTop }: { isAboutAtTop: boolean }) {
                 <Link
                   className="text-accent hover:text-white"
                   href="#about-section">
-                  About
+                  about
                 </Link>
                 <Link
                   className="text-accent hover:text-white"
                   href="#work-section">
-                  Work
+                  work
                 </Link>
                 <Link
                   className="text-accent hover:text-white"
                   href="./justinchambers_resume_2023.pdf">
-                  Resume
+                  resume
                 </Link>
               </div>
 
@@ -98,7 +99,7 @@ export default function NavBar({ isAboutAtTop }: { isAboutAtTop: boolean }) {
             <div className="block">
               <Link href="#about-section">
                 <div className="text-accent pl-6 py-1 transition duration-500 hover:text-dark hover:bg-accent">
-                  About
+                  about
                 </div>
               </Link>
             </div>
@@ -106,7 +107,7 @@ export default function NavBar({ isAboutAtTop }: { isAboutAtTop: boolean }) {
             <div className="block">
               <Link href="#work-section">
                 <div className="text-accent pl-6 py-1 transition duration-500 hover:text-dark hover:bg-accent">
-                  Work
+                  work
                 </div>
               </Link>
             </div>
@@ -114,7 +115,7 @@ export default function NavBar({ isAboutAtTop }: { isAboutAtTop: boolean }) {
             <div className="block">
               <Link href="./justinchambers_resume_2023.pdf">
                 <div className="text-accent pl-6 py-1 transition duration-500 hover:text-dark hover:bg-accent">
-                  Resume
+                  resume
                 </div>
               </Link>
             </div>

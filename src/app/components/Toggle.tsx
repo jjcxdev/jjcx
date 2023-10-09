@@ -4,12 +4,14 @@ import { SVGMotionProps, motion } from "framer-motion";
 const Path = (
   props: React.JSX.IntrinsicAttributes &
     SVGMotionProps<SVGPathElement> &
-    React.RefAttributes<SVGPathElement>
+    React.RefAttributes<SVGPathElement> & {
+      color?: string;
+    }
 ) => (
   <motion.path
     fill="transparent"
-    strokeWidth="3"
-    stroke="#5EBBF6"
+    strokeWidth="4"
+    stroke={props.color || "#06b6d4"}
     strokeLinecap="round"
     {...props}
   />
@@ -31,7 +33,7 @@ export const MenuToggle: React.FC<MenuToggleProps> = ({ toggle }) => (
       console.log("Key pressed");
       toggle();
     }}>
-    <svg width="23" height="23" viewBox="0 0 23 23">
+    <svg width="50" height="50" viewBox="0 0 23 23">
       <Path
         variants={{
           closed: { d: "M 2 2.5 L 20 2.5" },

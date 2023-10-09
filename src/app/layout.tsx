@@ -41,6 +41,7 @@ export default function RootLayout({
   if (!isMounted) {
     return (
       <html lang="en">
+        <title>jjcx</title>
         <body className={inter.className}>
           {isAboutAtTop && <Nav isAboutAtTop={isAboutAtTop} />}
           {/* Rest of the static components */}
@@ -52,6 +53,7 @@ export default function RootLayout({
   // Client-side rendered part
   return (
     <html lang="en">
+      <title>jjcx</title>
       <body className={inter.className}>
         {isAboutAtTop && <Nav isAboutAtTop={isAboutAtTop} />}
         {children}

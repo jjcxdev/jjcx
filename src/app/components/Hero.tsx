@@ -1,5 +1,21 @@
 import React from "react";
-import { TypeAnimation } from "react-type-animation";
+
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "JJCX",
+  description: "Frontend Development portfolio",
+  openGraph: {
+    type: "website",
+    title: "JJCX",
+    description: "Frontend Development portfolio",
+    images: [
+      {
+        url: "https://i.ibb.co/yQVTbz1/Screenshot-2023-10-09-at-2-44-28-AM.png",
+      },
+    ],
+  },
+};
 
 export default function Hero() {
   return (

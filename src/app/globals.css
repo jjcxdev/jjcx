@@ -23,3 +23,23 @@ html {
 .blue-bar:last-child::after {
   content: "";
 }
+
+/* This is for Webkit browsers like Chrome, Safari */
+::-webkit-scrollbar {
+  width: 6px; /* Width of the vertical scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #151515; /* Color of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #06b6d4; /* Color of the scroll thumb */
+  border-radius: 6px; /* Radius for the scroll thumb */
+}
+
+/* This is for Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #151515 #06b6d4;
+}

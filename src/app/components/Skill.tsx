@@ -25,7 +25,7 @@ const Skill: React.FC<SkillProps> = ({ title, icon, value, color }) => {
 
   return (
     <div className="flex flex-col items-center">
-      <div className="relative md:w-28 md:h-28 w-10 h-10 ">
+      <div className="relative md:w-28 md:h-28 w-14 h-14 ">
         <svg className="absolute top-0 left-0 w-full h-full">
           <circle
             r={radius}
@@ -45,7 +45,7 @@ const Skill: React.FC<SkillProps> = ({ title, icon, value, color }) => {
           />
         </svg>
         <div
-          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 md:w-12 md:h-12 w-12 h-12 flex items-center justify-center"
+          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 md:w-12 md:h-12 w-6 h-6 flex items-center justify-center"
           dangerouslySetInnerHTML={{ __html: svgContent ? svgContent : "" }}
           style={{ fill: color || "currentColor" }}
         />

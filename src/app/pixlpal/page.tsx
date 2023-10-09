@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import SecondaryButton from "../components/SecondaryButton";
+import TertiaryButton from "../components/TertiaryButton";
 import { SiGithub } from "react-icons/si";
 import { FaGlobe } from "react-icons/fa";
 import { IoCaretBack } from "react-icons/io5";
@@ -10,7 +11,7 @@ export default function Sots() {
   return (
     <div className="flex min-h-screen w-full bg-neutral-900 py-[14vh]">
       <div className="mx-auto max-w-7xl 2xl:w-4/5 w-11/12 ">
-        <div className="flex justify-between flex-col h-full relative z-10 text-neutral-50/90">
+        <main className="flex justify-between flex-col h-full relative z-10 text-neutral-50/90">
           <div className="pb-8">
             <SecondaryButton href={"/"} text={"back"} icon={<IoCaretBack />} />
           </div>
@@ -24,8 +25,12 @@ export default function Sots() {
             />
           </div>
           <div>
-            <div className="text-clamp-lg my-4">PixlPal</div>
-            <div className="text-clamp-2xs font-extralight mb-8">
+            <h5 className="text-clamp-lg my-4" aria-label="project name">
+              PixlPal
+            </h5>
+            <div
+              className="text-clamp-2xs font-extralight mb-8"
+              aria-label="description">
               PixlPal is a macOS application designed to help users easily
               capture any color on their screen and automatically save it to
               their clipboard. The application offers support for various color
@@ -38,7 +43,8 @@ export default function Sots() {
             </div>
             <div className="flex flex-row gap-8">
               <div className="">
-                <SecondaryButton
+                <TertiaryButton
+                  aria-label="Website"
                   href={
                     "https://apps.apple.com/ca/app/pixlpal/id6447212748?mt=12"
                   }
@@ -47,7 +53,8 @@ export default function Sots() {
                 />
               </div>
               <div className="">
-                <SecondaryButton
+                <TertiaryButton
+                  aria-label="GitHub"
                   href={"http://github.com/jjcxdev/pixlpal"}
                   icon={<SiGithub />}
                   text={"GitHub"}
@@ -55,7 +62,7 @@ export default function Sots() {
               </div>
             </div>
           </div>
-        </div>
+        </main>
       </div>
     </div>
   );

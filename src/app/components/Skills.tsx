@@ -6,11 +6,11 @@ export default function Skills() {
       <div
         id="skills-section"
         className="z-20 relative text-white bg-dark flex flex-col py-10 font-extralight items-center justify-center h-screen flex-wrap w-full ">
-        <div className="flex flex-col w-full items-center py-12">
-          <div className="w-11/12 max-w-5xl">
+        <div className="flex flex-col w-full items-center">
+          <div className="w-10/12 max-w-5xl">
             <div className="flex flex-col gap-20">
               <div>
-                <h3 className="text-clamp-md font-bold uppercase items-start flex">
+                <h3 className="text-clamp-md font-bold uppercase items-start flex pb-4">
                   Technical Skills
                 </h3>
                 <div className="flex flex-col gap-4">
@@ -81,20 +81,6 @@ export default function Skills() {
                       value={10}
                     />
                   </div>
-                </div>
-              </div>
-              <div>
-                <h3 className="text-clamp-md font-bold uppercase items-start flex">
-                  Personal Skills
-                </h3>
-                <div>
-                  <ul className="text-clamp-xs">
-                    <li className="inline blue-bar">Leadership</li>
-                    <li className="inline blue-bar">Communication</li>
-                    <li className="inline blue-bar">Teamwork</li>
-                    <li className="inline blue-bar">Problem Solving</li>
-                    <li className="inline blue-bar">Project Management</li>
-                  </ul>
                 </div>
               </div>
             </div>

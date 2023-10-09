@@ -7,7 +7,7 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ title, image, projectType, link }) => {
   return (
-    <div className="rounded-lg aspect-[10/16] min-h-[300px] relative transition-all duration-300 ease-in-out group ">
+    <div className="rounded-lg aspect-square w-full max-w-xs relative transition-all duration-300 ease-in-out group">
       <img
         src={image}
         alt={title}
@@ -15,6 +15,7 @@ const Card: React.FC<CardProps> = ({ title, image, projectType, link }) => {
       />
       <a
         href={link}
+        aria-label={`View details for the project ${title} of type ${projectType}`}
         className="card-container absolute bottom-0 left-0 w-full h-full flex flex-col justify-end p-4 transform translate-y-10 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition duration-300 ease-in-out ">
         <h4 className="font-bold">{title}</h4>
         <p className="text-accent">{projectType}</p>
