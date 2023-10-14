@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { useRef, useState } from "react";
@@ -5,7 +7,7 @@ import { MenuToggle } from "./Toggle";
 import { motion } from "framer-motion";
 import PrimaryButton from "./PrimaryButton";
 
-export default function NavBar({ isAboutAtTop }: { isAboutAtTop: boolean }) {
+export default function NavBar() {
   const [navbar, setNavbar] = useState(false);
   console.log("Navbar state:", navbar);
   const containerRef = useRef(null);
@@ -15,32 +17,26 @@ export default function NavBar({ isAboutAtTop }: { isAboutAtTop: boolean }) {
   };
 
   const baseClass =
-    " py-2 transition duration-600 border-b border-accent bg-neutral-900/50 backdrop-blur-md";
-  const conditionalClass = isAboutAtTop ? "bg-accent/10" : "";
-  const finalClass = `${baseClass} ${conditionalClass}`;
+    "py-2 transition duration-600 border-b border-accent bg-neutral-900/50 backdrop-blur-md";
+  const finalClass = `${baseClass}`;
 
   const menuParentClass = `bg-neutral-900/90 transition duration-300 backdrop-blur-md md:hidden ${
     navbar ? "block" : "hidden"
-  } ${isAboutAtTop ? "" : ""}`;
-
-  const navSectionClass = navbar
-    ? "backdrop-blur-md bg-neutral-900/90 transition duration-500"
-    : "";
+  }`;
 
   const menuVariants = {
     open: { opacity: 1, y: 0 },
     closed: { opacity: 0, y: "-100%" },
   };
 
-  const navOpacity = isAboutAtTop ? 1 : 0;
-
   return (
     <>
       <motion.header
-        className={`w-full fixed top-0 z-40 ${navSectionClass}`}
+        className={`w-full fixed top-0 z-40`}
         initial={{ opacity: 0 }}
-        animate={{ opacity: navOpacity, transition: { duration: 0.3 } }}
-        ref={containerRef}>
+        animate={{ opacity: 1, transition: { duration: 0.3 } }}
+        ref={containerRef}
+      >
         <nav className={finalClass}>
           <div className="2xl:w-4/5 max-w-7xl mx-auto w-11/12">
             <div className="flex flex-row items-center justify-between">
@@ -50,17 +46,20 @@ export default function NavBar({ isAboutAtTop }: { isAboutAtTop: boolean }) {
               <div className="hidden md:flex gap-4 w-1/3">
                 <Link
                   className="text-accent hover:text-white"
-                  href="#about-section">
+                  href="#about-section"
+                >
                   about
                 </Link>
                 <Link
                   className="text-accent hover:text-white"
-                  href="#work-section">
+                  href="#work-section"
+                >
                   work
                 </Link>
                 <Link
                   className="text-accent hover:text-white"
-                  href="./justinchambers_resume_2023.pdf">
+                  href="./justinchambers_resume_2023.pdf"
+                >
                   resume
                 </Link>
               </div>
@@ -93,7 +92,8 @@ export default function NavBar({ isAboutAtTop }: { isAboutAtTop: boolean }) {
         animate={navbar ? "open" : "closed"}
         variants={menuVariants}
         transition={{ duration: 0.5 }}
-        onClick={() => toggleMenu()}>
+        onClick={() => toggleMenu()}
+      >
         <div className={menuParentClass}>
           <div className="flex flex-col uppercase py-2 justify-center">
             <div className="block">
