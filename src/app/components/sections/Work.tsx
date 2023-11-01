@@ -1,12 +1,11 @@
-import Card from "./Card";
+import Card from "@/app/components/utils/Card";
 
 export default function Work() {
   return (
     <>
       <div
         id="work-section"
-        className="z-20 relative text-white bg-dark flex flex-col py-10 font-extralight items-center justify-center h-full lg:h-screen flex-wrap w-full "
-      >
+        className="z-20 relative text-white bg-dark flex flex-col py-10 font-extralight items-center justify-center h-full lg:h-screen flex-wrap w-full ">
         <div className="flex flex-col w-full items-center">
           <div className="w-10/12 max-w-5xl">
             <div className="flex flex-col gap-4">

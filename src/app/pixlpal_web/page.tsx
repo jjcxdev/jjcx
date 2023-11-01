@@ -1,11 +1,11 @@
 "use client";
 
 import Image from "next/image";
-import SecondaryButton from "../components/SecondaryButton";
+import SecondaryButton from "../components/buttons/SecondaryButton";
 import { SiGithub } from "react-icons/si";
 import { FaGlobe } from "react-icons/fa";
 import { IoCaretBack } from "react-icons/io5";
-import TertiaryButton from "../components/TertiaryButton";
+import TertiaryButton from "../components/buttons/TertiaryButton";
 
 export default function Sots() {
   return (

@@ -1,4 +1,4 @@
-import Skill from "./Skill";
+import Skill from "@/app/components/utils/Skill";
 
 export default function Skills() {
   return (

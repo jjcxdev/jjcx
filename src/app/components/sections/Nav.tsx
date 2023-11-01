@@ -3,9 +3,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useRef, useState } from "react";
-import { MenuToggle } from "./Toggle";
+import { MenuToggle } from "@/app/components/utils/Toggle";
 import { motion } from "framer-motion";
-import PrimaryButton from "./PrimaryButton";
+import PrimaryButton from "@/app/components/buttons/PrimaryButton";
 
 export default function NavBar() {
   const [navbar, setNavbar] = useState(false);
@@ -35,8 +35,7 @@ export default function NavBar() {
         className={`w-full fixed top-0 z-40`}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1, transition: { duration: 0.3 } }}
-        ref={containerRef}
-      >
+        ref={containerRef}>
         <nav className={finalClass}>
           <div className="2xl:w-4/5 max-w-7xl mx-auto w-11/12">
             <div className="flex flex-row items-center justify-between">
@@ -46,20 +45,17 @@ export default function NavBar() {
               <div className="hidden md:flex gap-4 w-1/3">
                 <Link
                   className="text-accent hover:text-white"
-                  href="#about-section"
-                >
+                  href="#about-section">
                   about
                 </Link>
                 <Link
                   className="text-accent hover:text-white"
-                  href="#work-section"
-                >
+                  href="#work-section">
                   work
                 </Link>
                 <Link
                   className="text-accent hover:text-white"
-                  href="./justinchambers_resume_2023.pdf"
-                >
+                  href="./justinchambers_resume_2023.pdf">
                   resume
                 </Link>
               </div>
@@ -92,8 +88,7 @@ export default function NavBar() {
         animate={navbar ? "open" : "closed"}
         variants={menuVariants}
         transition={{ duration: 0.5 }}
-        onClick={() => toggleMenu()}
-      >
+        onClick={() => toggleMenu()}>
         <div className={menuParentClass}>
           <div className="flex flex-col uppercase py-2 justify-center">
             <div className="block">

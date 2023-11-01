@@ -1,12 +1,12 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Footer from "./components/Footer";
-import About from "./components/About";
-import SecondaryButton from "./components/SecondaryButton";
-import Hero from "./components/Hero";
-import Work from "./components/Work";
-import Skills from "./components/Skills";
+import Footer from "./components/sections/Footer";
+import About from "./components/sections/About";
+import SecondaryButton from "./components/buttons/SecondaryButton";
+import Hero from "./components/sections/Hero";
+import Work from "./components/sections/Work";
+import Skills from "./components/sections/Skills";
 
 export default function Home() {
   const [isClient, setIsClient] = useState(false);
@@ -50,8 +50,7 @@ export default function Home() {
       {/* Hero section */}
       <section
         className="h-screen bg-dark w-full flex flex-col justify-center py-28"
-        id="hero-heading"
-      >
+        id="hero-heading">
         <div className="2xl:w-4/5 max-w-7xl mx-auto w-11/12">
           <div className="flex items-center justify-center flex-col">
             <Hero />
