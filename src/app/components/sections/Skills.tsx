@@ -5,12 +5,12 @@ export default function Skills() {
     <>
       <div
         id="skills-section"
-        className="z-20 relative text-white bg-dark flex flex-col py-10 font-extralight items-center justify-center h-full flex-wrap w-full ">
+        className="z-20 sm:h-screen relative text-white bg-dark flex flex-col py-10 font-extralight items-center justify-center h-full flex-wrap w-full ">
         <div className="flex flex-col w-full items-center">
           <div className="w-10/12 max-w-5xl">
             <div className="flex flex-col gap-20">
               <div>
-                <h3 className="text-clamp-md font-bold uppercase items-start flex pb-4">
+                <h3 className="text-2xl sm:text-5xl md:text-7xl text-accent uppercase items-start flex pb-4">
                   Technical Skills
                 </h3>
                 <div className="grid grid-cols-2 lg:grid-cols-4 sm:grid-cols-3 gap-4">

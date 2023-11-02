@@ -37,7 +37,7 @@ const SkillController: React.FC<SkillProps> = ({
   }, [icon]);
 
   // Determine the scaling factor based on SVG dimensions
-  const scaleFactor = Math.min(svgWidth, svgHeight) / 175;
+  const scaleFactor = Math.min(svgWidth, svgHeight) / 250;
   const scaledRadius = 100 * scaleFactor;
 
   //Update the circumference based on scale radius
@@ -58,10 +58,10 @@ const SkillController: React.FC<SkillProps> = ({
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}>
       <div
-        className="relative"
+        className="relative w-fit h-fit"
         style={{
-          width: `${scaledRadius * 2.25}px`,
-          height: `${scaledRadius * 2.25}px`,
+          width: `${scaledRadius * 2.5}px`,
+          height: `${scaledRadius * 2.5}px`,
         }}>
         <svg className="absolute top-0 left-0 w-full h-full">
           {/* Clipping mask for the fill */}
@@ -98,7 +98,7 @@ const SkillController: React.FC<SkillProps> = ({
           />
         </svg>
         <div
-          className="absolute w-12 h-12 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10"
+          className="absolute w-12 h-12 md:h-16 md:w-16 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10"
           dangerouslySetInnerHTML={{ __html: svgContent ? svgContent : "" }}
           style={{
             width: `${scaledRadius}px`,
@@ -107,7 +107,7 @@ const SkillController: React.FC<SkillProps> = ({
           }}
         />
       </div>
-      <div className="font-poppins text-center">{title}</div>
+      <div className="font-space text-sm text-center">{title}</div>
     </div>
   );
 };
