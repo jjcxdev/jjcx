@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import BackButton from "../components/buttons/SecondaryButton";
+import BackButton from "../components/buttons/BackButton";
 import TertiaryButton from "../components/buttons/TertiaryButton";
 import { SiGithub } from "react-icons/si";
 import { FaGlobe } from "react-icons/fa";

@@ -17,7 +17,7 @@ export default function Sots() {
           </div>
           <div className="overflow-hidden w-fit rounded-2xl">
             <Image
-              src="/images/projects/pixlpal.webp"
+              src="/images/projects/scammers.webp"
               width="800"
               height="800"
               alt="PixlPal site"
@@ -26,28 +26,20 @@ export default function Sots() {
           </div>
           <div>
             <h5 className="text-clamp-lg my-4" aria-label="project name">
-              PixlPal
+              Dialer
             </h5>
             <div
               className="text-clamp-2xs font-extralight mb-8"
               aria-label="description">
-              Website for PixlPal, a macOS app I created for capturing screen
-              color data.
+              This was made purely out of spite. Fed up with constantly
+              receiving scam phone calls, I created a dialer that would return
+              the annoying favour.
             </div>
-
             <div className="flex flex-row gap-8">
               <div className="">
                 <TertiaryButton
-                  aria-label="Website"
-                  href={"http://pixlpal.vercel.app"}
-                  icon={<FaGlobe />}
-                  text={"Website"}
-                />
-              </div>
-              <div className="">
-                <TertiaryButton
                   aria-label="GitHub"
-                  href={"http://github.com/jjcxdev/pixlpal_web"}
+                  href={"https://github.com/jjcxdev/dialer"}
                   icon={<SiGithub />}
                   text={"GitHub"}
                 />

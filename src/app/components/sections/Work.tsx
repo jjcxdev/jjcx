@@ -22,7 +22,7 @@ export default function Work() {
                   title="Handmade Code"
                   image="./images/projects/cards/code.webp"
                   projectType="WebApp"
-                  link="./sots"
+                  link="./handmade"
                 />
                 <ProjectCard
                   title="PixlPal Website"
