@@ -32,7 +32,7 @@ export default function Sots() {
               className="text-clamp-2xs font-extralight mb-8"
               aria-label="description">
               I decided to make a bingo game to play along with a podcast that I
-              like to listen to called "The Rest is Football".
+              like to listen to called &quot;`The Rest is Football&quot;`.
             </div>
             <div className="flex flex-row gap-8">
               <div className="">
