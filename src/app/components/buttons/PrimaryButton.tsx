@@ -1,4 +1,5 @@
 // ButtonComponent.tsx
+"use client";
 
 interface ButtonProps {
   href: string;

@@ -1,122 +1,139 @@
 "use client";
 
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { useRef, useState } from "react";
-import { MenuToggle } from "@/app/components/utils/Toggle";
-import { motion } from "framer-motion";
 import PrimaryButton from "@/app/components/buttons/PrimaryButton";
+import MenuToggle from "@/app/components/utils/MenuToggle";
+import { MdEmail } from "react-icons/md";
+import "@fontsource/monomaniac-one";
+import "@fontsource/space-mono";
+import { FaGithub, FaMedium, FaXTwitter } from "react-icons/fa6";
 
 export default function NavBar() {
-  const [navbar, setNavbar] = useState(false);
-  console.log("Navbar state:", navbar);
-  const containerRef = useRef(null);
+  const [isMenuVisible, setIsMenuVisible] = useState(false);
 
-  const toggleMenu = () => {
-    setNavbar(!navbar);
+  const toggleMenuVisibility = () => {
+    setIsMenuVisible((prevState) => !prevState);
   };
-
-  const baseClass =
-    "py-2 transition duration-600 border-b border-accent bg-neutral-900/50 backdrop-blur-md";
-  const finalClass = `${baseClass}`;
-
-  const menuParentClass = `bg-neutral-900/90 transition duration-300 backdrop-blur-md md:hidden ${
-    navbar ? "block" : "hidden"
-  }`;
-
-  const menuVariants = {
-    open: { opacity: 1, y: 0 },
-    closed: { opacity: 0, y: "-100%" },
-  };
-
   return (
     <>
-      <motion.header
-        className={`w-full fixed top-0 z-40`}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1, transition: { duration: 0.3 } }}
-        ref={containerRef}>
-        <nav className={finalClass}>
-          <div className="2xl:w-4/5 max-w-7xl mx-auto w-11/12">
-            <div className="flex flex-row items-center justify-between">
-              <div className="flex w-1/3 items-center md:hidden">
-                <MenuToggle toggle={toggleMenu} />
-              </div>
-              <div className="hidden md:flex gap-4 w-1/3">
+      <nav className="w-full text-accent bg-transparent backdrop-blur-sm fixed h-8 z-50">
+        <div className="2xl:w-4/5  max-w-7xl mx-auto w-[95vw] py-1">
+          <div className="flex flex-row items-center h-full justify-between">
+            <div className="hidden font-space lg:flex gap-4 w-1/3">
+              <Link href="#about-section">about</Link>
+              <Link href="#work-section">work</Link>
+              <Link href="./justinchambers_resume_2023.pdf">resume</Link>
+            </div>
+            <div className="flex z-50 items-center w-1/3 lg:justify-center justify-start">
+              <Image
+                src="/jjcx_logo.svg"
+                width={75}
+                height={20}
+                alt="jjcx logo"
+                priority={true}
+                style={{ width: "75px", height: "20px" }}
+              />
+            </div>
+            <div className="flex items-center w-1/3 justify-end">
+              <div className="hidden lg:flex flex-row gap-6">
                 <Link
-                  className="text-accent hover:text-white"
-                  href="#about-section">
-                  about
+                  href="https://www.github.com/jjcxdev"
+                  className="flex flex-row items-center hover:text-white gap-2">
+                  <FaGithub />
                 </Link>
                 <Link
-                  className="text-accent hover:text-white"
-                  href="#work-section">
-                  work
+                  href="https://twitter.com/jjcxdev"
+                  className="flex flex-row items-center hover:text-white gap-2">
+                  <FaXTwitter />
                 </Link>
                 <Link
-                  className="text-accent hover:text-white"
-                  href="./justinchambers_resume_2023.pdf">
-                  resume
+                  href="https://medium.com/@jjcx"
+                  className="flex flex-row items-center hover:text-white gap-2">
+                  <FaMedium />
                 </Link>
               </div>
-
-              <div className="flex items-center w-1/3 justify-center">
-                <Image
-                  src="/jjcx_logo.svg"
-                  width={75}
-                  height={75}
-                  alt="jjcx logo"
-                  style={{ width: "auto", height: "20px" }}
-                  priority={true}
-                />
+              <div className="lg:hidden">
+                <MenuToggle onClick={toggleMenuVisibility} />
               </div>
-
-              <div className="flex items-center justify-end w-1/3">
-                <PrimaryButton href="mailto:j@jjcx.dev" text="contact" />
-              </div>
-            </div>
-          </div>
-        </nav>
-      </motion.header>
-      <motion.div
-        className={
-          navbar
-            ? "fixed inset-0 z-30 backdrop-blur-md pt-12"
-            : "fixed inset-0 z-30 backdrop-blur-md pt-12 opacity-0"
-        }
-        initial="closed"
-        animate={navbar ? "open" : "closed"}
-        variants={menuVariants}
-        transition={{ duration: 0.5 }}
-        onClick={() => toggleMenu()}>
-        <div className={menuParentClass}>
-          <div className="flex flex-col uppercase py-2 justify-center">
-            <div className="block">
-              <Link href="#about-section">
-                <div className="text-accent pl-6 py-1 transition duration-500 hover:text-dark hover:bg-accent">
-                  about
-                </div>
-              </Link>
-            </div>
-
-            <div className="block">
-              <Link href="#work-section">
-                <div className="text-accent pl-6 py-1 transition duration-500 hover:text-dark hover:bg-accent">
-                  work
-                </div>
-              </Link>
-            </div>
-
-            <div className="block">
-              <Link href="./justinchambers_resume_2023.pdf">
-                <div className="text-accent pl-6 py-1 transition duration-500 hover:text-dark hover:bg-accent">
-                  resume
-                </div>
-              </Link>
             </div>
           </div>
         </div>
-      </motion.div>
+        <div
+          className={`h-[100vh] bg-neutral-900 flex flex-col justify-around backdrop-blur-sm transform z-10 transition-all ease-in-out duration-300 ${
+            isMenuVisible
+              ? "opacity-100 translate-y-0 visible pointer-events-auto"
+              : "opacity-0 -translate-y-10 invisible pointer-events-none"
+          } flex flex-col font-space text-accent items-center justify-center`}>
+          <div>
+            <div
+              className={`${
+                isMenuVisible ? "transition-delay-100" : "transition-delay-400"
+              } py-4 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all justify-center flex w-full h-fit ease-in-out duration-300 ${
+                isMenuVisible
+                  ? "translate-y-0 opacity-100"
+                  : "-translate-y-4 opacity-0"
+              }`}>
+              <Link href="#about-section">about</Link>
+            </div>
+            <div
+              className={`${
+                isMenuVisible ? "transition-delay-200" : "transition-delay-300"
+              } py-4 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all justify-center flex w-full h-fit ease-in-out duration-300 ${
+                isMenuVisible
+                  ? "translate-y-0 opacity-100"
+                  : "-translate-y-4 opacity-0"
+              }`}>
+              <Link href="#work-section">work</Link>
+            </div>
+            <div
+              className={`${
+                isMenuVisible ? "transition-delay-300" : "transition-delay-200"
+              } py-4 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all justify-center flex w-full h-fit ease-in-out duration-300 ${
+                isMenuVisible
+                  ? "translate-y-0 opacity-100"
+                  : "-translate-y-4 opacity-0"
+              }`}>
+              <Link href="./justinchambers_resume_2023.pdf">resume</Link>
+            </div>
+          </div>
+          <div
+            className={`${
+              isMenuVisible ? "transition-delay-400" : "transition-delay-100"
+            } py-4 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all justify-center flex w-full h-fit ease-in-out duration-300 ${
+              isMenuVisible
+                ? "translate-y-0 opacity-100"
+                : "-translate-y-4 opacity-0"
+            }`}>
+            <div className="flex flex-col items-center gap-6">
+              <Link
+                href="mailto:j@jjcx.dev"
+                className="flex flex-row items-center hover:text-white gap-2">
+                <MdEmail />{" "}
+                <span className="text-white hover:text-accent">j@jjcx.dev</span>
+              </Link>
+              <div className="flex flex-row gap-6">
+                <Link
+                  href="https://www.github.com/jjcxdev"
+                  className="flex flex-row items-center hover:text-white gap-2">
+                  <FaGithub />
+                </Link>
+                <Link
+                  href="https://twitter.com/jjcxdev"
+                  className="flex flex-row items-center hover:text-white gap-2">
+                  <FaXTwitter />
+                </Link>
+                <Link
+                  href="https://medium.com/@jjcx"
+                  className="flex flex-row items-center hover:text-white gap-2">
+                  <FaMedium />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
     </>
   );
 }

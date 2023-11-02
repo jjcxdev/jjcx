@@ -11,9 +11,9 @@ export default function Footer() {
             <Image
               src="/jjcx_logo_dk.svg"
               width={75}
-              height={75}
+              height={20}
               alt="jjcx logo"
-              style={{ width: "75px", height: "75px" }}
+              style={{ width: "75px", height: "20px" }}
             />
           </Link>
         </div>

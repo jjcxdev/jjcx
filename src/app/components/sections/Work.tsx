@@ -1,4 +1,4 @@
-import Card from "@/app/components/utils/Card";
+import ProjectCard from "@/app/components/utils/ProjectCard";
 
 export default function Work() {
   return (
@@ -18,25 +18,25 @@ export default function Work() {
                 </p>
               </div>
               <div className="flex items-center flex-col lg:flex-row justify-around gap-4">
-                <Card
+                <ProjectCard
                   title="Seminar on the Seas"
                   image="./sots.webp"
                   projectType="WebApp"
                   link="./sots"
                 />
-                <Card
+                <ProjectCard
                   title="PixlPal"
                   image="./pixlpal.png"
                   projectType="macOS App"
                   link="./pixlpal"
                 />
-                <Card
+                <ProjectCard
                   title="PixlPal Website"
                   image="./pixlpal.webp"
                   projectType="WebApp"
                   link="./pixlpal_web"
                 />
-                <Card
+                <ProjectCard
                   title="JJCX"
                   image="./jjcx.webp"
                   projectType="WebApp"

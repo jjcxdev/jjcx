@@ -5,7 +5,12 @@ interface CardProps {
   link: string;
 }
 
-const Card: React.FC<CardProps> = ({ title, image, projectType, link }) => {
+const ProjectCard: React.FC<CardProps> = ({
+  title,
+  image,
+  projectType,
+  link,
+}) => {
   return (
     <div className="rounded-lg aspect-square w-full max-w-xs relative transition-all duration-300 ease-in-out group">
       <img
@@ -24,4 +29,4 @@ const Card: React.FC<CardProps> = ({ title, image, projectType, link }) => {
   );
 };
 
-export default Card;
+export default ProjectCard;
