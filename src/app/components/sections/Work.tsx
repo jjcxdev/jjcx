@@ -44,7 +44,7 @@ export default function Work() {
                 />
               </div>
               <p className="text-clamp-xs">
-                Theses are some other things that I've built.
+                Theses are some other things that I&apos;ve built.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 justify-center items-center md:grid-cols-4 gap-4">
                 <ProjectCard
