@@ -5,7 +5,7 @@ export default function Work() {
     <>
       <div
         id="work-section"
-        className="z-20 relative text-white bg-dark flex flex-col py-10 font-extralight items-center justify-center h-full lg:h-screen flex-wrap w-full ">
+        className="z-20 relative text-white bg-dark flex flex-col py-10 font-extralight items-center justify-center h-full flex-wrap w-full ">
         <div className="flex flex-col w-full items-center">
           <div className="w-10/12 max-w-5xl">
             <div className="flex flex-col gap-4">
@@ -20,25 +20,25 @@ export default function Work() {
               <div className="grid grid-cols-1 sm:grid-cols-2 justify-center items-center md:grid-cols-4 gap-4">
                 <ProjectCard
                   title="Handmade Code"
-                  image="./images/projects/placeholder.jpeg"
+                  image="./images/projects/cards/code.webp"
                   projectType="WebApp"
                   link="./sots"
                 />
                 <ProjectCard
-                  title="The Rest is Bingo"
-                  image="./images/projects/placeholder.jpeg"
-                  projectType="WebApp"
-                  link="./bingo"
-                />
-                <ProjectCard
                   title="PixlPal Website"
-                  image="./images/projects/placeholder.jpeg"
+                  image="./images/projects/cards/pp_web.webp"
                   projectType="WebApp"
                   link="./pixlpal_web"
                 />
                 <ProjectCard
+                  title="The Rest is Bingo"
+                  image="./images/projects/cards/bingo.webp"
+                  projectType="WebApp"
+                  link="./bingo"
+                />
+                <ProjectCard
                   title="Seminar on the Seas"
-                  image="./images/projects/placeholder.jpeg"
+                  image="./images/projects/cards/sots.webp"
                   projectType="WebApp"
                   link="./sots"
                 />
@@ -49,13 +49,13 @@ export default function Work() {
               <div className="grid grid-cols-1 sm:grid-cols-2 justify-center items-center md:grid-cols-4 gap-4">
                 <ProjectCard
                   title="PixlPal"
-                  image="./images/projects/placeholder.jpeg"
+                  image="./images/projects/cards/pp.webp"
                   projectType="macOS App"
                   link="./pixlpal"
                 />
                 <ProjectCard
                   title="Dialer"
-                  image="./images/projects/placeholder.jpeg"
+                  image="./images/projects/cards/dialer.webp"
                   projectType="python program"
                   link="./dialer"
                 />
