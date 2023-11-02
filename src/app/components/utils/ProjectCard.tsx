@@ -24,12 +24,12 @@ const ProjectCard: React.FC<CardProps> = ({
         className="w-full h-full flex flex-col justify-center items-center p-4 opacity-0 group-hover:opacity-100 transition invisible group-hover:visible duration-700 ease-in-out z-10">
         <h4 className="font-bold">{title}</h4>
         <p className="text-accent">{projectType}</p>
-        <div className="py-2">
+        <div className="py-4">
           <button
-            className="w-fit font-space h-fit px-6 py-1 rounded-full border border-accent cursor-pointer"
+            className="w-fit text-xs font-space h-fit px-6 py-1 rounded-full border border-accent cursor-pointer"
             type="button"
             onClick={() => (window.location.href = link)}>
-            see project
+            learn more
           </button>
         </div>
       </div>
