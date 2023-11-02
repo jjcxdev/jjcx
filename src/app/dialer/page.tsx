@@ -1,10 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import BackButton from "../components/buttons/BackButton";
+
 import { SiGithub } from "react-icons/si";
-import { FaGlobe } from "react-icons/fa";
-import { IoCaretBack } from "react-icons/io5";
+
 import TertiaryButton from "../components/buttons/TertiaryButton";
 
 export default function Sots() {
@@ -12,9 +11,6 @@ export default function Sots() {
     <div className="flex min-h-screen w-full bg-neutral-900 items-center">
       <div className="mx-auto max-w-7xl 2xl:w-4/5 w-11/12 ">
         <main className="flex justify-between flex-col h-full relative z-10 text-neutral-50/90">
-          <div className="pb-8">
-            <BackButton href={"/"} text={"back"} icon={<IoCaretBack />} />
-          </div>
           <div className="overflow-hidden w-fit rounded-2xl">
             <Image
               src="/images/projects/scammers.webp"
