@@ -2,10 +2,10 @@
 
 import Image from "next/image";
 import SecondaryButton from "../components/buttons/SecondaryButton";
-import TertiaryButton from "../components/buttons/TertiaryButton";
 import { SiGithub } from "react-icons/si";
 import { FaGlobe } from "react-icons/fa";
 import { IoCaretBack } from "react-icons/io5";
+import TertiaryButton from "../components/buttons/TertiaryButton";
 
 export default function Sots() {
   return (
@@ -17,29 +17,28 @@ export default function Sots() {
           </div>
           <div className="overflow-hidden w-fit rounded-2xl">
             <Image
-              src="/images/projects/sots.webp"
+              src="/images/projects/bingo.webp"
               width="800"
               height="800"
-              alt="Seminar on the Seas site"
+              alt="PixlPal site"
               className=""
             />
           </div>
           <div>
             <h5 className="text-clamp-lg my-4" aria-label="project name">
-              Seminar on the Seas
+              The Rest is Bingo
             </h5>
             <div
               className="text-clamp-2xs font-extralight mb-8"
               aria-label="description">
-              Website for Seminar on the Seas, a training experience for the
-              lighting industry.
+              I decided to make a bingo game to play along with a podcast that I
+              like to listen to called "The Rest is Football".
             </div>
-
             <div className="flex flex-row gap-8">
               <div className="">
                 <TertiaryButton
                   aria-label="Website"
-                  href={"http://sots.vercel.app"}
+                  href={"http://therestisbingo.vercel.app"}
                   icon={<FaGlobe />}
                   text={"Website"}
                 />
@@ -47,7 +46,7 @@ export default function Sots() {
               <div className="">
                 <TertiaryButton
                   aria-label="GitHub"
-                  href={"http://github.com/jjcxdev/sots"}
+                  href={"http://github.com/jjcxdev/therestisbingo"}
                   icon={<SiGithub />}
                   text={"GitHub"}
                 />

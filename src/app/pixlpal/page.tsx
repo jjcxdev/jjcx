@@ -9,15 +9,15 @@ import { IoCaretBack } from "react-icons/io5";
 
 export default function Sots() {
   return (
-    <div className="flex min-h-screen w-full bg-neutral-900 py-[14vh]">
+    <div className="flex min-h-screen w-full bg-neutral-900 items-center">
       <div className="mx-auto max-w-7xl 2xl:w-4/5 w-11/12 ">
         <main className="flex justify-between flex-col h-full relative z-10 text-neutral-50/90">
           <div className="pb-8">
             <SecondaryButton href={"/"} text={"back"} icon={<IoCaretBack />} />
           </div>
-          <div className="overflow-hidden">
+          <div className="overflow-hidden w-fit rounded-2xl">
             <Image
-              src="/pixlpal.png"
+              src="/images/projects/pixlpal.png"
               width="500"
               height="500"
               alt="PixlPal App"
@@ -38,9 +38,7 @@ export default function Sots() {
               the captured color for various purposes such as web design,
               graphic design, and more.
             </div>
-            <div className="border-neutral-50/90 mb-4 text-clamp-3xs border-b">
-              macOS app
-            </div>
+
             <div className="flex flex-row gap-8">
               <div className="">
                 <TertiaryButton
