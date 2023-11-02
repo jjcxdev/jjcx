@@ -7,7 +7,12 @@ interface SkillProps {
 
 import React, { useState, useEffect } from "react";
 
-const Skill: React.FC<SkillProps> = ({ title, icon, value, color }) => {
+const SkillController: React.FC<SkillProps> = ({
+  title,
+  icon,
+  value,
+  color,
+}) => {
   const [svgContent, setSvgContent] = useState<string | null>(null);
   const [isHovered, setIsHovered] = useState(false);
 
@@ -36,8 +41,7 @@ const Skill: React.FC<SkillProps> = ({ title, icon, value, color }) => {
     <div
       className="flex flex-col items-center"
       onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-    >
+      onMouseLeave={handleMouseLeave}>
       <div className="relative md:w-28 md:h-28 w-14 h-14">
         <svg className="absolute top-0 left-0 w-full h-full">
           {/* Clipping mask for the fill */}
@@ -84,4 +88,4 @@ const Skill: React.FC<SkillProps> = ({ title, icon, value, color }) => {
   );
 };
 
-export default Skill;
+export default SkillController;

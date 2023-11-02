@@ -1,4 +1,4 @@
-import Skill from "@/app/components/utils/Skill";
+import SkillController from "@/app/components/utils/SkillController";
 
 export default function Skills() {
   return (
@@ -15,44 +15,44 @@ export default function Skills() {
                 </h3>
                 <div className="flex flex-col gap-4">
                   <div className="flex w-full justify-around">
-                    <Skill
+                    <SkillController
                       title="HTML5"
                       icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
                       value={90}
                     />
-                    <Skill
+                    <SkillController
                       title="CSS"
                       icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
                       value={90}
                     />
-                    <Skill
+                    <SkillController
                       title="Figma"
                       icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
                       value={75}
                     />
-                    <Skill
+                    <SkillController
                       title="Illustrator"
                       icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg"
                       value={90}
                     />
                   </div>
                   <div className="flex w-full justify-around">
-                    <Skill
+                    <SkillController
                       title="Photoshop"
                       icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg"
                       value={90}
                     />
-                    <Skill
+                    <SkillController
                       title="Typescript"
                       icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
                       value={50}
                     />
-                    <Skill
+                    <SkillController
                       title="React"
                       icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
                       value={50}
                     />
-                    <Skill
+                    <SkillController
                       title="Next"
                       icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
                       value={50}
@@ -60,22 +60,22 @@ export default function Skills() {
                     />
                   </div>
                   <div className="flex w-full justify-around">
-                    <Skill
+                    <SkillController
                       title="TailwindCSS"
                       icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
                       value={80}
                     />
-                    <Skill
+                    <SkillController
                       title="Javascript"
                       icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
                       value={50}
                     />
-                    <Skill
+                    <SkillController
                       title="Python"
                       icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
                       value={25}
                     />
-                    <Skill
+                    <SkillController
                       title="Swift"
                       icon="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg"
                       value={10}

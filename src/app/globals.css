@@ -12,6 +12,19 @@ html {
   scroll-behavior: smooth;
 }
 
+.fade-entering,
+.fade-exiting,
+.fade-exited {
+  opacity: 0;
+  display: none;
+}
+
+.fade-entered {
+  opacity: 1;
+  display: block;
+  transition: opacity 300ms;
+}
+
 .blue-bar::after {
   content: "|";
   color: #06b6d4;
