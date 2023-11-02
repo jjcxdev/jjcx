@@ -5,15 +5,15 @@ export default function Work() {
     <>
       <div
         id="work-section"
-        className="z-20 relative text-white bg-dark flex flex-col py-10 font-extralight items-center justify-center h-full flex-wrap w-full ">
+        className="z-20 sm:h-screen relative text-white bg-dark flex flex-col py-10 font-extralight items-center justify-center h-full flex-wrap w-full ">
         <div className="flex flex-col w-full items-center">
           <div className="w-10/12 max-w-5xl">
             <div className="flex flex-col gap-4">
               <div>
-                <h3 className="text-clamp-md font-bold uppercase items-start flex pb-4">
+                <h3 className="text-2xl sm:text-5xl md:text-7xl text-accent uppercase items-start flex pb-4">
                   Work
                 </h3>
-                <p className="text-clamp-xs">
+                <p className="text-xl sm:text-3xl md:text-4xl">
                   These are a few of the Web Apps I&apos;ve been working on.
                 </p>
               </div>
@@ -43,8 +43,8 @@ export default function Work() {
                   link="./sots"
                 />
               </div>
-              <p className="text-clamp-xs">
-                Theses are some other things that I&apos;ve built.
+              <p className="text-xl sm:text-3xl md:text-4xl">
+                These are some other things that I&apos;ve built.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 justify-center items-center md:grid-cols-4 gap-4">
                 <ProjectCard
