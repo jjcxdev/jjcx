@@ -15,6 +15,10 @@ export default function NavBar() {
   const toggleMenuVisibility = () => {
     setIsMenuVisible((prevState) => !prevState);
   };
+
+  const handleLinkClicked = () => {
+    setIsMenuVisible(false);
+  };
   return (
     <>
       <nav className="w-full text-accent bg-transparent backdrop-blur-sm fixed h-8 z-50">
@@ -56,7 +60,10 @@ export default function NavBar() {
                 </Link>
               </div>
               <div className="lg:hidden">
-                <MenuToggle onClick={toggleMenuVisibility} />
+                <MenuToggle
+                  isOpen={isMenuVisible}
+                  onClick={toggleMenuVisibility}
+                />
               </div>
             </div>
           </div>
@@ -69,6 +76,7 @@ export default function NavBar() {
           } flex flex-col font-space text-accent items-center justify-center`}>
           <div>
             <div
+              onClick={handleLinkClicked}
               className={`${
                 isMenuVisible ? "transition-delay-100" : "transition-delay-400"
               } py-4 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all justify-center flex w-full h-fit ease-in-out duration-300 ${
@@ -79,6 +87,7 @@ export default function NavBar() {
               <Link href="#about-section">about</Link>
             </div>
             <div
+              onClick={handleLinkClicked}
               className={`${
                 isMenuVisible ? "transition-delay-200" : "transition-delay-300"
               } py-4 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all justify-center flex w-full h-fit ease-in-out duration-300 ${
@@ -89,6 +98,7 @@ export default function NavBar() {
               <Link href="#work-section">work</Link>
             </div>
             <div
+              onClick={handleLinkClicked}
               className={`${
                 isMenuVisible ? "transition-delay-300" : "transition-delay-200"
               } py-4 hover:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all justify-center flex w-full h-fit ease-in-out duration-300 ${

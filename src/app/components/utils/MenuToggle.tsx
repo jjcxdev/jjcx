@@ -1,19 +1,13 @@
 "use client";
 
-import React, { useState, MouseEventHandler } from "react";
+import React, { MouseEventHandler } from "react";
 
 type MenuToggleProps = {
   onClick?: MouseEventHandler<HTMLButtonElement>;
+  isOpen: boolean;
 };
 
-export default function MenuToggle({ onClick }: MenuToggleProps) {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggle = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
-    setIsOpen(!isOpen);
-    if (onClick) onClick(event);
-  };
-
+export default function MenuToggle({ onClick, isOpen }: MenuToggleProps) {
   const commonStyles = {
     transition: isOpen ? "all 0.3s ease" : "all 0.3s ease",
     stroke: "white",
@@ -21,7 +15,7 @@ export default function MenuToggle({ onClick }: MenuToggleProps) {
   };
 
   return (
-    <button onClick={toggle} aria-label="Toggle Menu">
+    <button onClick={onClick} aria-label="Toggle Menu">
       <svg width="20" height="18" viewBox="0 0 18 20">
         <line
           x1="0"
