@@ -14,33 +14,50 @@ export default function Work() {
                   Work
                 </h3>
                 <p className="text-clamp-xs">
-                  Just a few of the things I&apos;ve been working on.
+                  These are a few of the Web Apps I&apos;ve been working on.
                 </p>
               </div>
-              <div className="flex items-center flex-col lg:flex-row justify-around gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 justify-center items-center md:grid-cols-4 gap-4">
                 <ProjectCard
-                  title="Seminar on the Seas"
-                  image="./sots.webp"
+                  title="Handmade Code"
+                  image="./images/projects/placeholder.jpeg"
                   projectType="WebApp"
                   link="./sots"
                 />
                 <ProjectCard
-                  title="PixlPal"
-                  image="./pixlpal.png"
-                  projectType="macOS App"
-                  link="./pixlpal"
+                  title="The Rest is Bingo"
+                  image="./images/projects/placeholder.jpeg"
+                  projectType="WebApp"
+                  link="./bingo"
                 />
                 <ProjectCard
                   title="PixlPal Website"
-                  image="./pixlpal.webp"
+                  image="./images/projects/placeholder.jpeg"
                   projectType="WebApp"
                   link="./pixlpal_web"
                 />
                 <ProjectCard
-                  title="JJCX"
-                  image="./jjcx.webp"
+                  title="Seminar on the Seas"
+                  image="./images/projects/placeholder.jpeg"
                   projectType="WebApp"
-                  link="./portfolio"
+                  link="./sots"
+                />
+              </div>
+              <p className="text-clamp-xs">
+                Theses are some other things that I've built.
+              </p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 justify-center items-center md:grid-cols-4 gap-4">
+                <ProjectCard
+                  title="PixlPal"
+                  image="./images/projects/placeholder.jpeg"
+                  projectType="macOS App"
+                  link="./pixlpal"
+                />
+                <ProjectCard
+                  title="Dialer"
+                  image="./images/projects/placeholder.jpeg"
+                  projectType="python program"
+                  link="./dialer"
                 />
               </div>
             </div>
