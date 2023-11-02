@@ -26,14 +26,16 @@ export default function NavBar() {
               <Link href="./justinchambers_resume_2023.pdf">resume</Link>
             </div>
             <div className="flex z-50 items-center w-1/3 lg:justify-center justify-start">
-              <Image
-                src="/jjcx_logo.svg"
-                width={75}
-                height={20}
-                alt="jjcx logo"
-                priority={true}
-                style={{ width: "75px", height: "20px" }}
-              />
+              <Link href="/">
+                <Image
+                  src="/jjcx_logo.svg"
+                  width={75}
+                  height={20}
+                  alt="jjcx logo"
+                  priority={true}
+                  style={{ width: "75px", height: "20px" }}
+                />
+              </Link>
             </div>
             <div className="flex items-center w-1/3 justify-end">
               <div className="hidden lg:flex flex-row gap-6">
