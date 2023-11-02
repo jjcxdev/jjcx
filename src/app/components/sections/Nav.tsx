@@ -3,7 +3,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import PrimaryButton from "@/app/components/buttons/PrimaryButton";
 import MenuToggle from "@/app/components/utils/MenuToggle";
 import { MdEmail } from "react-icons/md";
 import "@fontsource/monomaniac-one";
