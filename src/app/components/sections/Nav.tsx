@@ -20,7 +20,7 @@ export default function NavBar() {
       <nav className="w-full text-accent bg-transparent backdrop-blur-sm fixed h-8 z-50">
         <div className="2xl:w-4/5  max-w-7xl mx-auto w-[95vw] py-1">
           <div className="flex flex-row items-center h-full justify-between">
-            <div className="hidden font-space lg:flex gap-4 w-1/3">
+            <div className="hidden font-space text-xs lg:flex gap-4 w-1/3">
               <Link href="#about-section">about</Link>
               <Link href="#work-section">work</Link>
               <Link href="./justinchambers_resume_2023.pdf">resume</Link>
