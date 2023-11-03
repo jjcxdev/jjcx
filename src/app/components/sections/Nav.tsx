@@ -77,6 +77,8 @@ export default function NavBar() {
             <div className="flex items-center w-1/3 justify-end">
               <div className="hidden lg:flex flex-row gap-6">
                 <Link
+                  title="Visit my GitHub"
+                  aria-label="Visit my GitHub"
                   target="_blank"
                   rel="noopener referrer"
                   onKeyDown={(e) =>
@@ -88,6 +90,8 @@ export default function NavBar() {
                   <FaGithub />
                 </Link>
                 <Link
+                  title="Visit my Twitter"
+                  aria-label="Visit my Twitter"
                   target="_blank"
                   rel="noopener referrer"
                   onKeyDown={(e) =>
@@ -99,6 +103,8 @@ export default function NavBar() {
                   <FaXTwitter />
                 </Link>
                 <Link
+                  title="Read my medium articles"
+                  aria-label="Read my medium articles"
                   target="_blank"
                   rel="noopener referrer"
                   onKeyDown={(e) =>
