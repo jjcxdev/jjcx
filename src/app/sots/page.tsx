@@ -8,22 +8,22 @@ import { FaGlobe } from "react-icons/fa";
 
 export default function Sots() {
   return (
-    <div className="flex min-h-screen w-full bg-neutral-900 items-center">
-      <div className="mx-auto max-w-7xl 2xl:w-4/5 w-11/12 ">
-        <main className="flex justify-between flex-col h-full relative z-10 text-neutral-50/90">
-          <div className="overflow-hidden w-fit rounded-2xl">
+    <div className="flex w-full justify-center items-center">
+      <main className="flex w-11/12 p-4 mt-10 max-w-3xl items-center justify-between flex-col h-full relative z-10 text-neutral-50/90">
+        <div>
+          <div className="w-full rounded-2xl">
             <Image
               src="/images/projects/sots.webp"
-              width="800"
-              height="800"
+              width={1920}
+              height={1080}
               alt="Seminar on the Seas site"
-              className=""
+              className="w-auto h-auto"
             />
           </div>
           <div>
-            <h5 className="text-clamp-lg my-4" aria-label="project name">
+            <h1 className="text-clamp-lg my-4" aria-label="project name">
               Seminar on the Seas
-            </h5>
+            </h1>
             <div
               className="text-clamp-2xs font-extralight mb-8"
               aria-label="description">
@@ -35,23 +35,23 @@ export default function Sots() {
               <div className="">
                 <TertiaryButton
                   aria-label="Website"
-                  href={"http://sots.vercel.app"}
-                  icon={<FaGlobe />}
+                  href={"http://backintime.ca"}
+                  icon={<FaGlobe aria-label="Open Website" />}
                   text={"Website"}
                 />
               </div>
               <div className="">
                 <TertiaryButton
                   aria-label="GitHub"
-                  href={"http://github.com/jjcxdev/sots"}
-                  icon={<SiGithub />}
+                  href={"http://github.com/jjcxdev/handmadecode"}
+                  icon={<SiGithub aria-label="Open GitHub Repository" />}
                   text={"GitHub"}
                 />
               </div>
             </div>
           </div>
-        </main>
-      </div>
+        </div>
+      </main>
     </div>
   );
 }

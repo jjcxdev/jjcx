@@ -34,6 +34,7 @@ export default function Footer() {
         <div className="flex flex-row items-center gap-4">
           <div>
             <Link
+              title="Visit my GitHub"
               onKeyDown={(e) =>
                 handleKeyDown(e, "https://www.github.com/jjcxdev", true)
               }
@@ -49,6 +50,7 @@ export default function Footer() {
           </div>
           <div>
             <Link
+              title="Visit my Twitter"
               onKeyDown={(e) =>
                 handleKeyDown(e, "https://twitter.com/jjcxdev", true)
               }
@@ -56,7 +58,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener referrer"
               passHref
-              aria-label="Visit my GitHub"
+              aria-label="Visit my Twitter"
               className="hover:text-accent transition duration-300"
               href="https://twitter.com/jjcxdev">
               <FaXTwitter />
@@ -65,6 +67,7 @@ export default function Footer() {
 
           <div>
             <Link
+              title="Read my Medium articles"
               onKeyDown={(e) =>
                 handleKeyDown(e, "https://medium.com/@jjcx", true)
               }
