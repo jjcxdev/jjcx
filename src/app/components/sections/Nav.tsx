@@ -12,6 +12,21 @@ import { FaGithub, FaMedium, FaXTwitter } from "react-icons/fa6";
 export default function NavBar() {
   const [isMenuVisible, setIsMenuVisible] = useState(false);
 
+  const handleKeyDown = (
+    e: React.KeyboardEvent<HTMLAnchorElement>,
+    href: string,
+    newTab: boolean = false
+  ) => {
+    if (e.key === " " || e.key === "Enter") {
+      e.preventDefault();
+      if (newTab) {
+        window.open(href, "_blank", "noopener noreferrer");
+      } else {
+        window.location.href = href;
+      }
+    }
+  };
+
   const toggleMenuVisibility = () => {
     setIsMenuVisible((prevState) => !prevState);
   };
@@ -19,15 +34,33 @@ export default function NavBar() {
   const handleLinkClicked = () => {
     setIsMenuVisible(false);
   };
+
   return (
     <>
       <nav className="w-full text-accent bg-transparent backdrop-blur-sm fixed h-8 z-50">
         <div className="2xl:w-4/5  max-w-7xl mx-auto w-[95vw] py-1">
           <div className="flex flex-row items-center h-full justify-between">
             <div className="hidden font-space text-xs lg:flex gap-4 w-1/3">
-              <Link href="#about-section">about</Link>
-              <Link href="#work-section">work</Link>
-              <Link href="./justinchambers_resume_2023.pdf">resume</Link>
+              <Link
+                onKeyDown={(e) => handleKeyDown(e, "#about-section")}
+                href="#about-section"
+                tabIndex={0}>
+                about
+              </Link>
+              <Link
+                onKeyDown={(e) => handleKeyDown(e, "#work-section")}
+                href="#work-section"
+                tabIndex={0}>
+                work
+              </Link>
+              <Link
+                onKeyDown={(e) =>
+                  handleKeyDown(e, "./justinchambers_resume_2023.pdf", true)
+                }
+                href="./justinchambers_resume_2023.pdf"
+                tabIndex={0}>
+                resume
+              </Link>
             </div>
             <div className="flex z-50 items-center w-1/3 lg:justify-center justify-start">
               <Link href="/">
@@ -44,17 +77,35 @@ export default function NavBar() {
             <div className="flex items-center w-1/3 justify-end">
               <div className="hidden lg:flex flex-row gap-6">
                 <Link
+                  target="_blank"
+                  rel="noopener referrer"
+                  onKeyDown={(e) =>
+                    handleKeyDown(e, "https://www.github.com/jjcxdev", true)
+                  }
                   href="https://www.github.com/jjcxdev"
+                  passHref
                   className="flex flex-row items-center hover:text-white gap-2">
                   <FaGithub />
                 </Link>
                 <Link
+                  target="_blank"
+                  rel="noopener referrer"
+                  onKeyDown={(e) =>
+                    handleKeyDown(e, "https://twitter.com/jjcxdev", true)
+                  }
                   href="https://twitter.com/jjcxdev"
+                  passHref
                   className="flex flex-row items-center hover:text-white gap-2">
                   <FaXTwitter />
                 </Link>
                 <Link
+                  target="_blank"
+                  rel="noopener referrer"
+                  onKeyDown={(e) =>
+                    handleKeyDown(e, "https://medium.com/@jjcx", true)
+                  }
                   href="https://medium.com/@jjcx"
+                  passHref
                   className="flex flex-row items-center hover:text-white gap-2">
                   <FaMedium />
                 </Link>
@@ -126,16 +177,28 @@ export default function NavBar() {
               </Link>
               <div className="flex flex-row gap-6">
                 <Link
+                  target="_blank"
+                  rel="noopener referrer"
+                  passHref
+                  tabIndex={0}
                   href="https://www.github.com/jjcxdev"
                   className="flex flex-row items-center hover:text-white gap-2">
                   <FaGithub />
                 </Link>
                 <Link
+                  target="_blank"
+                  rel="noopener referrer"
+                  passHref
+                  tabIndex={0}
                   href="https://twitter.com/jjcxdev"
                   className="flex flex-row items-center hover:text-white gap-2">
                   <FaXTwitter />
                 </Link>
                 <Link
+                  target="_blank"
+                  rel="noopener referrer"
+                  passHref
+                  tabIndex={0}
                   href="https://medium.com/@jjcx"
                   className="flex flex-row items-center hover:text-white gap-2">
                   <FaMedium />
