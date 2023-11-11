@@ -16,7 +16,7 @@ export default function Sots() {
               src="/images/projects/scammers.webp"
               width={1920}
               height={1080}
-              alt="PixlPal site"
+              alt="Python Dialer program"
               className="w-auto h-auto"
             />
           </div>
@@ -26,7 +26,8 @@ export default function Sots() {
             </h1>
             <div
               className="text-clamp-2xs font-extralight mb-8"
-              aria-label="description">
+              aria-label="description"
+            >
               This was made purely out of spite. Fed up with constantly
               receiving scam phone calls, I created a dialer that would return
               the annoying favour.

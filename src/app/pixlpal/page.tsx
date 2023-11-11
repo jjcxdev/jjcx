@@ -26,7 +26,8 @@ export default function Sots() {
             </h1>
             <div
               className="text-clamp-2xs font-extralight mb-8"
-              aria-label="description">
+              aria-label="description"
+            >
               PixlPal is a macOS application designed to help users easily
               capture any color on their screen and automatically save it to
               their clipboard. The application offers support for various color
@@ -39,7 +40,7 @@ export default function Sots() {
               <div className="">
                 <TertiaryButton
                   aria-label="Website"
-                  href={"http://backintime.ca"}
+                  href={"https://pixlpal.vercel.app"}
                   icon={<FaGlobe aria-label="Open Website" />}
                   text={"Website"}
                 />
@@ -47,7 +48,7 @@ export default function Sots() {
               <div className="">
                 <TertiaryButton
                   aria-label="GitHub"
-                  href={"http://github.com/jjcxdev/handmadecode"}
+                  href={"https://github.com/jjcxdev/pixlpal"}
                   icon={<SiGithub aria-label="Open GitHub Repository" />}
                   text={"GitHub"}
                 />

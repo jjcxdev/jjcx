@@ -15,7 +15,7 @@ export default function Sots() {
           <div className="w-full rounded-2xl">
             <Image
               src="/images/projects/bingo.webp"
-              alt="PixlPal site"
+              alt="The Rest is Bingo Site"
               width={1920}
               height={1080}
               className="w-auto h-auto"
@@ -27,15 +27,16 @@ export default function Sots() {
             </h1>
             <div
               className="text-clamp-2xs font-extralight mb-8"
-              aria-label="description">
+              aria-label="description"
+            >
               I decided to make a bingo game to play along with a podcast that I
-              like to listen to called &quot;`The Rest is Football&quot;`.
+              like to listen to called &quot;The Rest is Football&quot;.
             </div>
             <div className="flex flex-row gap-8">
               <div className="">
                 <TertiaryButton
                   aria-label="Website"
-                  href={"http://backintime.ca"}
+                  href={"https://www.therestisbingo.com"}
                   icon={<FaGlobe aria-label="Open Website" />}
                   text={"Website"}
                 />
@@ -43,7 +44,7 @@ export default function Sots() {
               <div className="">
                 <TertiaryButton
                   aria-label="GitHub"
-                  href={"http://github.com/jjcxdev/handmadecode"}
+                  href={"https://github.com/jjcxdev/therestisbingo"}
                   icon={<SiGithub aria-label="Open GitHub Repository" />}
                   text={"GitHub"}
                 />
