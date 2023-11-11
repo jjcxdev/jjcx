@@ -5,7 +5,8 @@ export default function Work() {
     <>
       <div
         id="work-section"
-        className="z-20 sm:h-screen relative text-white bg-dark flex flex-col py-10 font-extralight items-center justify-center h-full flex-wrap w-full ">
+        className="z-20 sm:h-screen relative text-white bg-dark flex flex-col py-10 font-extralight items-center justify-center h-full flex-wrap w-full "
+      >
         <div className="flex flex-col w-full items-center">
           <div className="w-10/12 max-w-5xl">
             <div className="flex flex-col gap-4">
@@ -18,6 +19,12 @@ export default function Work() {
                 </p>
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 justify-center items-center md:grid-cols-4 gap-4">
+                <ProjectCard
+                  title="Hue Rotate"
+                  image="./images/projects/cards/hue.webp"
+                  projectType="WebApp"
+                  link="./hue-rotate"
+                />
                 <ProjectCard
                   title="Handmade Code"
                   image="./images/projects/cards/code.webp"
