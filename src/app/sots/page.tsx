@@ -26,7 +26,8 @@ export default function Sots() {
             </h1>
             <div
               className="text-clamp-2xs font-extralight mb-8"
-              aria-label="description">
+              aria-label="description"
+            >
               Website for Seminar on the Seas, a training experience for the
               lighting industry.
             </div>
@@ -35,7 +36,7 @@ export default function Sots() {
               <div className="">
                 <TertiaryButton
                   aria-label="Website"
-                  href={"http://backintime.ca"}
+                  href={"https://sots.vercel.app"}
                   icon={<FaGlobe aria-label="Open Website" />}
                   text={"Website"}
                 />
@@ -43,7 +44,7 @@ export default function Sots() {
               <div className="">
                 <TertiaryButton
                   aria-label="GitHub"
-                  href={"http://github.com/jjcxdev/handmadecode"}
+                  href={"https://github.com/jjcxdev/sots"}
                   icon={<SiGithub aria-label="Open GitHub Repository" />}
                   text={"GitHub"}
                 />

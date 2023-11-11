@@ -16,7 +16,7 @@ export default function Handmade() {
               src="/images/projects/handmade.webp"
               width={1920}
               height={1080}
-              alt="jjcx site"
+              alt="Handmade Code"
               layout-="responsive"
               className="w-auto h-auto"
             />
@@ -27,7 +27,8 @@ export default function Handmade() {
             </h1>
             <div
               className="text-clamp-2xs font-extralight mb-8"
-              aria-label="description">
+              aria-label="description"
+            >
               This is the company that I started to do webdesign under.
             </div>
 
@@ -35,7 +36,7 @@ export default function Handmade() {
               <div className="">
                 <TertiaryButton
                   aria-label="Website"
-                  href={"http://backintime.ca"}
+                  href={"https://www.backintime.ca"}
                   icon={<FaGlobe aria-label="Open Website" />}
                   text={"Website"}
                 />
@@ -43,7 +44,7 @@ export default function Handmade() {
               <div className="">
                 <TertiaryButton
                   aria-label="GitHub"
-                  href={"http://github.com/jjcxdev/handmadecode"}
+                  href={"https://github.com/jjcxdev/handmadecode"}
                   icon={<SiGithub aria-label="Open GitHub Repository" />}
                   text={"GitHub"}
                 />

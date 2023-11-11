@@ -39,7 +39,7 @@ export default function Handmade() {
               <div className="">
                 <TertiaryButton
                   aria-label="Website"
-                  href={"http://hue-rotate.vercel.app"}
+                  href={"https://hue-rotate.vercel.app"}
                   icon={<FaGlobe aria-label="Open Website" />}
                   text={"Website"}
                 />
@@ -47,7 +47,7 @@ export default function Handmade() {
               <div className="">
                 <TertiaryButton
                   aria-label="GitHub"
-                  href={"http://github.com/jjcxdev/hue-rotate"}
+                  href={"https://github.com/jjcxdev/hue-rotate"}
                   icon={<SiGithub aria-label="Open GitHub Repository" />}
                   text={"GitHub"}
                 />

@@ -27,7 +27,8 @@ export default function Sots() {
             </h1>
             <div
               className="text-clamp-2xs font-extralight mb-8"
-              aria-label="description">
+              aria-label="description"
+            >
               Website for PixlPal, a macOS app I created for capturing screen
               color data.
             </div>
@@ -36,7 +37,7 @@ export default function Sots() {
               <div className="">
                 <TertiaryButton
                   aria-label="Website"
-                  href={"http://backintime.ca"}
+                  href={"https://pixlpal.vercel.app"}
                   icon={<FaGlobe aria-label="Open Website" />}
                   text={"Website"}
                 />
@@ -44,7 +45,7 @@ export default function Sots() {
               <div className="">
                 <TertiaryButton
                   aria-label="GitHub"
-                  href={"http://github.com/jjcxdev/handmadecode"}
+                  href={"https://github.com/jjcxdev/pixlpal_web"}
                   icon={<SiGithub aria-label="Open GitHub Repository" />}
                   text={"GitHub"}
                 />
