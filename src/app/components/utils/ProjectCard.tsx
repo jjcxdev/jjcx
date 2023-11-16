@@ -1,43 +1,33 @@
-import { useRef, useEffect } from "react";
-
 interface CardProps {
   title: string;
   image: string;
   projectType: string;
-  link: string;
+  href: string;
 }
 
 const ProjectCard: React.FC<CardProps> = ({
   title,
   image,
   projectType,
-  link,
+  href,
 }) => {
-  const cardRef = useRef<HTMLAnchorElement>(null);
-
-  useEffect(() => {
-    if (cardRef.current && document.activeElement === document.body) {
-      cardRef.current.focus();
-    }
-  }, []);
-
   const handleCardClicked = () => {
-    window.location.href = link;
+    window.location.href = href;
   };
 
   return (
     <a
-      ref={cardRef}
       tabIndex={0}
-      role="link"
-      className="rounded-lg group cursor-pointer overflow-hidden aspect-video w-full max-w-xs relative transition-all duration-300 ease-in-out"
+      href={href}
+      className="project-card rounded-lg group cursor-pointer overflow-hidden aspect-video w-full max-w-xs relative transition-all duration-300 ease-in-out z-0"
       onClick={handleCardClicked}
       onKeyDown={(e) => {
         if (e.key === "Enter" || e.key === " ") {
           handleCardClicked();
         }
       }}
-      aria-label={`View details for the project ${title} of type ${projectType}`}>
+      aria-label={`View details for the project ${title} of type ${projectType}`}
+    >
       <img
         src={image}
         alt={title}

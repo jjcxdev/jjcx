@@ -23,31 +23,31 @@ export default function Work() {
                   title="Hue Rotate"
                   image="./images/projects/cards/hue.webp"
                   projectType="WebApp"
-                  link="./hue-rotate"
+                  href="./hue-rotate"
                 />
                 <ProjectCard
                   title="Handmade Code"
                   image="./images/projects/cards/code.webp"
                   projectType="WebApp"
-                  link="./handmade"
+                  href="./handmade"
                 />
                 <ProjectCard
                   title="PixlPal Website"
                   image="./images/projects/cards/pp_web.webp"
                   projectType="WebApp"
-                  link="./pixlpal_web"
+                  href="./pixlpal_web"
                 />
                 <ProjectCard
                   title="The Rest is Bingo"
                   image="./images/projects/cards/bingo.webp"
                   projectType="WebApp"
-                  link="./bingo"
+                  href="./bingo"
                 />
                 <ProjectCard
                   title="Seminar on the Seas"
                   image="./images/projects/cards/sots.webp"
                   projectType="WebApp"
-                  link="./sots"
+                  href="./sots"
                 />
               </div>
               <p className="text-xl sm:text-3xl md:text-4xl">
@@ -58,13 +58,13 @@ export default function Work() {
                   title="PixlPal"
                   image="./images/projects/cards/pp.webp"
                   projectType="macOS App"
-                  link="./pixlpal"
+                  href="./pixlpal"
                 />
                 <ProjectCard
                   title="Dialer"
                   image="./images/projects/cards/dialer.webp"
                   projectType="python program"
-                  link="./dialer"
+                  href="./dialer"
                 />
               </div>
             </div>
