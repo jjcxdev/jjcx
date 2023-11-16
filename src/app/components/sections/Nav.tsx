@@ -44,13 +44,17 @@ export default function NavBar() {
               <Link
                 onKeyDown={(e) => handleKeyDown(e, "#about-section")}
                 href="#about-section"
-                tabIndex={0}>
+                tabIndex={0}
+                className="hover:text-white"
+              >
                 about
               </Link>
               <Link
                 onKeyDown={(e) => handleKeyDown(e, "#work-section")}
                 href="#work-section"
-                tabIndex={0}>
+                tabIndex={0}
+                className="hover:text-white"
+              >
                 work
               </Link>
               <Link
@@ -58,7 +62,9 @@ export default function NavBar() {
                   handleKeyDown(e, "./justinchambers_resume_2023.pdf", true)
                 }
                 href="./justinchambers_resume_2023.pdf"
-                tabIndex={0}>
+                tabIndex={0}
+                className="hover:text-white"
+              >
                 resume
               </Link>
             </div>
@@ -86,7 +92,8 @@ export default function NavBar() {
                   }
                   href="https://www.github.com/jjcxdev"
                   passHref
-                  className="flex flex-row items-center hover:text-white gap-2">
+                  className="flex flex-row items-center hover:text-white gap-2"
+                >
                   <FaGithub />
                 </Link>
                 <Link
@@ -99,7 +106,8 @@ export default function NavBar() {
                   }
                   href="https://twitter.com/jjcxdev"
                   passHref
-                  className="flex flex-row items-center hover:text-white gap-2">
+                  className="flex flex-row items-center hover:text-white gap-2"
+                >
                   <FaXTwitter />
                 </Link>
                 <Link
@@ -112,7 +120,8 @@ export default function NavBar() {
                   }
                   href="https://medium.com/@jjcx"
                   passHref
-                  className="flex flex-row items-center hover:text-white gap-2">
+                  className="flex flex-row items-center hover:text-white gap-2"
+                >
                   <FaMedium />
                 </Link>
               </div>
@@ -130,7 +139,8 @@ export default function NavBar() {
             isMenuVisible
               ? "opacity-100 translate-y-0 visible pointer-events-auto"
               : "opacity-0 -translate-y-10 invisible pointer-events-none"
-          } flex flex-col font-space text-accent items-center justify-center`}>
+          } flex flex-col font-space text-accent items-center justify-center`}
+        >
           <div>
             <div
               onClick={handleLinkClicked}
@@ -140,7 +150,8 @@ export default function NavBar() {
                 isMenuVisible
                   ? "translate-y-0 opacity-100"
                   : "-translate-y-4 opacity-0"
-              }`}>
+              }`}
+            >
               <Link href="#about-section">about</Link>
             </div>
             <div
@@ -151,7 +162,8 @@ export default function NavBar() {
                 isMenuVisible
                   ? "translate-y-0 opacity-100"
                   : "-translate-y-4 opacity-0"
-              }`}>
+              }`}
+            >
               <Link href="#work-section">work</Link>
             </div>
             <div
@@ -162,7 +174,8 @@ export default function NavBar() {
                 isMenuVisible
                   ? "translate-y-0 opacity-100"
                   : "-translate-y-4 opacity-0"
-              }`}>
+              }`}
+            >
               <Link href="./justinchambers_resume_2023.pdf">resume</Link>
             </div>
           </div>
@@ -173,11 +186,13 @@ export default function NavBar() {
               isMenuVisible
                 ? "translate-y-0 opacity-100"
                 : "-translate-y-4 opacity-0"
-            }`}>
+            }`}
+          >
             <div className="flex flex-col items-center gap-6">
               <Link
                 href="mailto:j@jjcx.dev"
-                className="flex flex-row items-center hover:text-white gap-2">
+                className="flex flex-row items-center hover:text-white gap-2"
+              >
                 <MdEmail />{" "}
                 <span className="text-white hover:text-accent">j@jjcx.dev</span>
               </Link>
@@ -188,7 +203,8 @@ export default function NavBar() {
                   passHref
                   tabIndex={0}
                   href="https://www.github.com/jjcxdev"
-                  className="flex flex-row items-center hover:text-white gap-2">
+                  className="flex flex-row items-center hover:text-white gap-2"
+                >
                   <FaGithub />
                 </Link>
                 <Link
@@ -197,7 +213,8 @@ export default function NavBar() {
                   passHref
                   tabIndex={0}
                   href="https://twitter.com/jjcxdev"
-                  className="flex flex-row items-center hover:text-white gap-2">
+                  className="flex flex-row items-center hover:text-white gap-2"
+                >
                   <FaXTwitter />
                 </Link>
                 <Link
@@ -206,7 +223,8 @@ export default function NavBar() {
                   passHref
                   tabIndex={0}
                   href="https://medium.com/@jjcx"
-                  className="flex flex-row items-center hover:text-white gap-2">
+                  className="flex flex-row items-center hover:text-white gap-2"
+                >
                   <FaMedium />
                 </Link>
               </div>
