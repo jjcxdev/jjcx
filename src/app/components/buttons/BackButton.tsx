@@ -1,25 +1,25 @@
 "use client";
-
-import React, { ReactNode } from "react";
+import { IoReturnUpBackOutline } from "react-icons/io5";
 
 interface ButtonProps {
-  href: string;
   text: string;
-  icon?: ReactNode; // Optional icon prop
+  href: string;
 }
 
-const BackButton: React.FC<ButtonProps> = ({ href, text, icon }) => {
+export default function BackButton({ text, href }: ButtonProps) {
   const navigate = () => {
-    window.open(href, "_blank")?.focus();
+    window.location.href = href;
   };
 
   return (
     <button
       onClick={navigate}
-      className="flex flex-row items-center justify-start py-2 text-neutral-100 hover:text-accent  transition duration-300 text-sm text-center whitespace-nowrap">
-      {icon && <span className="mr-1">{icon}</span>} {text}
+      className="text-xs w-fit items-center flex gap-2 px-[0.25em] text-lightcoal hover:text-yellow-400 lowercase rounded-md py-[0.12em] bg-[#2a2828] border border-[#3e3c3c]"
+    >
+      <div className="text-yellow-400 flex">
+        <IoReturnUpBackOutline />
+      </div>
+      {text}
     </button>
   );
-};
-
-export default BackButton;
+}

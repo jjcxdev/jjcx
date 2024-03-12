@@ -2,61 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  color: #151515;
-  background: #151515;
+:root {
+  --primary-white: #f6f6f6;
+  --primary-gray: #1c1c1c;
+  --secondary-gray: #3d3d3d;
+  --tertiary-gray: #2c2c2c;
+  --light-gray: #d1d1d1;
+  --button-outline: #6d6d6d;
+  --browser-dark: #454545;
 }
 
+body,
 html {
-  background: #151515;
-  scroll-behavior: smooth;
+  background: var(--primary-gray);
+  color: var(--primary-white);
 }
 
-.fade-entering,
-.fade-exiting,
-.fade-exited {
-  opacity: 0;
-  display: none;
+body {
+  font-family: "JetBrains Mono Variable", monospace;
+  font-weight: 100;
 }
 
-.fade-entered {
-  opacity: 1;
-  display: block;
-  transition: opacity 300ms;
+.tab {
+  position: relative;
 }
 
-.blue-bar::after {
-  content: "|";
-  color: #06b6d4;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-  font-weight: 600;
-}
-
-.blue-bar:last-child::after {
+.tab:not(:first-child)::after {
+  height: 1.25rem;
+  width: 1px;
+  left: -1px;
+  top: 20%;
+  z-index: 10;
+  position: absolute;
+  background: #3d3d3d;
+  border: 0 solid red;
   content: "";
-}
-
-.project-card:focus-within img {
-  z-index: -1;
-}
-
-/* This is for Webkit browsers like Chrome, Safari */
-::-webkit-scrollbar {
-  width: 6px; /* Width of the vertical scrollbar */
-}
-
-::-webkit-scrollbar-track {
-  background-color: #151515; /* Color of the scrollbar track */
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #06b6d4; /* Color of the scroll thumb */
-  border-radius: 6px; /* Radius for the scroll thumb */
-}
-
-/* This is for Firefox */
-* {
-  scrollbar-width: thin;
-  scrollbar-color: #151515 #06b6d4;
 }
