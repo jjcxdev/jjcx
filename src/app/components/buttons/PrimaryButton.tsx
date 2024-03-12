@@ -1,12 +1,11 @@
-// ButtonComponent.tsx
-"use client";
+'use client';
 
 interface ButtonProps {
-  href: string;
   text: string;
+  href: string;
 }
 
-const PrimaryButton: React.FC<ButtonProps> = ({ href, text }) => {
+export default function PrimaryButton({ text, href }: ButtonProps) {
   const navigate = () => {
     window.location.href = href;
   };
@@ -14,10 +13,9 @@ const PrimaryButton: React.FC<ButtonProps> = ({ href, text }) => {
   return (
     <button
       onClick={navigate}
-      className=" border-2 py-1 px-3 hover:bg-dark text-dark border-accent hover:text-accent hover:border-accent bg-accent transition duration-300 text-sm text-center whitespace-nowrap">
+      className='text-xs px-[0.25em] text-yellow-400 hover:text-lightcoal lowercase rounded-md py-[0.12em] bg-[#2a2828] border border-[#3e3c3c]'
+    >
       {text}
     </button>
   );
-};
-
-export default PrimaryButton;
+}

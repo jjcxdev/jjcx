@@ -1,0 +1,49 @@
+.heading {
+  font-size: x-large;
+  line-height: 1em;
+  color: snow;
+  padding-bottom: 1rem;
+}
+
+.subheading {
+  font-size: x-large;
+  color: gray;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.sectionheading {
+  font-size: large;
+  color: snow;
+  text-decoration: underline;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+code {
+  padding: 0.5em;
+  color: #1c1c1c;
+  background: snow;
+  border-radius: 0.25em;
+}
+
+.pre {
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+}
+
+.strong {
+  font-weight: 800;
+  color: snow;
+}
+
+.p {
+  padding-bottom: 1em;
+  line-height: 2em;
+}
+
+body {
+  color: d4d4d4;
+  font-weight: 50;
+  padding-bottom: 4rem;
+}

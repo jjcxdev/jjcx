@@ -1,14 +1,11 @@
-"use client";
-
-import React, { ReactNode } from "react";
+'use client';
 
 interface ButtonProps {
-  href: string;
   text: string;
-  icon?: ReactNode; // Optional icon prop
+  href: string;
 }
 
-const SecondaryButton: React.FC<ButtonProps> = ({ href, text, icon }) => {
+export default function SecondaryButton({ text, href }: ButtonProps) {
   const navigate = () => {
     window.location.href = href;
   };
@@ -16,10 +13,9 @@ const SecondaryButton: React.FC<ButtonProps> = ({ href, text, icon }) => {
   return (
     <button
       onClick={navigate}
-      className="border-2 flex flex-row items-center py-2 px-5 bg-dark hover:text-dark hover:bg-accent text-accent font-space  hover:border-dark border-accent transition duration-300 text-sm text-center whitespace-nowrap">
-      {icon && <span className="mr-2">{icon}</span>} {text}
+      className='text-xs px-[0.25em] text-lightcoal hover:text-yellow-400 lowercase rounded-md py-[0.12em] bg-[#2a2828] border border-[#3e3c3c]'
+    >
+      {text}
     </button>
   );
-};
-
-export default SecondaryButton;
+}
