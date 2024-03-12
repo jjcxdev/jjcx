@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import "./globals.css";
 import { ActiveTabProvider } from "./(browser)/portfolio/ActiveTabContext";
@@ -15,7 +16,9 @@ export default function RootLayout({
   return (
     <ActiveTabProvider>
       <html lang="en">
-        <body>{children}</body>
+        <body>{children}
+          <Analytics />
+        </body>
       </html>
     </ActiveTabProvider>
   );
