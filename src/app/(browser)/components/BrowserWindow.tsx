@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 import BrowserTab from "./BrowserTab";
 import BrowserNavBar from "./BrowserNavBar";
 import BrowserPane from "./BrowserPane";
@@ -18,7 +18,7 @@ export default function BrowserWindow() {
 
   const { setActiveDesc, setActiveTech } = useActiveTabDetails();
 
-  const tabs = [
+  const tabs = useMemo(() => [
     {
       name: "VimKeyboard",
       href: "",
@@ -84,7 +84,7 @@ export default function BrowserWindow() {
       desc: "I decided to make a bingo game to play along with a podcast that I like to listen to called 'The Rest is Football'",
       tech: "Next14 Typescript TailwindCSS",
     },
-  ];
+  ], []);
 
   useEffect(() => {
     const initialTab = tabs.find(tab => tab.name === activeTab);
@@ -92,7 +92,7 @@ export default function BrowserWindow() {
       setActiveDesc(initialTab.desc);
       setActiveTech(initialTab.tech);
     }
-  }, []);
+  }, [activeTab, setActiveDesc, setActiveTech, tabs]);
 
   const handleTabClick = (
     tabName: string,
