@@ -38,12 +38,12 @@ code {
 }
 
 .p {
+  font-weight: 200;
   padding-bottom: 1em;
   line-height: 2em;
 }
 
 body {
   color: d4d4d4;
-  font-weight: 50;
   padding-bottom: 4rem;
 }

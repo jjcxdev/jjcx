@@ -10,8 +10,8 @@ export default async function BlogList() {
   });
 
   return (
-    <main className="flex flex-col w-full">
-      <h1 className="text-xs underline pl-4 pb-4 flex-row uppercase justify-start">
+    <main className="flex font-normal flex-col w-full">
+      <h1 className="text-xs font-normal underline pl-4 pb-4 flex-row uppercase justify-start">
         Blog
       </h1>
       <Posts posts={posts} />

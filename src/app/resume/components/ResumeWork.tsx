@@ -8,7 +8,7 @@ interface ResumeWorkProps {
 
 export default function ResumeWork(props: ResumeWorkProps) {
   return (
-    <div className="font-share-tech-mono hover:bg-secondary hover:rounded-md flex flex-col p-4 text-sm leading-5">
+    <div className="font-normal hover:bg-secondary hover:rounded-md flex flex-col p-4 text-sm leading-5">
       <div className="flex justify-between">
         <h1 className="font-bold">{props.employer}</h1>
         <h4 className="font-bold">{props.dates}</h4>

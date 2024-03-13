@@ -9,7 +9,7 @@ export default function Resume() {
     <main className="bg-coal w-full max-w-5xl border-[0.5px] border-secondary">
       <section className="w-full p-4 md:p-12 bg-coal">
         <section>
-          <div className="font-share-tech-mono flex w-full flex-col md:items-center">
+          <div className=" flex w-full flex-col md:items-center">
             <div className="text-xl font-semibold uppercase">
               Justin Chambers
             </div>
@@ -31,10 +31,10 @@ export default function Resume() {
             </div>
             <div>Grimsby, ON</div>
           </div>
-          <div className="font-share-tech-mono py-4 font-bold uppercase underline">
+          <div className=" py-4 font-bold uppercase underline">
             Summary
           </div>
-          <div className="font-share-tech-mono text-sm hover:bg-secondary hover:rounded-md p-4">
+          <div className=" text-sm hover:bg-secondary hover:rounded-md p-4">
             <div>• 19 years of intermittent web design experience</div>
             <div>
               • 1+ year with ReactJS, Tailwind, TypeScript, Figma, GitHub,
@@ -47,7 +47,7 @@ export default function Resume() {
         </section>
 
         <section>
-          <div className="font-share-tech-mono pt-4 font-bold uppercase underline">
+          <div className=" pt-4 font-bold uppercase underline">
             Professional Experience
           </div>
         </section>
@@ -59,20 +59,19 @@ export default function Resume() {
           dates="10/2022 - Present"
         />
         <ResumeProject
+          client="VimKeyboard"
+          description="Vim Motions learning aid"
+          bullets={[
+            "UI/UX design",
+          ]}
+        />
+        <ResumeProject
           client="Sharaoke"
           description="Web-based Karaoke App"
           bullets={[
             "UI/UX design, client management",
             "YouTube V3, Web Audio and OpenAI API integration",
             "System Audio integration",
-          ]}
-        />
-        <ResumeProject
-          client="Broke Financial"
-          description="Household Budgeting App"
-          bullets={[
-            "UI/UX design",
-            "Database integration using MySQL and Planetscale",
           ]}
         />
         <ResumeProject
@@ -125,10 +124,10 @@ export default function Resume() {
           bullets={["Project management, UI/UX design, content management"]}
         />
         <section>
-          <div className="font-share-tech-mono pt-4 font-bold uppercase underline">
+          <div className=" pt-4 font-bold uppercase underline">
             Work Experience
           </div>
-          <div className="flex flex-col md:flex w-full gap-16">
+          <div className="flex flex-col md:flex-row w-full md:gap-16">
             <div className="flex md:w-1/2 flex-col">
               <ResumeWorkExperience
                 employer="Pure Muscle Radio"
@@ -166,7 +165,7 @@ export default function Resume() {
           </div>
         </section>
         <section>
-          <div className="font-share-tech-mono py-4 font-bold uppercase underline">
+          <div className=" py-4 font-bold uppercase underline">
             Technical Skills
           </div>
           <div className=" hover:bg-secondary hover:rounded-md p-4 ">
@@ -181,7 +180,7 @@ export default function Resume() {
           </div>
         </section>
         <section>
-          <div className="font-share-tech-mono pt-4 font-bold uppercase underline">
+          <div className=" pt-4 font-bold uppercase underline">
             Certificates
           </div>
           <ResumeEducation
@@ -192,7 +191,7 @@ export default function Resume() {
           />
         </section>
         <section>
-          <div className="font-share-tech-mono pt-4 font-bold uppercase underline">
+          <div className=" pt-4 font-bold uppercase underline">
             Education
           </div>
           <ResumeEducation
