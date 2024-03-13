@@ -13,7 +13,7 @@ export default function SecondaryButton({ text, href }: ButtonProps) {
   return (
     <button
       onClick={navigate}
-      className='text-xs px-[0.25em] text-lightcoal hover:text-yellow-400 lowercase rounded-md py-[0.12em] bg-[#2a2828] border border-[#3e3c3c]'
+      className='text-xs font-normal px-[0.25em] text-lightcoal hover:text-yellow-400 lowercase rounded-md py-[0.12em] bg-[#2a2828] border border-[#3e3c3c]'
     >
       {text}
     </button>

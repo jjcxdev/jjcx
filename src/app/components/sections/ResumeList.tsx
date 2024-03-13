@@ -2,7 +2,7 @@ import SecondaryButton from "../buttons/SecondaryButton";
 
 export default function ResumeList() {
   return (
-    <div className="uppercase w-full">
+    <div className="uppercase font-normal w-full">
       <h2 className="text-xs underline pb-2">Related Experience</h2>
       <div className="flex justify-between">
         <div className="flex flex-col">

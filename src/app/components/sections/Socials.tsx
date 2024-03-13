@@ -2,7 +2,7 @@ import SecondaryButton from "../buttons/SecondaryButton";
 
 export default function Socials() {
   return (
-    <div className="uppercase">
+    <div className="uppercase font-normal">
       <h2 className="text-xs underline pb-2">Socials</h2>
       <div className="flex gap-10">
         <div>
