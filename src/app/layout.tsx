@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "jjcx",
   description: "personal portfolio of jjcx",
   twitter: {
-    card: 'summary',
+    card: 'summary_large_image',
     title: 'jjcx',
     description: 'personal portfolio of jjcx',
     images: 'https://raw.githubusercontent.com/jjcxdev/jjcx/main/public/jjcx.png'
