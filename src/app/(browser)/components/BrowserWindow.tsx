@@ -22,7 +22,7 @@ export default function BrowserWindow() {
     {
       name: "VimKeyboard",
       href: "",
-      url: "https://vim-keyboard.vercel.app",
+      url: "vim-keyboard.vercel.app",
       image: "/images/projects/full/vimkeyboard.webp",
       github: "https://www.github.com/jjcxdev/vim",
       desc: "An interactive site I created to aid in learning Vim Motions",
@@ -31,7 +31,7 @@ export default function BrowserWindow() {
     {
       name: "PixlPal",
       href: "",
-      url: "https://pixlpal.vercel.app",
+      url: "pixlpal.vercel.app",
       image: "/images/projects/full/pixlpal_web.webp",
       github: "https://www.github.com/jjcxdev/pixlpal_web",
       desc: "Website for PixlPal, a macOS app I created for capturing screen color data.",
@@ -40,7 +40,7 @@ export default function BrowserWindow() {
     {
       name: "Sharaoke",
       href: "",
-      url: "https://sharaoke.vercel.app",
+      url: "sharaoke.vercel.app",
       image: "/images/projects/full/sharaoke.webp",
       github: "https://www.github.com/jjcxdev/karaoke",
       desc: "A fun little app to make a playlist of YouTube karaoke songs and sing along, using any connected audio input device",
@@ -49,7 +49,7 @@ export default function BrowserWindow() {
     {
       name: "Seminar on the Seas",
       href: "",
-      url: "https://sots.vercel.app",
+      url: "sots.vercel.app",
       image: "/images/projects/full/sots.webp",
       github: "https://www.github.com/jjcxdev/sots",
       desc: "Commissioned site for Seminar on the Seas, a training experience for the lighting industry.",
@@ -69,7 +69,7 @@ export default function BrowserWindow() {
     {
       name: "Hue-Rotate",
       href: "",
-      url: "https://hue-rotate.vercel.app",
+      url: "hue-rotate.vercel.app",
       image: "/images/projects/full/huerotate.webp",
       github: "https://www.github.com/jjcxdev/hue-rotate",
       desc: "Hue Rotate is a React application that allows users to select an initial color and a desired color, then calculates the CSS hue-rotate filter value required to transition between these colors.",
@@ -78,7 +78,7 @@ export default function BrowserWindow() {
     {
       name: "Rest is BINGO",
       href: "",
-      url: "https://therestisbingo.vercel.app",
+      url: "therestisbingo.vercel.app",
       image: "/images/projects/full/therestisbingo.webp",
       github: "https://www.github.com/jjcxdev/therestisbingo",
       desc: "I decided to make a bingo game to play along with a podcast that I like to listen to called 'The Rest is Football'",
