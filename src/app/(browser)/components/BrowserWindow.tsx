@@ -8,7 +8,7 @@ import { useActiveTabDetails } from "../portfolio/ActiveTabContext";
 
 export default function BrowserWindow() {
   const [activeTab, setActiveTab] = useState("VimKeyboard");
-  const [activeUrl, setActiveUrl] = useState("https://vim-keyboard.vercel.app");
+  const [activeUrl, setActiveUrl] = useState("vim-keyboard.vercel.app");
   const [activeGithubUrl, setActiveGithubUrl] = useState(
     "https://www.github.com/jjcxdev/vim",
   );

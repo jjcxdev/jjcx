@@ -36,7 +36,7 @@ export default function BrowserNavBar({
           href={activeUrl}
           target="_blank"
         >
-          <span>{activeUrl}</span>
+          <span className="truncate">{activeUrl}</span>
         </Link>
       </div>
       <Link
