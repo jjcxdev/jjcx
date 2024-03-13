@@ -7,6 +7,27 @@ import { Noto_Sans_Mono } from "next/font/google";
 export const metadata: Metadata = {
   title: "jjcx",
   description: "personal portfolio of jjcx",
+  twitter: {
+    card: 'summary',
+    title: 'jjcx',
+    description: 'personal portfolio of jjcx',
+    images: 'https://raw.githubusercontent.com/jjcxdev/jjcx/main/public/jjcx.png'
+  },
+  openGraph: {
+    title: 'jjcx',
+    description: '',
+    url: 'https://jjcx.dev',
+    siteName: 'jjcx',
+    images: [
+      {
+        url: 'https://raw.githubusercontent.com/jjcxdev/jjcx/main/public/jjcx.png',
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: 'en_CANADA',
+    type: 'website',
+  },
 };
 
 const noto = Noto_Sans_Mono({
