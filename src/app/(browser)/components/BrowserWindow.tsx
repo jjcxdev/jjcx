@@ -44,7 +44,7 @@ export default function BrowserWindow() {
       image: "/images/projects/full/sharaoke.webp",
       github: "https://www.github.com/jjcxdev/karaoke",
       desc: "A fun little app to make a playlist of YouTube karaoke songs and sing along, using any connected audio input device",
-      tech: "Next14 Typescript TailwindCSS YouTubeV3API",
+      tech: "Next14 Typescript TailwindCSS YouTubeV3API OpenAIAPI",
     },
     {
       name: "Seminar on the Seas",

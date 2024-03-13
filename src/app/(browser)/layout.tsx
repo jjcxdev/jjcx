@@ -20,6 +20,8 @@ function getTechStyle(tech: string) {
       return { color: "#FF0000", border: "1px solid #3D3D3D", background: "#2A2828", borderRadius: "0.25rem", paddingRight: "4px", paddingLeft: "4px", margin: "4px" };
     case 'Javascript':
       return { color: "#F7DF1E", border: "1px solid #3D3D3D", background: "#2A2828", borderRadius: "0.25rem", paddingRight: "4px", paddingLeft: "4px", margin: "4px" };
+    case 'OpenAIAPI':
+      return { color: "#74AA9C", border: "1px solid #3D3D3D", background: "#2A2828", borderRadius: "0.25rem", paddingRight: "4px", paddingLeft: "4px", margin: "4px" };
     default:
       return { color: "white" };
   }
@@ -35,9 +37,9 @@ export default function PortfolioLayout({
   const renderTechStyles = (techString: string) => {
     const techs = techString.split(' ');
     return techs.map((tech: string, index: number) => (
-      <span key={index} style={getTechStyle(tech.trim())}>
+      <div key={index} style={getTechStyle(tech.trim())}>
         {tech}{index < techs.length - 1 ? '' : ''}
-      </span>
+      </div>
     ));
   };
 
@@ -52,7 +54,7 @@ export default function PortfolioLayout({
         <div className="w-full max-w-5xl p-4 flex flex-col items-center">
           <div>{activeDesc}</div>
 
-          <div className=" pt-2">{renderTechStyles(activeTech)}</div>
+          <div className="flex flex-col md:flex-row pt-2">{renderTechStyles(activeTech)}</div>
 
         </div>
       </div>
