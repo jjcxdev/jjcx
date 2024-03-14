@@ -18,11 +18,6 @@ html {
   color: var(--primary-white);
 }
 
-
-.tab {
-  position: relative;
-}
-
 .tab:not(:first-child)::after {
   height: 1.25rem;
   width: 1px;

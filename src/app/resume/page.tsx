@@ -13,7 +13,7 @@ export default function Resume() {
             <div className="text-xl font-semibold uppercase">
               Justin Chambers
             </div>
-            <div>
+            <div className="text-sm">
               <a
                 className="hover:text-yellow-400"
                 href="mailto:j@jjcx.dev?subject=Greetings from the motherhship!"
@@ -29,7 +29,7 @@ export default function Resume() {
                 jjcx.dev
               </a>
             </div>
-            <div>Grimsby, ON</div>
+            <div className="text-sm">Grimsby, ON</div>
           </div>
           <div className=" py-4 font-bold uppercase underline">
             Summary

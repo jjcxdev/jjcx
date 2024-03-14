@@ -117,7 +117,7 @@ export default function BrowserWindow() {
           <div className="h-2.5 w-2.5 rounded-full bg-accent"></div>
           <div className="h-2.5 w-2.5 rounded-full bg-accent"></div>
         </div>
-        <div className="flex min-w-0 flex-1">
+        <div className="flex w-full">
           {tabs.map((tab) => (
             <div
               key={tab.name}
