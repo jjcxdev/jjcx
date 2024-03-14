@@ -112,7 +112,7 @@ export default function BrowserWindow() {
 
   return (
     <div>
-      <div className="flex px-1.5">
+      <div className="flex w-full px-1.5">
         <div className="flex items-center space-x-1 px-2.5">
           <div className="h-2.5 w-2.5 rounded-full bg-accent"></div>
           <div className="h-2.5 w-2.5 rounded-full bg-accent"></div>
