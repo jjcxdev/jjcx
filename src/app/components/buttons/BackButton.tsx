@@ -14,7 +14,7 @@ export default function BackButton({ text, href }: ButtonProps) {
   return (
     <button
       onClick={navigate}
-      className="text-xs w-fit items-center flex gap-2 px-[0.25em] text-lightcoal hover:text-yellow-400 lowercase rounded-md py-[0.12em] bg-[#2a2828] border border-[#3e3c3c]"
+      className="no-print text-xs w-fit items-center flex gap-2 px-[0.25em] text-lightcoal hover:text-yellow-400 lowercase rounded-md py-[0.12em] bg-[#2a2828] border border-[#3e3c3c]"
     >
       <div className="text-yellow-400 flex">
         <IoReturnUpBackOutline />

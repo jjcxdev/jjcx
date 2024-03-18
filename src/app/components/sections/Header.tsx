@@ -4,7 +4,7 @@ import Navigation from "./Navigation";
 
 export default function Header() {
   return (
-    <header className="bg-coal fixed flex w-full flex-col">
+    <header className="bg-coal fixed flex w-full no-print flex-col">
       <div className="flex h-14 w-full items-center justify-center">
         <Link href="/">
           {" "}
