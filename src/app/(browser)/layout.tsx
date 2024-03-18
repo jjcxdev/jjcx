@@ -47,7 +47,7 @@ export default function PortfolioLayout({
     <section>
       <Header />
       <div className="pt-40 pb-20 flex flex-col items-center px-4">
-        <div className="w-full max-w-5xl pb-12">
+        <div className="w-full max-w-[800px] pb-12">
           <BackButton text="back" href="/" />
         </div>
         {children}

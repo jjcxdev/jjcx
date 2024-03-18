@@ -6,7 +6,7 @@ import ResumeWorkExperience from "./components/ResumeWorkExperience";
 
 export default function Resume() {
   return (
-    <main className="bg-coal w-full max-w-5xl border-[0.5px] border-secondary">
+    <main className="bg-coal w-full max-w-[800px] border-[0.5px] border-secondary">
       <section className="w-full p-4 md:p-12 bg-coal">
         <section>
           <div className=" flex w-full flex-col md:items-center">

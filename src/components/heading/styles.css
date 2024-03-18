@@ -1,13 +1,12 @@
 .heading {
   font-size: x-large;
-  line-height: 1em;
-  color: snow;
+  color: rgb(250 204 21);
   padding-bottom: 1rem;
 }
 
 .subheading {
   font-size: x-large;
-  color: gray;
+  color: snow;
   padding-top: 1rem;
   padding-bottom: 1rem;
 }

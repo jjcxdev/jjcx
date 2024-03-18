@@ -11,7 +11,7 @@ export default async function BlogList() {
   });
 
   return (
-    <main className="flex flex-col max-w-5xl w-full">
+    <main className="flex flex-col max-w-[800px] w-full">
       <Posts posts={posts} />
 
       {/* <Pagination baseUrl="/page" page={1} perPage={postsPerPage} total={total} />

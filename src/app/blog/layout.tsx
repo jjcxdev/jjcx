@@ -10,7 +10,7 @@ export default function BlogLayout({
     <section>
       <Header />
       <div className="font-normal pt-40 flex flex-col items-center">
-        <div className="w-full max-w-5xl pb-12 px-4 flex">
+        <div className="w-full max-w-[800px] pb-12 flex">
           <BackButton text="back" href="/" />
         </div>
         {children}
