@@ -16,7 +16,7 @@ export default function ResumeProject(props: ResumeProjectProps) {
           <span className="font-normal">
             {props.bullets?.map((line, index) => (
               <span className="text-sm" key={index}>
-                {line}{index < props.bullets.length - 1 ? ', ' : ''}
+                {line}{index < (props.bullets??[]).length - 1 ? ', ' : ''}
               </span>
             ))}
           </span>
