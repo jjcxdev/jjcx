@@ -26,7 +26,7 @@ export default function Resume() {
               </a>{" "}
               |{" "}
               <a className="hover:text-yellow-400" href="https://www.jjcx.dev">
-                jjcx.dev
+                www.jjcx.dev
               </a>
             </div>
             <div className="text-sm">Grimsby, ON</div>
@@ -35,14 +35,7 @@ export default function Resume() {
             Summary
           </div>
           <div className=" text-sm hover:bg-secondary hover:rounded-md p-4">
-            <div>• 19 years of intermittent web design experience</div>
-            <div>
-              • 1+ year with ReactJS, Tailwind, TypeScript, Figma, GitHub,
-              Vercel
-            </div>
-            <div>• 3+ years with Wordpress, JavaScript</div>
-            <div>• 5+ years various CMS systems</div>
-            <div>• 10+ years with HTML, CSS</div>
+            Front-End Developer with a solid foundation in web design and development, enhanced by extensive project management and creative problem-solving skills from a 15-year career in the film industry. Proficient in HTML, CSS, JavaScript, React, and various other technologies. Committed to continuous learning and delivering high-quality, user-friendly web solutions.
           </div>
         </section>
 
@@ -51,137 +44,79 @@ export default function Resume() {
             Professional Experience
           </div>
         </section>
+        <div className="py-2">
         <ResumeWork
           employer="Freelance"
           jobTitle="Front End Developer"
           location="Toronto, ON"
-          summary="Built custom WebApps for clients, as well as self-driven projects"
           dates="10/2022 - Present"
+        />
+          <ResumeProject
+          bullets={["Built custom web applications for clients and self-driven projects."]}
         />
         <ResumeProject
           client="VimKeyboard"
-          description="Vim Motions learning aid"
-          bullets={[
-            "UI/UX design",
-          ]}
+          bullets={["UI/UX design for a Vim Motions learning aid."]}
         />
-        <ResumeProject
-          client="Sharaoke"
-          description="Web-based Karaoke App"
-          bullets={[
-            "UI/UX design, client management",
-            "YouTube V3, Web Audio and OpenAI API integration",
-            "System Audio integration",
-          ]}
-        />
-        <ResumeProject
+                <ResumeProject
           client="Hue-Rotate"
-          description="A tool for calcualting hue-rotate for SVGs"
-          bullets={["UI/UX design"]}
+          bullets={["Tool for calculating hue-rotate for SVGs."]}
         />
+                <ResumeProject
+          client="PixlPal"
+          bullets={["macOS color picker app. Designed for developers and content creators. Successfully launched on the Apple Store."]}
+        />
+
+
         <ResumeProject
           client="Seminar on the Seas"
-          description="Responsive web app"
-          bullets={[
-            "Project management, UI/UX design, client management",
-            "Mobile-first design",
-            "Future implementations will include auth, and database for user sections",
-          ]}
+          bullets={["Responsive web app with a mobile-first design. Managed projects, UI/UX design, and client interactions. Future implementations include authentication and a user database."]}
         />
-        <ResumeProject
-          client="PixlPal"
-          description="macOS color picker app, designed to help devs and other content creators"
-          bullets={[
-            "Built entirely from scratch, with no previous experience in SwiftUI/XCode",
-            "Successfully accepted on the Apple Store",
-          ]}
+                <ResumeProject
+          client="Sharaoke"
+          bullets={["Web-based Karaoke App with YouTube V3, Web Audio, and OpenAI API integration. Managed client interactions and system audio integration."]}
+
         />
+        </div>
+                <div className="py-2">
         <ResumeWork
           employer="Epic Toronto Camera Rentals Inc."
           jobTitle="Co-Owner & Frontend Developer"
           location="Toronto, ON"
-          summary="Camera and film equipment rental house"
           dates=" 01/2015 – 07/2019"
         />
         <ResumeProject
-          client="Website"
-          description="Online inventory of rental equipment with booking capabilities"
           bullets={[
-            "Project management, UI/UX design, content management",
-            "Successfully integrated Booqable to manage equipment bookings and calendars",
+            "Managed projects, UI/UX design, and content for an online inventory of rental equipment with booking capabilities. Integrated Booqable to manage equipment bookings and calendars.",
           ]}
-        />
+          />
+        </div>
+                <div className="py-2">
         <ResumeWork
           employer="Ethereum Films Ltd."
           jobTitle="Co-Owner & Frontend Developer"
           location="Toronto, ON"
-          summary="Film production company."
           dates=" 06/2012 – 07/2019"
         />
         <ResumeProject
-          client="Website"
-          description="Online portfolio of produced works"
-          bullets={["Project management, UI/UX design, content management"]}
+          bullets={["Managed projects, UI/UX design, and content for an online portfolio of produced works. Integrated Booqable to manage equipment bookings and calendars."]}
+          />
+          </div>
+                <div className="py-4">
+        <ResumeWork
+          employer="Production Experience in Film Industry"
+          jobTitle="Various Roles"
+          location="Toronto, ON"
+          dates=" 2008 – 2022"
         />
+        <ResumeProject
+          bullets={["Extensive experience as a Producer, Technical Director, Production Manager, and Coordinator. Directed and shot films, managed crews, and oversaw production logistics. Taught film production at Toronto Film School."]}
+          />
+          </div>
+
         <section>
           <div className=" pt-4 font-bold uppercase underline">
-            Work Experience
-          </div>
-          <div className="flex flex-col md:flex-row w-full md:gap-16">
-            <div className="flex md:w-1/2 flex-col">
-              <ResumeWorkExperience
-                employer="Pure Muscle Radio"
-                position="Producer & Technical Director"
-                location="Burlington, ON"
-                dates="2023"
-              />
-              <ResumeWorkExperience
-                employer="The Deli (HeydSaffer)"
-                position="Production Manager"
-                location="Toronto, ON"
-                dates="2020 - 2022"
-              />
-              <ResumeWorkExperience
-                employer="The Deli (HeydSaffer)"
-                position="Production Coordinator"
-                location="Toronto, ON"
-                dates="2019 - 2020"
-              />
-            </div>
-            <div className="flex md:w-1/2 flex-col">
-              <ResumeWorkExperience
-                employer="Freelance"
-                position="Director & Cinematographer"
-                location="Toronto, ON"
-                dates="2008 - 2019"
-              />
-              <ResumeWorkExperience
-                employer="Toronto Film School"
-                position="Instructor, Film Production"
-                location="Toronto, ON"
-                dates="2013 - 2016"
-              />
-            </div>
-          </div>
-        </section>
-        <section>
-          <div className=" py-4 font-bold uppercase underline">
-            Technical Skills
-          </div>
-          <div className=" hover:bg-secondary hover:rounded-md p-4 ">
-            <ResumeTechSkills
-              category="Languages"
-              skill="HTML, CSS, JavaScript, TypeScript"
-            />
-            <ResumeTechSkills category="Technologies" skill="Next.js, React" />
-            <ResumeTechSkills category="API" skill="Google, OpenAI" />
-            <ResumeTechSkills category="Software" skill="Figma, Jira" />
-            <ResumeTechSkills category="Version Control" skill="GitHub" />
-          </div>
-        </section>
-        <section>
-          <div className=" pt-4 font-bold uppercase underline">
-            Certificates
+            Education
           </div>
           <ResumeEducation
             school="Udemy"
@@ -189,11 +124,6 @@ export default function Resume() {
             dates="2022"
             location="Online"
           />
-        </section>
-        <section>
-          <div className=" pt-4 font-bold uppercase underline">
-            Education
-          </div>
           <ResumeEducation
             school="Toronto Film School"
             program="Film Production"
@@ -212,6 +142,35 @@ export default function Resume() {
             dates="04/2004 - 08/2004"
             location="Chatham, ON"
           />
+        </section>
+        <section>
+          <div className=" py-4 font-bold uppercase underline">
+            Technical Skills
+          </div>
+          <div className=" hover:bg-secondary hover:rounded-md px-4 py-1 ">
+            <ResumeTechSkills
+              category="Languages"
+              skill="HTML, CSS, JavaScript, TypeScript"
+            />
+            <ResumeTechSkills category="Technologies" skill="Next.js, React" />
+            <ResumeTechSkills category="API" skill="Google, OpenAI" />
+            <ResumeTechSkills category="Software" skill="Figma, Jira" />
+            <ResumeTechSkills category="Version Control" skill="GitHub" />
+          </div>
+        </section>
+        <section>
+          <div className=" py-4 font-bold uppercase underline">
+            Additional Skills
+          </div>
+          <div className=" hover:bg-secondary hover:rounded-md px-4 py-1 ">
+            <ResumeTechSkills
+              category="Project Management"
+              skill="Experience managing large-scale projects with multiple stakeholders."
+            />
+            <ResumeTechSkills category="UI/UX Design" skill="Extensive experience in designing user-friendly interfaces." />
+            <ResumeTechSkills category="Content Management" skill="Proficient in managing content for various platforms." />
+            <ResumeTechSkills category="Client Management" skill="Skilled in managing client relationships and project requirements." />
+          </div>
         </section>
       </section>
     </main>
