@@ -10,7 +10,7 @@ export default function ResumeProject(props: ResumeProjectProps) {
         <p className="mr-1 whitespace-normal">
           {props.client && (
             <span className="font-semibold whitespace-nowrap">
-              {props.client}:
+              {props.client}:&nbsp;
             </span>
           )}
           <span className="font-normal">

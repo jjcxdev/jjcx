@@ -46,6 +46,28 @@ export default function Resume() {
         </section>
         <div className="py-2">
         <ResumeWork
+          employer="DataAnnotation"
+          jobTitle="Data Annotation Specialist (Freelance)"
+          location="Remote"
+          dates=" 08/2023 – Present"
+        />
+        <ResumeProject
+          bullets={[
+            "Conduct high-quality data labeling to train machine learning models, contributing to the improvement of AI systems.",
+          ]}
+          />
+          <ResumeProject
+          bullets={[
+            "Select and manage diverse projects, ensuring completion within tight deadlines while maintaining high accuracy and quality standards.",
+          ]}
+          /><ResumeProject
+          bullets={[
+            "Effectively manage a self-directed work schedule, balancing multiple projects and personal commitments to consistently meet deadlines.",
+          ]}
+          />
+        </div>
+        <div className="py-2">
+        <ResumeWork
           employer="Freelance"
           jobTitle="Front End Developer"
           location="Toronto, ON"
@@ -87,7 +109,11 @@ export default function Resume() {
         />
         <ResumeProject
           bullets={[
-            "Managed projects, UI/UX design, and content for an online inventory of rental equipment with booking capabilities. Integrated Booqable to manage equipment bookings and calendars.",
+            "Managed projects, UI/UX design, and content for an online inventory of rental equipment with booking capabilities.",
+          ]}
+          /><ResumeProject
+          bullets={[
+            "Integrated Booqable to manage equipment bookings and calendars.",
           ]}
           />
         </div>
@@ -99,7 +125,7 @@ export default function Resume() {
           dates=" 06/2012 – 07/2019"
         />
         <ResumeProject
-          bullets={["Managed projects, UI/UX design, and content for an online portfolio of produced works. Integrated Booqable to manage equipment bookings and calendars."]}
+          bullets={["Managed projects, UI/UX design, and content for an online portfolio of produced works."]}
           />
           </div>
                 <div className="py-4">
@@ -110,7 +136,12 @@ export default function Resume() {
           dates=" 2008 – 2022"
         />
         <ResumeProject
-          bullets={["Extensive experience as a Producer, Technical Director, Production Manager, and Coordinator. Directed and shot films, managed crews, and oversaw production logistics. Taught film production at Toronto Film School."]}
+          bullets={["Extensive experience as a Producer, Technical Director, Production Manager, and Coordinator."]}
+          />
+          <ResumeProject
+          bullets={["Directed and shot films, managed crews, and oversaw production logistics."]}
+          /><ResumeProject
+          bullets={["Taught film production at Toronto Film School."]}
           />
           </div>
 
