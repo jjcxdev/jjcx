@@ -35,7 +35,7 @@ export default function Resume() {
             Summary
           </div>
           <div className=" text-sm hover:bg-secondary hover:rounded-md p-4">
-            Front-End Developer with a solid foundation in web design and development, enhanced by extensive project management and creative problem-solving skills from a 15-year career in the film industry. Proficient in HTML, CSS, JavaScript, React, and various other technologies. Committed to continuous learning and delivering high-quality, user-friendly web solutions.
+          Experienced Front-End Developer with expertise in HTML, CSS, JavaScript, and React, complemented by a strong background in project management and creative problem-solving from a 15-year film industry career. Demonstrated capability in Next.js and API integrations. Dedicated to continuous learning and delivering high-quality, user-centric web solutions. Known for my ability to quickly adapt to new technologies and efficiently manage multiple projects.
           </div>
         </section>
 
@@ -53,16 +53,16 @@ export default function Resume() {
         />
         <ResumeProject
           bullets={[
-            "Conduct high-quality data labeling to train machine learning models, contributing to the improvement of AI systems.",
+            "Executed high-quality data labeling to train machine learning models, significantly contributing to the enhancement of AI systems.",
           ]}
           />
           <ResumeProject
           bullets={[
-            "Select and manage diverse projects, ensuring completion within tight deadlines while maintaining high accuracy and quality standards.",
+            "Selected and managed diverse projects, ensuring completion within tight deadlines while maintaining high accuracy and quality standards.",
           ]}
           /><ResumeProject
           bullets={[
-            "Effectively manage a self-directed work schedule, balancing multiple projects and personal commitments to consistently meet deadlines.",
+            "Effectively managed a self-directed work schedule, balancing multiple projects and personal commitments to consistently meet deadlines.",
           ]}
           />
         </div>
@@ -74,60 +74,15 @@ export default function Resume() {
           dates="10/2022 - Present"
         />
           <ResumeProject
-          bullets={["Built custom web applications for clients and self-driven projects."]}
+          bullets={["Launched PixlPal, a macOS colour picker app, achieving a successful debut on the Apple Store. Demonstrated proficiency in software development and project management. Quickly learned and applied SwiftUI."]}
         />
         <ResumeProject
-          client="VimKeyboard"
-          bullets={["UI/UX design for a Vim Motions learning aid."]}
+          bullets={["Developed web applications using Next.js, integrating Google APIs, YouTube V3, Web Audio, and OpenAI APIs to enhance user interaction and content accessibility. Leveraged Figma for UI/UX design and utilized HTML, CSS, JavaScript, TypeScript, and GitHub for version control."]}
         />
                 <ResumeProject
-          client="Hue-Rotate"
-          bullets={["Tool for calculating hue-rotate for SVGs."]}
-        />
-                <ResumeProject
-          client="PixlPal"
-          bullets={["macOS color picker app. Designed for developers and content creators. Successfully launched on the Apple Store."]}
-        />
-
-
-        <ResumeProject
-          client="Seminar on the Seas"
-          bullets={["Responsive web app with a mobile-first design. Managed projects, UI/UX design, and client interactions. Future implementations include authentication and a user database."]}
-        />
-                <ResumeProject
-          client="Sharaoke"
-          bullets={["Web-based Karaoke App with YouTube V3, Web Audio, and OpenAI API integration. Managed client interactions and system audio integration."]}
-
+          bullets={["Created a Python tool for web scraping data for a fantasy football league, automating tasks and improving data management."]}
         />
         </div>
-                <div className="py-2">
-        <ResumeWork
-          employer="Epic Toronto Camera Rentals Inc."
-          jobTitle="Co-Owner & Frontend Developer"
-          location="Toronto, ON"
-          dates=" 01/2015 – 07/2019"
-        />
-        <ResumeProject
-          bullets={[
-            "Managed projects, UI/UX design, and content for an online inventory of rental equipment with booking capabilities.",
-          ]}
-          /><ResumeProject
-          bullets={[
-            "Integrated Booqable to manage equipment bookings and calendars.",
-          ]}
-          />
-        </div>
-                <div className="py-2">
-        <ResumeWork
-          employer="Ethereum Films Ltd."
-          jobTitle="Co-Owner & Frontend Developer"
-          location="Toronto, ON"
-          dates=" 06/2012 – 07/2019"
-        />
-        <ResumeProject
-          bullets={["Managed projects, UI/UX design, and content for an online portfolio of produced works."]}
-          />
-          </div>
                 <div className="py-4">
         <ResumeWork
           employer="Production Experience in Film Industry"
@@ -136,12 +91,12 @@ export default function Resume() {
           dates=" 2008 – 2022"
         />
         <ResumeProject
-          bullets={["Extensive experience as a Producer, Technical Director, Production Manager, and Coordinator."]}
+          bullets={["Directed and managed film production teams, showcasing strong leadership and problem-solving skills."]}
           />
           <ResumeProject
-          bullets={["Directed and shot films, managed crews, and oversaw production logistics."]}
+          bullets={["Developed and taught educational programs at Toronto Film School, enhancing course engagement through practical film production techniques and technologies."]}
           /><ResumeProject
-          bullets={["Taught film production at Toronto Film School."]}
+          bullets={["Co-Owned and managed business operations for sister companies, Epic Toronto Camera Rentals Inc. and Ethereum Films Ltd. Managed client relations, oversaw business operations, and led the development and UI/UX design of various systems, including an online inventory system for rental equipment and an online portfolio. Integrated Booqable into WordPress for streamlined equipment bookings and calendar management, and directed content strategy that attracted significant investment."]}
           />
           </div>
 
@@ -183,10 +138,9 @@ export default function Resume() {
               category="Languages"
               skill="HTML, CSS, JavaScript, TypeScript"
             />
-            <ResumeTechSkills category="Technologies" skill="Next.js, React" />
-            <ResumeTechSkills category="API" skill="Google, OpenAI" />
-            <ResumeTechSkills category="Software" skill="Figma, Jira" />
-            <ResumeTechSkills category="Version Control" skill="GitHub" />
+            <ResumeTechSkills category="Frameworks & Libraries" skill="Next.js, React, Shadcn, Tailwind CSS " />
+            <ResumeTechSkills category="APIs" skill="Google, OpenAI" />
+            <ResumeTechSkills category="Tools" skill="Figma, GitHub" />
           </div>
         </section>
         <section>

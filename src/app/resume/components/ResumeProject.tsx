@@ -8,7 +8,7 @@ export default function ResumeProject(props: ResumeProjectProps) {
    <div className="font-normal flex hover:bg-secondary hover:rounded-md flex-col px-4 py-1 text-sm">
       <div className="flex flex-wrap">
         <p className="mr-1 whitespace-normal">
-          {props.client && (
+        • {props.client && (
             <span className="font-semibold whitespace-nowrap">
               {props.client}:&nbsp;
             </span>
