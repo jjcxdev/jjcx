@@ -506,13 +506,6 @@ footer {
   max-width: 680px;
 }
 
-.case-content hr + p {
-  font-size: 15px;
-  color: var(--text-dim);
-  font-style: italic;
-  line-height: 1.7;
-}
-
 /* ── RESPONSIVE ─────────────────────────────────────────── */
 @media (max-width: 768px) {
   .container { padding: 0 20px; }
