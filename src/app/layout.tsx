@@ -19,6 +19,7 @@ const noto = Noto_Sans_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://jjcx.dev"),
   title: "JJCX Inc. — AI Data Operations & PM Consulting",
   description:
     "Fractional AI PM and Data Operations consulting. Specializing in Human-in-the-Loop workflows, annotation pipelines, and GenAI data programs.",
@@ -27,6 +28,14 @@ export const metadata: Metadata = {
     title: "JJCX Inc. — AI Data Operations & PM Consulting",
     description:
       "Fractional AI PM and Data Operations consulting. Specializing in Human-in-the-Loop workflows, annotation pipelines, and GenAI data programs.",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "JJCX Inc. — AI Data Operations & PM Consulting",
+      },
+    ],
   },
   openGraph: {
     title: "JJCX Inc. — AI Data Operations & PM Consulting",
@@ -36,6 +45,14 @@ export const metadata: Metadata = {
     siteName: "JJCX Inc.",
     locale: "en_CA",
     type: "website",
+    images: [
+      {
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "JJCX Inc. — AI Data Operations & PM Consulting",
+      },
+    ],
   },
   icons: {
     icon: [
