@@ -14,6 +14,7 @@ export default function Home() {
           </a>
           <ul className="nav-links">
             <li><a href="#services">Services</a></li>
+            <li><a href="#work">Case Studies</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact" className="nav-cta">Get in touch</a></li>
           </ul>
@@ -108,6 +109,54 @@ export default function Home() {
 
       <hr className="divider" />
 
+      {/* WORK */}
+      <section id="work">
+        <div className="container">
+          <p className="section-label">Case Studies</p>
+          <div className="work-cards">
+
+            <a href="/work/when-the-feedback-loop-is-missing" className="work-card">
+              <div className="work-card-meta">
+                <span className="work-card-num">01</span>
+              </div>
+              <h3 className="work-card-title">When the feedback loop is missing</h3>
+              <p className="work-card-excerpt">
+                Annotation quality stuck at 60%. The annotators weren&apos;t the problem —
+                the system around them was. A structural fix brought quality to 90% within days.
+              </p>
+              <span className="work-card-link">Read case study →</span>
+            </a>
+
+            <a href="/work/the-productivity-problem-that-wasnt" className="work-card">
+              <div className="work-card-meta">
+                <span className="work-card-num">02</span>
+              </div>
+              <h3 className="work-card-title">The productivity problem that wasn&apos;t</h3>
+              <p className="work-card-excerpt">
+                A motivated remote annotation team that still couldn&apos;t perform.
+                The issue wasn&apos;t engagement — it was that no one knew where to be or who owned what.
+              </p>
+              <span className="work-card-link">Read case study →</span>
+            </a>
+
+            <a href="/work/building-the-plane-while-flying-it" className="work-card">
+              <div className="work-card-meta">
+                <span className="work-card-num">03</span>
+              </div>
+              <h3 className="work-card-title">Building the plane while flying it</h3>
+              <p className="work-card-excerpt">
+                Mid-transition to a new annotation system, the analytics and backend access
+                the team relied on disappeared. I didn&apos;t surface a problem — I arrived with a solution.
+              </p>
+              <span className="work-card-link">Read case study →</span>
+            </a>
+
+          </div>
+        </div>
+      </section>
+
+      <hr className="divider" />
+
       {/* ABOUT */}
       <section id="about">
         <div className="container">
@@ -117,27 +166,33 @@ export default function Home() {
             <div className="about-bio">
               <p>
                 I&apos;m <strong>Justin Chambers</strong>, Principal Consultant at <strong>JJCX Inc.</strong>{" "}
-                JJCX works with AI labs and product teams that need senior operational
-                leadership for their annotation pipelines, HITL workflows, and GenAI data
-                programs — without the overhead of a full-time hire.
+                I work with AI labs and product teams that need senior operational leadership
+                for their annotation pipelines, HITL workflows, and GenAI data programs —
+                without the overhead of a full-time hire.
               </p>
               <p>
-                Clients have included Meta&apos;s MediaGen division, where I directed end-to-end
-                data operations for Generative AI annotation programs at scale. Before AI,
-                15 years of operational leadership across film, production, and broadcast —
-                managing teams of 200+, budgets up to $1M, and complex multi-stakeholder
-                workflows under real deadline pressure.
+                Before AI, I spent 15 years as a producer, with credits including NBA &times; Hennessy,
+                Veuve Clicquot, Country Crock, and Scotch Brite. That background shaped how I work:
+                I don&apos;t come to stakeholders with problems. I come with solutions I&apos;ve already
+                stress-tested. Figure out as much as you can before you take it upstairs — that&apos;s
+                a producing instinct, and it translates directly to operational leadership.
+              </p>
+              <p>
+                I&apos;m also a tinkerer. When something isn&apos;t working — a broken pipeline, a missing
+                analytics layer, a team operating without a source of truth — my instinct is to dig
+                until I find the answer. Clients have included Meta, where I directed end-to-end data
+                operations for generative AI video and image annotation programs at scale.
               </p>
               <p>
                 I&apos;m not an ML engineer. I&apos;m the person who makes the human infrastructure
-                behind AI actually work. Currently accepting new engagements.
+                behind AI actually work.
               </p>
             </div>
 
             <div className="about-facts">
               <div className="about-fact">
                 <span className="fact-label">Clients include</span>
-                <span className="fact-value">Meta (MediaGen division) · Open to new engagements</span>
+                <span className="fact-value">Meta · Open to new engagements</span>
               </div>
               <div className="about-fact">
                 <span className="fact-label">Certifications</span>
