@@ -63,7 +63,7 @@ export default function Image() {
           {/* JJCX Logo */}
           <svg
             viewBox="0 0 1558 485"
-            style={{ height: "46px", width: "auto", marginBottom: "28px" }}
+            style={{ height: "46px", width: "148px", marginBottom: "28px" }}
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
