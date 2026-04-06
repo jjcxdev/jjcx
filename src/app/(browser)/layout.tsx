@@ -2,7 +2,7 @@
 
 import Header from "../components/sections/Header";
 import BackButton from "../components/buttons/BackButton";
-import { useActiveTabDetails } from "./portfolio/ActiveTabContext";
+import { ActiveTabProvider, useActiveTabDetails } from "./portfolio/ActiveTabContext";
 
 
 function getTechStyle(tech: string) {
@@ -27,7 +27,7 @@ function getTechStyle(tech: string) {
   }
 }
 
-export default function PortfolioLayout({
+function PortfolioLayoutInner({
   children,
 }: {
   children: React.ReactNode;
@@ -59,5 +59,17 @@ export default function PortfolioLayout({
         </div>
       </div>
     </section>
+  );
+}
+
+export default function PortfolioLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <ActiveTabProvider>
+      <PortfolioLayoutInner>{children}</PortfolioLayoutInner>
+    </ActiveTabProvider>
   );
 }
