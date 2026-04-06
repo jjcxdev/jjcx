@@ -1,23 +1,10 @@
 import { ImageResponse } from "next/og";
 
-export const runtime = "edge";
-
 export const alt = "JJCX Inc. — AI Data Operations & PM Consulting";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
-export default async function Image() {
-  // Load Inter font weights from Google Fonts
-  const interLight = fetch(
-    "https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiJ-Ek-_EeA.woff2"
-  ).then((r) => r.arrayBuffer());
-
-  const interSemiBold = fetch(
-    "https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuGKYAZ9hiJ-Ek-_EeA.woff2"
-  ).then((r) => r.arrayBuffer());
-
-  const [lightData, semiBoldData] = await Promise.all([interLight, interSemiBold]);
-
+export default function Image() {
   return new ImageResponse(
     (
       <div
@@ -31,7 +18,6 @@ export default async function Image() {
           padding: "72px 80px",
           position: "relative",
           overflow: "hidden",
-          fontFamily: "Inter",
         }}
       >
         {/* Left accent bar */}
@@ -90,7 +76,6 @@ export default async function Image() {
           {/* Label */}
           <div
             style={{
-              fontFamily: "monospace",
               fontSize: "12px",
               letterSpacing: "0.14em",
               color: "#00878A",
@@ -150,7 +135,6 @@ export default async function Image() {
               <div
                 key={text}
                 style={{
-                  fontFamily: "monospace",
                   fontSize: "10px",
                   letterSpacing: "0.09em",
                   color: accent ? "#00b4b8" : "#7a7f99",
@@ -173,7 +157,6 @@ export default async function Image() {
             position: "absolute",
             bottom: "48px",
             right: "80px",
-            fontFamily: "monospace",
             fontSize: "12px",
             letterSpacing: "0.06em",
             color: "#4a4f66",
@@ -185,22 +168,6 @@ export default async function Image() {
         </div>
       </div>
     ),
-    {
-      ...size,
-      fonts: [
-        {
-          name: "Inter",
-          data: lightData,
-          weight: 300,
-          style: "normal",
-        },
-        {
-          name: "Inter",
-          data: semiBoldData,
-          weight: 600,
-          style: "normal",
-        },
-      ],
-    }
+    size
   );
 }
