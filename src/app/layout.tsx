@@ -1,40 +1,43 @@
 import { Analytics } from "@vercel/analytics/next";
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import "./globals.css";
-import { ActiveTabProvider } from "./(browser)/portfolio/ActiveTabContext";
-import { Noto_Sans_Mono } from "next/font/google";
+import { Inter, Noto_Sans_Mono } from "next/font/google";
 
-export const metadata: Metadata = {
-  title: "jjcx",
-  description: "personal portfolio of jjcx",
-  twitter: {
-    card: 'summary_large_image',
-    title: 'jjcx',
-    description: 'personal portfolio of jjcx',
-    images: 'https://raw.githubusercontent.com/jjcxdev/jjcx/main/public/jjcx.png'
-  },
-  openGraph: {
-    title: 'jjcx',
-    description: '',
-    url: 'https://jjcx.dev',
-    siteName: 'jjcx',
-    images: [
-      {
-        url: 'https://raw.githubusercontent.com/jjcxdev/jjcx/main/public/jjcx.png',
-        width: 1200,
-        height: 630,
-      },
-    ],
-    locale: 'en_CANADA',
-    type: 'website',
-  },
-};
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600"],
+  variable: "--font-sans",
+  display: "swap",
+});
 
 const noto = Noto_Sans_Mono({
-  subsets: ['latin'],
-  display: 'swap',
-})
+  subsets: ["latin"],
+  weight: ["400", "500"],
+  variable: "--font-mono",
+  display: "swap",
+});
+
+export const metadata: Metadata = {
+  title: "JJCX Inc. — AI Data Operations & PM Consulting",
+  description:
+    "Fractional AI PM and Data Operations consulting. Specializing in Human-in-the-Loop workflows, annotation pipelines, and GenAI data programs.",
+  twitter: {
+    card: "summary_large_image",
+    title: "JJCX Inc. — AI Data Operations & PM Consulting",
+    description:
+      "Fractional AI PM and Data Operations consulting. Specializing in Human-in-the-Loop workflows, annotation pipelines, and GenAI data programs.",
+  },
+  openGraph: {
+    title: "JJCX Inc. — AI Data Operations & PM Consulting",
+    description:
+      "I help AI labs and product teams build and run the human infrastructure behind generative AI.",
+    url: "https://jjcx.dev",
+    siteName: "JJCX Inc.",
+    locale: "en_CA",
+    type: "website",
+  },
+};
 
 export default function RootLayout({
   children,
@@ -42,13 +45,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ActiveTabProvider>
-      <html lang="en" className={noto.className}>
-        <body>{children}
-          <Analytics />
-          <SpeedInsights />
-        </body>
-      </html>
-    </ActiveTabProvider>
+    <html lang="en" className={`${inter.variable} ${noto.variable}`}>
+      <body>
+        {children}
+        <Analytics />
+        <SpeedInsights />
+      </body>
+    </html>
   );
 }
