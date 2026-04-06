@@ -28,14 +28,6 @@ export const metadata: Metadata = {
     title: "JJCX Inc. — AI Data Operations & PM Consulting",
     description:
       "Fractional AI PM and Data Operations consulting. Specializing in Human-in-the-Loop workflows, annotation pipelines, and GenAI data programs.",
-    images: [
-      {
-        url: "/opengraph-image",
-        width: 1200,
-        height: 630,
-        alt: "JJCX Inc. — AI Data Operations & PM Consulting",
-      },
-    ],
   },
   openGraph: {
     title: "JJCX Inc. — AI Data Operations & PM Consulting",
@@ -45,21 +37,6 @@ export const metadata: Metadata = {
     siteName: "JJCX Inc.",
     locale: "en_CA",
     type: "website",
-    images: [
-      {
-        url: "/opengraph-image",
-        width: 1200,
-        height: 630,
-        alt: "JJCX Inc. — AI Data Operations & PM Consulting",
-      },
-    ],
-  },
-  icons: {
-    icon: [
-      { url: "/favicon.ico", sizes: "any" },
-      { url: "/favicon-512.png", type: "image/png", sizes: "512x512" },
-    ],
-    apple: { url: "/favicon-512.png", sizes: "512x512", type: "image/png" },
   },
 };
 
