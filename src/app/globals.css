@@ -20,8 +20,6 @@
   --border-hover: rgba(0, 135, 138, 0.35);
   --radius:       4px;
   --max-w:        960px;
-  --font-sans:    'Inter', system-ui, -apple-system, sans-serif;
-  --font-mono:    'Noto Sans Mono', 'Courier New', monospace;
 }
 
 html { scroll-behavior: smooth; }
@@ -29,7 +27,7 @@ html { scroll-behavior: smooth; }
 body {
   background: var(--bg);
   color: var(--text);
-  font-family: var(--font-sans);
+  font-family: var(--font-sans, 'Inter', system-ui, -apple-system, sans-serif);
   font-size: 16px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -88,7 +86,7 @@ nav {
   color: var(--text-muted);
   text-decoration: none;
   font-size: 13px;
-  font-family: var(--font-mono);
+  font-family: var(--font-mono, 'Noto Sans Mono', 'Courier New', monospace);
   letter-spacing: 0.04em;
   transition: color 0.2s;
 }
@@ -113,7 +111,7 @@ nav {
 .hero { padding: 100px 0 80px; }
 
 .hero-label {
-  font-family: var(--font-mono);
+  font-family: var(--font-mono, 'Noto Sans Mono', 'Courier New', monospace);
   font-size: 11px;
   letter-spacing: 0.12em;
   color: var(--accent);
@@ -153,7 +151,7 @@ nav {
   display: inline-block;
   background: var(--accent);
   color: #fff;
-  font-family: var(--font-mono);
+  font-family: var(--font-mono, 'Noto Sans Mono', 'Courier New', monospace);
   font-size: 13px;
   letter-spacing: 0.04em;
   padding: 12px 24px;
@@ -167,7 +165,7 @@ nav {
 .btn-ghost {
   display: inline-block;
   color: var(--text-muted);
-  font-family: var(--font-mono);
+  font-family: var(--font-mono, 'Noto Sans Mono', 'Courier New', monospace);
   font-size: 13px;
   letter-spacing: 0.04em;
   padding: 12px 0;
@@ -190,7 +188,7 @@ nav {
   display: flex;
   align-items: center;
   gap: 8px;
-  font-family: var(--font-mono);
+  font-family: var(--font-mono, 'Noto Sans Mono', 'Courier New', monospace);
   font-size: 11px;
   letter-spacing: 0.06em;
   color: var(--text-dim);
@@ -207,7 +205,7 @@ nav {
 
 /* ── SERVICES ───────────────────────────────────────────── */
 .section-label {
-  font-family: var(--font-mono);
+  font-family: var(--font-mono, 'Noto Sans Mono', 'Courier New', monospace);
   font-size: 11px;
   letter-spacing: 0.12em;
   color: var(--accent);
@@ -236,7 +234,7 @@ nav {
 .service-card:hover { background: var(--surface-2); }
 
 .service-number {
-  font-family: var(--font-mono);
+  font-family: var(--font-mono, 'Noto Sans Mono', 'Courier New', monospace);
   font-size: 11px;
   letter-spacing: 0.1em;
   color: var(--text-dim);
@@ -260,7 +258,7 @@ nav {
 }
 
 .service-rate {
-  font-family: var(--font-mono);
+  font-family: var(--font-mono, 'Noto Sans Mono', 'Courier New', monospace);
   font-size: 12px;
   color: var(--accent);
   letter-spacing: 0.02em;
@@ -303,7 +301,7 @@ nav {
 .about-fact:first-child { border-top: 1px solid var(--border); }
 
 .fact-label {
-  font-family: var(--font-mono);
+  font-family: var(--font-mono, 'Noto Sans Mono', 'Courier New', monospace);
   font-size: 10px;
   letter-spacing: 0.1em;
   color: var(--text-dim);
@@ -350,7 +348,7 @@ nav {
   align-items: center;
   gap: 8px;
   text-decoration: none;
-  font-family: var(--font-mono);
+  font-family: var(--font-mono, 'Noto Sans Mono', 'Courier New', monospace);
   font-size: 13px;
   letter-spacing: 0.04em;
   color: var(--text-muted);
@@ -391,7 +389,7 @@ footer {
 }
 
 .footer-left {
-  font-family: var(--font-mono);
+  font-family: var(--font-mono, 'Noto Sans Mono', 'Courier New', monospace);
   font-size: 11px;
   letter-spacing: 0.06em;
   color: var(--text-dim);
@@ -401,7 +399,7 @@ footer {
 .footer-right { display: flex; gap: 24px; }
 
 .footer-right a {
-  font-family: var(--font-mono);
+  font-family: var(--font-mono, 'Noto Sans Mono', 'Courier New', monospace);
   font-size: 11px;
   letter-spacing: 0.06em;
   color: var(--text-dim);
