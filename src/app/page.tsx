@@ -167,7 +167,7 @@ export default function Home() {
               <p>
                 I&apos;m <strong>Justin Chambers</strong>, Principal Consultant at <strong>JJCX Inc.</strong>{" "}
                 I work with AI labs and product teams that need senior operational leadership
-                for their annotation pipelines, HITL workflows, and GenAI data programs —
+                for their annotation pipelines, HITL workflows, and GenAI annotation programs —
                 without the overhead of a full-time hire.
               </p>
               <p>
@@ -180,8 +180,8 @@ export default function Home() {
               <p>
                 I&apos;m also a tinkerer. When something isn&apos;t working — a broken pipeline, a missing
                 analytics layer, a team operating without a source of truth — my instinct is to dig
-                until I find the answer. Current clients include Meta, where I direct end-to-end data
-                operations for generative AI video and image annotation programs at scale.
+                until I find the answer. Current clients include Meta, where I manage GenAI
+                video and image annotation programs at scale.
               </p>
               <p>
                 I&apos;m not an ML engineer. I&apos;m the person who makes the human infrastructure
