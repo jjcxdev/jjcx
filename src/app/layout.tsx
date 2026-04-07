@@ -20,17 +20,17 @@ const noto = Noto_Sans_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://jjcx.dev"),
-  title: "JJCX Inc. — AI Data Operations & PM Consulting",
+  title: "JJCX Inc. — Annotation Operations & AI PM Consulting",
   description:
-    "Fractional AI PM and Data Operations consulting. Specializing in Human-in-the-Loop workflows, annotation pipelines, and GenAI data programs.",
+    "Fractional AI PM and annotation operations consulting. Specializing in Human-in-the-Loop workflows, annotation pipelines, and GenAI data programs.",
   twitter: {
     card: "summary_large_image",
-    title: "JJCX Inc. — AI Data Operations & PM Consulting",
+    title: "JJCX Inc. — Annotation Operations & AI PM Consulting",
     description:
-      "Fractional AI PM and Data Operations consulting. Specializing in Human-in-the-Loop workflows, annotation pipelines, and GenAI data programs.",
+      "Fractional AI PM and annotation operations consulting. Specializing in Human-in-the-Loop workflows, annotation pipelines, and GenAI data programs.",
   },
   openGraph: {
-    title: "JJCX Inc. — AI Data Operations & PM Consulting",
+    title: "JJCX Inc. — Annotation Operations & AI PM Consulting",
     description:
       "I help AI labs and product teams build and run the human infrastructure behind generative AI.",
     url: "https://jjcx.dev",

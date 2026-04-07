@@ -24,7 +24,7 @@ export default function Home() {
       {/* HERO */}
       <section className="hero">
         <div className="container">
-          <p className="hero-label">JJCX Inc. &nbsp;·&nbsp; AI Data Operations &amp; PM Consulting</p>
+          <p className="hero-label">JJCX Inc. &nbsp;·&nbsp; Annotation Operations &amp; AI PM Consulting</p>
 
           <h1>
             The operational layer<br />
@@ -70,7 +70,7 @@ export default function Home() {
 
             <div className="service-card">
               <p className="service-number">01</p>
-              <h3 className="service-title">Fractional AI PM &amp; Data Ops Lead</h3>
+              <h3 className="service-title">Fractional AI PM &amp; Annotation Operations Lead</h3>
               <p className="service-desc">
                 Embedded in your team as the operational lead for your HITL program.
                 I own annotation workstreams, labeling quality, sprint delivery, and
@@ -180,7 +180,7 @@ export default function Home() {
               <p>
                 I&apos;m also a tinkerer. When something isn&apos;t working — a broken pipeline, a missing
                 analytics layer, a team operating without a source of truth — my instinct is to dig
-                until I find the answer. Clients have included Meta, where I directed end-to-end data
+                until I find the answer. Current clients include Meta, where I direct end-to-end data
                 operations for generative AI video and image annotation programs at scale.
               </p>
               <p>
@@ -200,7 +200,7 @@ export default function Home() {
               </div>
               <div className="about-fact">
                 <span className="fact-label">Specialization</span>
-                <span className="fact-value">HITL Workflows · Annotation QA · GenAI Data Ops · Agile PM</span>
+                <span className="fact-value">HITL Workflows · Annotation QA · GenAI Annotation Ops · Agile PM</span>
               </div>
               <div className="about-fact">
                 <span className="fact-label">Technical literacy</span>
