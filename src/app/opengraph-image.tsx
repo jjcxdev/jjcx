@@ -91,7 +91,7 @@ export default function Image() {
             }}
           >
             <span>The operational layer</span>
-            <span>behind your <span style={{ fontWeight: 600, color: "#00b4b8" }}>generative AI.</span></span>
+            <span>behind your<span style={{ fontWeight: 600, color: "#00b4b8" }}> generative AI.</span></span>
           </div>
         </div>
       </div>
