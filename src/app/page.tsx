@@ -89,7 +89,7 @@ export default function Home() {
                 is bleeding cost. Delivered as a written audit and a concrete redesign
                 you can implement immediately.
               </p>
-              <p className="service-rate">$5,000 – $15,000 / project &nbsp;·&nbsp; 2–4 weeks</p>
+              <p className="service-rate">$7,500 – $15,000 / project &nbsp;·&nbsp; 2–4 weeks</p>
             </div>
 
             <div className="service-card">
@@ -100,7 +100,7 @@ export default function Home() {
                 on GenAI data strategy and HITL program decisions — without adding
                 to the org chart. Async-first with one live session per week.
               </p>
-              <p className="service-rate">$4,000 – $7,500 / month &nbsp;·&nbsp; 10–20 hrs/month</p>
+              <p className="service-rate">$5,000 – $8,000 / month &nbsp;·&nbsp; 10–20 hrs/month</p>
             </div>
 
           </div>
