@@ -28,7 +28,7 @@ export default function Home() {
 
           <h1>
             The operational layer<br />
-            behind your <strong>generative AI.</strong>
+            behind your <strong style={{ color: "var(--accent-light)" }}>generative AI.</strong>
           </h1>
 
           <p className="hero-sub">

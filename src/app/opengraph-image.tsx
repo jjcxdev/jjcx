@@ -4,7 +4,30 @@ export const alt = "JJCX Inc. — Annotation Operations & AI PM Consulting";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
-export default function Image() {
+async function fetchInterFont(weight: number): Promise<ArrayBuffer> {
+  // Fetch the CSS from Google Fonts, then pull the actual woff2 URL from it.
+  // User-agent must look like a desktop browser or Google returns TTF instead of woff2.
+  const css = await fetch(
+    `https://fonts.googleapis.com/css2?family=Inter:wght@${weight}`,
+    {
+      headers: {
+        "User-Agent":
+          "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+      },
+    }
+  ).then((r) => r.text());
+
+  const match = css.match(/src: url\(([^)]+)\) format\('woff2'\)/);
+  if (!match) throw new Error(`Inter woff2 URL not found for weight ${weight}`);
+  return fetch(match[1]).then((r) => r.arrayBuffer());
+}
+
+export default async function Image() {
+  const [interLight, interSemiBold] = await Promise.all([
+    fetchInterFont(300),
+    fetchInterFont(600),
+  ]);
+
   return new ImageResponse(
     (
       <div
@@ -18,6 +41,7 @@ export default function Image() {
           padding: "72px 80px",
           position: "relative",
           overflow: "hidden",
+          fontFamily: "Inter",
         }}
       >
         {/* Left accent bar */}
@@ -32,7 +56,7 @@ export default function Image() {
           }}
         />
 
-        {/* Teal glow */}
+        {/* Teal glow — bottom right */}
         <div
           style={{
             position: "absolute",
@@ -58,7 +82,7 @@ export default function Image() {
           <rect width="100%" height="100%" fill="url(#grid)" />
         </svg>
 
-        {/* Logo */}
+        {/* JJCX Logo */}
         <svg
           viewBox="0 0 1558 485"
           style={{ height: "52px", width: "166px", position: "relative" }}
@@ -77,25 +101,61 @@ export default function Image() {
             display: "flex",
             flexDirection: "column",
             position: "relative",
+            gap: "0px",
           }}
         >
-          <div
+          <span
             style={{
               fontSize: "72px",
               fontWeight: 300,
               lineHeight: 1.08,
               letterSpacing: "-0.03em",
               color: "#f0f0f2",
-              display: "flex",
-              flexDirection: "column",
             }}
           >
-            <span>The operational layer</span>
-            <span>behind your<span style={{ fontWeight: 600, color: "#00b4b8" }}> generative AI.</span></span>
+            The operational layer
+          </span>
+
+          {/* Line 2: flex row so space is layout-controlled, not whitespace-dependent */}
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              alignItems: "flex-end",
+              lineHeight: 1.08,
+            }}
+          >
+            <span
+              style={{
+                fontSize: "72px",
+                fontWeight: 300,
+                letterSpacing: "-0.03em",
+                color: "#f0f0f2",
+                paddingRight: "18px",
+              }}
+            >
+              behind your
+            </span>
+            <span
+              style={{
+                fontSize: "72px",
+                fontWeight: 600,
+                letterSpacing: "-0.03em",
+                color: "#00b4b8",
+              }}
+            >
+              generative AI.
+            </span>
           </div>
         </div>
       </div>
     ),
-    size
+    {
+      ...size,
+      fonts: [
+        { name: "Inter", data: interLight,    weight: 300, style: "normal" },
+        { name: "Inter", data: interSemiBold, weight: 600, style: "normal" },
+      ],
+    }
   );
 }
