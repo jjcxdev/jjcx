@@ -43,20 +43,6 @@ export default function Home() {
             <a href="#services" className="btn-ghost">See how I work →</a>
           </div>
 
-          <div className="hero-meta">
-            <span className="hero-meta-item">
-              <span className="hero-meta-dot"></span>
-              Clients include Meta
-            </span>
-            <span className="hero-meta-item">
-              <span className="hero-meta-dot"></span>
-              PSM I &nbsp;·&nbsp; PMP Candidate
-            </span>
-            <span className="hero-meta-item">
-              <span className="hero-meta-dot"></span>
-              Ontario, Canada &nbsp;·&nbsp; Remote
-            </span>
-          </div>
         </div>
       </section>
 
