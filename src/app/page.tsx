@@ -15,6 +15,7 @@ export default function Home() {
           <ul className="nav-links">
             <li><a href="#services">Services</a></li>
             <li><a href="#work">Case Studies</a></li>
+            <li><a href="/articles">Articles</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact" className="nav-cta">Get in touch</a></li>
           </ul>
@@ -231,6 +232,26 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <hr className="divider" />
+
+      {/* ARTICLES */}
+      <section id="articles">
+        <div className="container">
+          <p className="section-label">Articles</p>
+          <div className="articles-teaser">
+            <a href="/articles/instruction-debt" className="article-teaser-row">
+              <span className="article-teaser-title">Instruction Debt</span>
+              <span className="article-teaser-meta">Apr 8, 2026 &nbsp;→</span>
+            </a>
+          </div>
+          <div className="articles-teaser-footer">
+            <a href="/articles" className="articles-all-link">All articles →</a>
+          </div>
+        </div>
+      </section>
+
+      <hr className="divider" />
 
       {/* FOOTER */}
       <footer>

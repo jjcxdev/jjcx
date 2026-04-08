@@ -1,0 +1,38 @@
+export const metadata = {
+  title: 'Instruction Debt — JJCX Inc.',
+  description: 'Most annotation quality problems aren't labeler problems. They're instruction problems.',
+  publishDate: '2026-04-08',
+};
+
+<div className="article-label">JJCX INC. &nbsp;·&nbsp; ARTICLES &nbsp;·&nbsp; APR 8, 2026</div>
+
+# Instruction Debt
+
+Most annotation quality problems aren't labeler problems.
+
+They're instruction problems.
+
+I've run HITL programs at scale where teams were convinced they had a "labeler quality issue." Leadership wanted to tighten hiring filters, add more exam questions, increase review layers.
+
+Every time, I'd ask the same thing: show me the instructions the labelers are working from.
+
+And every time, the answer was obvious. The guidelines were 40 pages long, written by someone who understood the task implicitly but never pressure-tested them with someone who didn't. Edge cases were buried in footnotes. Conflicting rules lived three sections apart.
+
+**The labelers weren't failing. The instructions were.**
+
+I started calling this **instruction debt**. It works like tech debt. It accumulates quietly. Teams ship a v1 guideline, patch it with Slack messages and verbal corrections, and six months later nobody can trace why labelers handle a specific case the way they do.
+
+## The fix
+
+It's almost never downstream. Not more QA. Not tighter rubrics scored after the fact.
+
+It's going upstream:
+
+1. Rewrite the guidelines with the people who actually use them
+2. Test instructions the way you'd test code — with someone who has no implicit knowledge
+3. Version them
+4. Review them whenever the task evolves
+
+If your annotation accuracy is stuck and you've already cycled through labelers twice, stop looking at the people.
+
+Look at what you handed them.
