@@ -5,20 +5,19 @@ export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
 async function fetchInterFont(weight: number): Promise<ArrayBuffer> {
-  // Fetch the CSS from Google Fonts, then pull the actual woff2 URL from it.
-  // User-agent must look like a desktop browser or Google returns TTF instead of woff2.
+  // Satori requires TTF/OTF — NOT woff2. Use a legacy UA so Google Fonts
+  // returns the truetype format URL instead of woff2.
   const css = await fetch(
     `https://fonts.googleapis.com/css2?family=Inter:wght@${weight}`,
     {
       headers: {
-        "User-Agent":
-          "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "User-Agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)",
       },
     }
   ).then((r) => r.text());
 
-  const match = css.match(/src: url\(([^)]+)\) format\('woff2'\)/);
-  if (!match) throw new Error(`Inter woff2 URL not found for weight ${weight}`);
+  const match = css.match(/src: url\(([^)]+)\) format\('(truetype|opentype)'\)/);
+  if (!match) throw new Error(`Inter TTF URL not found for weight ${weight}`);
   return fetch(match[1]).then((r) => r.arrayBuffer());
 }
 
