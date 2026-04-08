@@ -4,27 +4,21 @@ export const alt = "JJCX Inc. — Annotation Operations & AI PM Consulting";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
-async function fetchInterFont(weight: number): Promise<ArrayBuffer> {
-  // Satori requires TTF/OTF — NOT woff2. Use a legacy UA so Google Fonts
-  // returns the truetype format URL instead of woff2.
-  const css = await fetch(
-    `https://fonts.googleapis.com/css2?family=Inter:wght@${weight}`,
-    {
-      headers: {
-        "User-Agent": "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)",
-      },
-    }
-  ).then((r) => r.text());
-
-  const match = css.match(/src: url\(([^)]+)\) format\('(truetype|opentype)'\)/);
-  if (!match) throw new Error(`Inter TTF URL not found for weight ${weight}`);
-  return fetch(match[1]).then((r) => r.arrayBuffer());
+async function fetchInterFont(weight: 300 | 600): Promise<ArrayBuffer> {
+  // @expo-google-fonts/inter ships actual TTF files — exactly what Satori needs.
+  // Google Fonts no longer serves TTF via CSS, so this is the most reliable path.
+  const file =
+    weight === 300 ? "Inter_300Light.ttf" : "Inter_600SemiBold.ttf";
+  const url = `https://cdn.jsdelivr.net/npm/@expo-google-fonts/inter@0.2.3/${file}`;
+  const res = await fetch(url);
+  if (!res.ok) throw new Error(`Failed to fetch Inter ${weight}: ${res.status}`);
+  return res.arrayBuffer();
 }
 
 export default async function Image() {
   const [interLight, interSemiBold] = await Promise.all([
-    fetchInterFont(300),
-    fetchInterFont(600),
+    fetchInterFont(300 as const),
+    fetchInterFont(600 as const),
   ]);
 
   return new ImageResponse(
