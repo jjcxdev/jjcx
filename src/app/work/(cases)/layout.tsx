@@ -1,7 +1,6 @@
 export default function CaseLayout({ children }: { children: React.ReactNode }) {
   return (
     <>
-      {/* NAV */}
       <nav>
         <div className="nav-inner">
           <a className="nav-logo" href="/">
@@ -13,15 +12,17 @@ export default function CaseLayout({ children }: { children: React.ReactNode }) 
             </svg>
           </a>
           <ul className="nav-links">
-            <li><a href="/#work">← Case Studies</a></li>
+            <li><a href="/work">Case Studies</a></li>
+            <li><a href="/articles">Articles</a></li>
+            <li><a href="/#about">About</a></li>
             <li><a href="/#contact" className="nav-cta">Get in touch</a></li>
           </ul>
         </div>
       </nav>
 
-      <div className="case-page">
+      <div className="article-page">
         <div className="container">
-          <div className="case-content">
+          <div className="article-content">
             {children}
           </div>
         </div>
