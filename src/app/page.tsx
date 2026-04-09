@@ -160,9 +160,9 @@ export default function Home() {
               <p>
                 Before AI, I spent 15 years as a producer, with credits including NBA &times; Hennessy,
                 Veuve Clicquot, Country Crock, and Scotch Brite. That background shaped how I work:
-                I don&apos;t come to stakeholders with problems. I come with solutions I&apos;ve already
-                stress-tested. Figure out as much as you can before you take it upstairs — that&apos;s
-                a producing instinct, and it translates directly to operational leadership.
+                I don&apos;t come to stakeholders with problems. I come with solutions. Figure out
+                as much as you can before you take it upstairs — that&apos;s a producing instinct,
+                and it translates directly to operational leadership.
               </p>
               <p>
                 I&apos;m also a tinkerer. When something isn&apos;t working — a broken pipeline, a missing
