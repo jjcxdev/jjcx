@@ -613,7 +613,8 @@ footer {
   margin-bottom: 28px;
 }
 
-.article-content h1 {
+.article-content h1,
+.article-title {
   font-size: clamp(28px, 4.5vw, 46px);
   font-weight: 300;
   letter-spacing: -0.02em;
@@ -621,6 +622,11 @@ footer {
   line-height: 1.15;
   margin-bottom: 48px;
   max-width: 680px;
+}
+
+.article-title-accent {
+  font-weight: 600;
+  color: var(--accent-light);
 }
 
 .article-content h2 {
