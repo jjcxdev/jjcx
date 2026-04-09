@@ -690,6 +690,13 @@ footer {
   font-weight: 500 !important;
 }
 
+.article-content hr {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  max-width: 680px;
+  margin: 28px 0;
+}
+
 /* Numbered list — teal monospace counters, brand-consistent */
 .article-content ol {
   max-width: 680px;
