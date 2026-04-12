@@ -2,8 +2,6 @@
 
 import { useState } from "react";
 
-export const metadata = undefined; // client component
-
 function calcBinary(decisions: number, accuracy: number): number {
   return Math.pow(accuracy / 100, decisions) * 100;
 }
