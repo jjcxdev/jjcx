@@ -53,6 +53,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
     {
+      url: `${base}/tools/scoring-calculator`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
       url: `${base}/resume`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
