@@ -90,32 +90,64 @@ export default function Home() {
               <p className="service-rate">$5,000 – $8,000 / month &nbsp;·&nbsp; 10–20 hrs/month</p>
             </div>
 
-            <div className="service-card">
-              <p className="service-number">04</p>
-              <h3 className="service-title">Annotation Program Audit</h3>
-              <p className="service-desc">
-                A fixed-scope async diagnostic. Submit your documentation, guidelines, and
-                QA process. Get a written report identifying failure points with priority-ranked
-                recommendations in five business days. Includes a 30-minute follow-up call.
-              </p>
-              <p className="service-rate">
-                $2,000 CAD / flat &nbsp;·&nbsp;{" "}
-                <a href="/services/audit" style={{ color: "var(--accent-light)", textDecoration: "none" }}>Learn more →</a>
-              </p>
-            </div>
+          </div>
+        </div>
+      </section>
 
-            <div className="service-card">
-              <p className="service-number">05</p>
-              <h3 className="service-title">Office Hours</h3>
-              <p className="service-desc">
-                A 60-minute paid advisory call. Bring a specific problem — annotation quality,
-                HITL workflow design, QA process, program structure — and leave with a concrete
-                direction. No retainer, no ongoing commitment.
-              </p>
-              <p className="service-rate">
-                $500 CAD / session &nbsp;·&nbsp;{" "}
-                <a href="/services/office-hours" style={{ color: "var(--accent-light)", textDecoration: "none" }}>Book now →</a>
-              </p>
+      <hr className="divider" />
+
+      {/* PRODUCTS & TOOLS */}
+      <section id="products">
+        <div className="container">
+          <p className="section-label">Products &amp; Tools</p>
+          <div className="products-grid">
+
+            <a href="/tools/scoring-calculator" className="product-card">
+              <div>
+                <p className="product-tag">Free Tool</p>
+                <h3 className="service-title">Scoring Calculator</h3>
+                <p className="service-desc">
+                  See how binary pass/fail scoring inflates your annotation failure rates.
+                  Input your task complexity and accuracy — get the real numbers.
+                </p>
+              </div>
+              <p className="product-cta">Try it free →</p>
+            </a>
+
+            <a href="/services/audit" className="product-card">
+              <div>
+                <p className="product-tag">$2,000 CAD</p>
+                <h3 className="service-title">Annotation Program Audit</h3>
+                <p className="service-desc">
+                  Fixed-scope async diagnostic. Submit your docs and QA process, get a written
+                  report with priority-ranked recommendations in five business days.
+                </p>
+              </div>
+              <p className="product-cta">Learn more →</p>
+            </a>
+
+            <a href="/services/office-hours" className="product-card">
+              <div>
+                <p className="product-tag">$500 CAD</p>
+                <h3 className="service-title">Office Hours</h3>
+                <p className="service-desc">
+                  60-minute advisory call. Bring a specific problem — annotation quality,
+                  HITL workflow design, QA process — and leave with a concrete direction.
+                </p>
+              </div>
+              <p className="product-cta">Book a session →</p>
+            </a>
+
+            <div className="product-card product-card-coming">
+              <div>
+                <p className="product-tag">Coming Soon</p>
+                <h3 className="service-title">Template Pack</h3>
+                <p className="service-desc">
+                  Ready-to-use templates for annotation program managers. Onboarding
+                  frameworks, QA feedback loops, HITL workflow canvases, and more.
+                </p>
+              </div>
+              <p className="product-cta" style={{ color: "var(--text-dim)" }}>Notify me →</p>
             </div>
 
           </div>
