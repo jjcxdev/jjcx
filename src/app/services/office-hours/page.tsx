@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Office Hours | JJCX Inc.",
+  title: "Office Hours — JJCX Inc.",
   description:
     "60-minute paid advisory session. Bring a specific annotation ops or HITL workflow problem and leave with a concrete direction.",
 };
@@ -33,10 +33,10 @@ export default function OfficeHoursPage() {
         <div className="container">
           <div className="article-content">
 
-            <div className="section-label">JJCX Inc.</div>
-            <h1>Office <span style={{ color: "var(--accent-light)" }}>Hours</span></h1>
+            <div className="article-label">JJCX INC. &nbsp;·&nbsp; PRODUCTS</div>
+            <h1 className="article-title">Office <span className="article-title-accent">Hours</span></h1>
 
-            <p style={{ fontSize: "20px", lineHeight: "1.7", color: "var(--text-muted)", marginBottom: "48px" }}>
+            <p>
               60 minutes. One specific problem. A concrete direction forward.
             </p>
 
@@ -69,47 +69,16 @@ export default function OfficeHoursPage() {
               guideline docs — anything that helps me understand your setup before we talk.
             </p>
 
-            <div style={{
-              marginTop: "56px",
-              padding: "40px",
-              background: "var(--surface)",
-              border: "1px solid var(--border)",
-              borderRadius: "var(--radius)",
-              textAlign: "center",
-            }}>
-              <p style={{ fontSize: "14px", textTransform: "uppercase", letterSpacing: "0.08em", color: "var(--text-muted)", marginBottom: "8px" }}>
-                Office Hours Session
-              </p>
-              <p style={{ fontSize: "36px", fontWeight: 600, marginBottom: "4px" }}>
-                $500 <span style={{ fontSize: "16px", fontWeight: 400, color: "var(--text-muted)" }}>CAD</span>
-              </p>
-              <p style={{ color: "var(--text-muted)", marginBottom: "32px", fontSize: "15px" }}>
-                60-minute video call &nbsp;·&nbsp; No retainer required
-              </p>
-              <a
-                href="https://buy.stripe.com/aFabJ2952dw8aTecceeUU01"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{
-                  display: "inline-block",
-                  padding: "14px 40px",
-                  background: "var(--accent)",
-                  color: "#fff",
-                  fontWeight: 500,
-                  fontSize: "16px",
-                  borderRadius: "var(--radius)",
-                  textDecoration: "none",
-                  transition: "background 0.2s",
-                }}
-              >
-                Book a session
-              </a>
-            </div>
+            <hr />
 
-            <p style={{ marginTop: "40px", textAlign: "center", color: "var(--text-muted)", fontSize: "15px" }}>
-              Not sure if this is the right fit?{" "}
-              <a href="mailto:j@jjcx.dev" style={{ color: "var(--accent-light)" }}>Send me a note</a> — happy to point you in the right direction.
-            </p>
+            <div className="pricing-block">
+              <p className="pricing-amount">$500 <span className="pricing-currency">CAD</span></p>
+              <p className="pricing-detail">60-minute video call &nbsp;·&nbsp; No retainer required</p>
+              <a href="https://buy.stripe.com/aFabJ2952dw8aTecceeUU01" target="_blank" rel="noopener noreferrer" className="btn-primary">Book a session</a>
+              <p className="pricing-footnote">
+                Not sure if this is the right fit? <a href="mailto:j@jjcx.dev">Send me a note.</a>
+              </p>
+            </div>
 
           </div>
         </div>

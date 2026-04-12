@@ -738,6 +738,48 @@ footer {
   margin: 28px 0;
 }
 
+/* Pricing block */
+.pricing-block {
+  text-align: center;
+  padding: 48px 0 16px;
+}
+
+.pricing-amount {
+  font-size: clamp(36px, 5vw, 48px);
+  font-weight: 300;
+  letter-spacing: -0.02em;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+.pricing-currency {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
+.pricing-detail {
+  font-size: 15px;
+  color: var(--text-muted);
+  margin-bottom: 32px;
+}
+
+.pricing-block .btn-primary {
+  display: inline-block;
+  padding: 14px 40px;
+  font-size: 16px;
+}
+
+.pricing-footnote {
+  margin-top: 24px;
+  font-size: 14px;
+  color: var(--text-dim);
+}
+
+.pricing-footnote a {
+  color: var(--accent-light);
+}
+
 /* Table */
 .article-content table {
   width: 100%;

@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Annotation Program Audit | JJCX Inc.",
+  title: "Annotation Program Audit — JJCX Inc.",
   description:
     "Fixed-scope async audit of your annotation program. Written report with failure points and priority-ranked recommendations within five business days.",
 };
@@ -33,10 +33,10 @@ export default function AuditPage() {
         <div className="container">
           <div className="article-content">
 
-            <div className="section-label">JJCX Inc.</div>
-            <h1>Annotation Program <span style={{ color: "var(--accent-light)" }}>Audit</span></h1>
+            <div className="article-label">JJCX INC. &nbsp;·&nbsp; PRODUCTS</div>
+            <h1 className="article-title">Annotation Program <span className="article-title-accent">Audit</span></h1>
 
-            <p style={{ fontSize: "20px", lineHeight: "1.7", color: "var(--text-muted)", marginBottom: "48px" }}>
+            <p>
               A fixed-scope, fixed-price diagnostic of your annotation program.
               Find out where your program is broken and what to fix first.
             </p>
@@ -73,52 +73,20 @@ export default function AuditPage() {
             <h2>What happens next</h2>
             <p>
               Audit findings naturally surface the scope for deeper work. If you decide to
-              move forward with a full{" "}
-              <a href="/#services" style={{ color: "var(--accent-light)" }}>HITL Workflow Audit &amp; Redesign</a>{" "}
-              engagement within 30 days, the $2,000 audit fee is credited toward the project.
+              move forward with a full HITL Workflow Audit &amp; Redesign engagement within
+              30 days, the $2,000 audit fee is credited toward the project.
             </p>
 
-            <div style={{
-              marginTop: "56px",
-              padding: "40px",
-              background: "var(--surface)",
-              border: "1px solid var(--border)",
-              borderRadius: "var(--radius)",
-              textAlign: "center",
-            }}>
-              <p style={{ fontSize: "14px", textTransform: "uppercase", letterSpacing: "0.08em", color: "var(--text-muted)", marginBottom: "8px" }}>
-                Annotation Program Audit
+            <hr />
+
+            <div className="pricing-block">
+              <p className="pricing-amount">$2,000 <span className="pricing-currency">CAD</span></p>
+              <p className="pricing-detail">Written report in 5 business days &nbsp;·&nbsp; 30-min follow-up call</p>
+              <a href="https://buy.stripe.com/7sY00kepm2Ru6CY3FIeUU00" target="_blank" rel="noopener noreferrer" className="btn-primary">Get started</a>
+              <p className="pricing-footnote">
+                Questions first? <a href="mailto:j@jjcx.dev">j@jjcx.dev</a>
               </p>
-              <p style={{ fontSize: "36px", fontWeight: 600, marginBottom: "4px" }}>
-                $2,000 <span style={{ fontSize: "16px", fontWeight: 400, color: "var(--text-muted)" }}>CAD</span>
-              </p>
-              <p style={{ color: "var(--text-muted)", marginBottom: "32px", fontSize: "15px" }}>
-                Written report in 5 business days &nbsp;·&nbsp; Includes 30-min follow-up call
-              </p>
-              <a
-                href="https://buy.stripe.com/7sY00kepm2Ru6CY3FIeUU00"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{
-                  display: "inline-block",
-                  padding: "14px 40px",
-                  background: "var(--accent)",
-                  color: "#fff",
-                  fontWeight: 500,
-                  fontSize: "16px",
-                  borderRadius: "var(--radius)",
-                  textDecoration: "none",
-                  transition: "background 0.2s",
-                }}
-              >
-                Get started
-              </a>
             </div>
-
-            <p style={{ marginTop: "40px", textAlign: "center", color: "var(--text-muted)", fontSize: "15px" }}>
-              Questions first?{" "}
-              <a href="mailto:j@jjcx.dev" style={{ color: "var(--accent-light)" }}>j@jjcx.dev</a>
-            </p>
 
           </div>
         </div>
