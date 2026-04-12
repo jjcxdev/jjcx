@@ -27,6 +27,8 @@ export default function WorkLayout({ children }: { children: React.ReactNode }) 
         <div className="footer-inner">
           <span className="footer-left">© 2026 JJCX Inc.</span>
           <div className="footer-right">
+            <a href="/privacy">Privacy</a>
+            <a href="/terms">Terms</a>
             <a href="https://linkedin.com/in/justinjchambers" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             <a href="mailto:j@jjcx.dev">Contact</a>
           </div>
