@@ -5,6 +5,12 @@ export const metadata = {
 
 const articles = [
   {
+    slug: "binary-passfail-scoring",
+    title: "Binary Pass/Fail Scoring Artificially Inflates Annotation Failure Rates",
+    date: "Apr 11, 2026",
+    label: "Annotation Operations",
+  },
+  {
     slug: "instruction-debt",
     title: "Instruction Debt",
     date: "Apr 8, 2026",

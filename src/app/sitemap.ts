@@ -17,6 +17,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: `${base}/articles/binary-passfail-scoring`,
+      lastModified: new Date('2026-04-11'),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
       url: `${base}/articles/instruction-debt`,
       lastModified: new Date('2026-04-08'),
       changeFrequency: 'monthly',

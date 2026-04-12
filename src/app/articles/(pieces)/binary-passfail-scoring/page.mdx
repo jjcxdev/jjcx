@@ -1,0 +1,93 @@
+export const metadata = {
+  title: 'Binary Pass/Fail Scoring Artificially Inflates Annotation Failure Rates — JJCX Inc.',
+  description: "Binary pass/fail audit systems are mathematically unfair for complex annotation tasks. They artificially inflate failure rates regardless of annotator skill.",
+  publishDate: '2026-04-11',
+};
+
+<div className="article-label">JJCX INC. &nbsp;·&nbsp; ARTICLES &nbsp;·&nbsp; APR 11, 2026</div>
+
+<h1 className="article-title">Binary Pass/Fail Scoring <span className="article-title-accent">Artificially Inflates</span> Annotation Failure Rates</h1>
+
+**Binary pass/fail audit systems are mathematically unfair for complex annotation tasks.** They artificially inflate failure rates regardless of annotator skill — and the operational damage that follows is predictable and preventable.
+
+## The Problem
+
+Most annotation quality programs set a threshold — commonly 90% — that annotators must maintain to stay in active production. Fall below it and you're pulled out, sent to retraining, and face a burdensome recovery process before returning to live work.
+
+On the surface, that sounds reasonable. For simple annotation tasks, binary pass/fail is the right tool. A single question, an A/B choice, a straightforward label — binary scoring is clean, fast, and appropriate.
+
+But applied to complex annotation tasks, it becomes mathematically broken.
+
+## The Math Nobody Is Talking About
+
+Binary pass/fail scoring means a single error anywhere in a job results in a failed audit for that entire job. No partial credit. One mistake across fifteen decisions — zero.
+
+Now consider what that means for a skilled annotator working on a complex task requiring fifteen independent decisions per job.
+
+Assume that annotator is 98% accurate on every individual decision. That's a high bar — nearly perfect at the step level. What's their expected pass rate under binary scoring?
+
+The probability of passing a single job is 0.98 multiplied by itself fifteen times. That equals approximately 74%.
+
+In a standard twenty-job audit, that annotator would be expected to pass around fifteen jobs. A 74% audit score — well below the 90% threshold — from someone who is 98% accurate on every individual decision they make.
+
+To reach 90% under binary scoring on a fifteen-decision task, an annotator would need to be accurate at 99.6% or above on every single step. That is not a realistic standard given the complexity and edge cases inherent in most annotation workflows.
+
+**This is not a talent problem. It is a math problem.**
+
+## Simple vs. Complex Tasks
+
+The same math works very differently on simpler tasks. Consider a straightforward annotation job requiring only four decisions.
+
+At 98% per-step accuracy, the probability of passing is 0.98 multiplied by itself four times — approximately 92%. Above the threshold. Comfortably achievable. Binary scoring works exactly as intended.
+
+The gap between a 74% pass rate and a 92% pass rate comes entirely from task complexity, not annotator quality. The same person, doing the same quality of work, looks completely different on paper depending on which task type they are assigned.
+
+This is why audit scores on complex workflows are routinely lower than on simple ones — and why comparing scores across task types without accounting for complexity tells you almost nothing useful about actual performance.
+
+## The Subjectivity Problem
+
+The math alone makes binary scoring untenable for complex tasks. But there is a second compounding factor that makes it worse: human subjectivity.
+
+You can write the most detailed, thorough annotation guidelines imaginable — and you should. But no specification eliminates interpretation. Complex tasks by their nature require annotators to exercise judgment, and judgment varies between people.
+
+Consider a moral dilemma where annotators are given two clear options and explicit guidelines on how to choose. Even with the most precise instructions, reasonable people will divide. Not because they failed to read the spec, not because they lack skill — but because the decision genuinely involves human interpretation. That is not a flaw in the annotator. It is a property of complex tasks.
+
+In annotation, this plays out constantly. Two experienced annotators, working from the same guidelines, will sometimes reach different conclusions on the same piece of content. Neither is necessarily wrong. The task is simply complex enough that the guidelines do not fully resolve every edge case — and they never will.
+
+Binary scoring treats this as failure. Per-decision scoring allows programs to identify where divergence is happening, understand whether it reflects a spec gap or genuine ambiguity, and address it with targeted feedback rather than blanket retraining.
+
+**Subjectivity is not a problem to be eliminated. It is a signal to be understood.**
+
+## The Operational Fallout
+
+When audit thresholds are mathematically unattainable, the downstream effects are significant and predictable.
+
+Annotators are regularly pulled from active production and placed into retraining queues — not because their work has degraded, but because the scoring system makes failure inevitable. Recovery is typically slow and resource-intensive. Output drops. The team cycles continuously through retraining. Morale suffers. The people being penalized know they are doing good work, and the numbers say otherwise.
+
+**Production slows not because of annotator underperformance, but because the measurement system is penalizing competence.**
+
+## The Fix: Per-Decision Scoring
+
+The solution is straightforward. Score each annotation decision independently.
+
+If an annotator makes a minor error on one step, only that decision receives a deduction. The rest of their accurate work counts positively. The job score reflects actual accuracy across all decisions — not an all-or-nothing result that erases fourteen correct decisions because of one mistake.
+
+Here is what that looks like in practice:
+
+| Per-Step Accuracy | Pass Rate (Binary) | Score (Per-Decision) |
+|---|---|---|
+| 90% | 20.5% | 90% |
+| 95% | 46.0% | 95% |
+| 98% | 74.0% | 98% |
+| 99% | 86.0% | 99% |
+| 100% | 100% | 100% |
+
+Under per-decision scoring, the measured score reflects actual accuracy. Under binary scoring, it reflects the harshness of the system.
+
+## The Right Tool for the Right Task
+
+Binary pass/fail is not inherently wrong. For simple, low-decision tasks it is fast, clean, and appropriate. The problem is applying it uniformly across task types without accounting for complexity.
+
+If your annotation quality scores are consistently low on complex tasks, the first question to ask is not what is wrong with your annotators. The first question is whether your scoring system is actually measuring what you think it is.
+
+Adopting per-decision scoring for complex workflows is not about lowering standards — it is about measuring the right thing. Annotators performing at industry-leading accuracy levels should not routinely fail audits. If they are, the audit methodology needs to change.
