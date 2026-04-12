@@ -90,6 +90,34 @@ export default function Home() {
               <p className="service-rate">$5,000 – $8,000 / month &nbsp;·&nbsp; 10–20 hrs/month</p>
             </div>
 
+            <div className="service-card">
+              <p className="service-number">04</p>
+              <h3 className="service-title">Annotation Program Audit</h3>
+              <p className="service-desc">
+                A fixed-scope async diagnostic. Submit your documentation, guidelines, and
+                QA process. Get a written report identifying failure points with priority-ranked
+                recommendations in five business days. Includes a 30-minute follow-up call.
+              </p>
+              <p className="service-rate">
+                $2,000 CAD / flat &nbsp;·&nbsp;{" "}
+                <a href="/services/audit" style={{ color: "var(--accent-light)", textDecoration: "none" }}>Learn more →</a>
+              </p>
+            </div>
+
+            <div className="service-card">
+              <p className="service-number">05</p>
+              <h3 className="service-title">Office Hours</h3>
+              <p className="service-desc">
+                A 60-minute paid advisory call. Bring a specific problem — annotation quality,
+                HITL workflow design, QA process, program structure — and leave with a concrete
+                direction. No retainer, no ongoing commitment.
+              </p>
+              <p className="service-rate">
+                $500 CAD / session &nbsp;·&nbsp;{" "}
+                <a href="/services/office-hours" style={{ color: "var(--accent-light)", textDecoration: "none" }}>Book now →</a>
+              </p>
+            </div>
+
           </div>
         </div>
       </section>

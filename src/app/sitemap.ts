@@ -65,6 +65,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.5,
     },
     {
+      url: `${base}/services/audit`,
+      lastModified: new Date('2026-04-12'),
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
+      url: `${base}/services/office-hours`,
+      lastModified: new Date('2026-04-12'),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
       url: `${base}/privacy`,
       lastModified: new Date('2026-04-12'),
       changeFrequency: 'yearly',
