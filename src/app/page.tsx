@@ -153,16 +153,20 @@ export default function Home() {
             <div className="about-bio">
               <p>
                 I&apos;m <strong>Justin Chambers</strong>, Principal Consultant at <strong>JJCX Inc.</strong>{" "}
-                I work with AI labs and product teams that need senior operational leadership
-                for their annotation pipelines, HITL workflows, and GenAI annotation programs —
-                without the overhead of a full-time hire.
+                I work with AI labs and product teams that need senior operational leadership for their
+                annotation pipelines, HITL workflows, and GenAI annotation programs — without the
+                overhead of a full-time hire.
               </p>
               <p>
-                Before AI, I spent 15 years as a producer, with credits including NBA &times; Hennessy,
-                Veuve Clicquot, Country Crock, and Scotch Brite. That background shaped how I work:
-                I don&apos;t come to stakeholders with problems. I come with solutions. Figure out
-                as much as you can before you take it upstairs — that&apos;s a producing instinct,
-                and it translates directly to operational leadership.
+                At 40, I made a deliberate career change into AI. I took CS50, got my foot in the door
+                as an annotator, and went from Team Lead to Project Manager in under a year based on
+                performance and expanded scope. It turns out 15 years of operational leadership in film
+                and production translates directly — human infrastructure is human infrastructure.
+              </p>
+              <p>
+                Those 15 years included credits with NBA &times; Hennessy, Veuve Clicquot, Country Crock,
+                and Scotch Brite. That background shaped how I work: I don&apos;t come to stakeholders
+                with problems. I come with solutions. Figure out as much as you can before you take it upstairs.
               </p>
               <p>
                 I&apos;m also a tinkerer. When something isn&apos;t working — a broken pipeline, a missing
@@ -240,6 +244,10 @@ export default function Home() {
         <div className="container">
           <p className="section-label">Articles</p>
           <div className="articles-teaser">
+            <a href="/articles/binary-passfail-scoring" className="article-teaser-row">
+              <span className="article-teaser-title">Binary Pass/Fail Scoring Artificially Inflates Annotation Failure Rates</span>
+              <span className="article-teaser-meta">Apr 11, 2026 &nbsp;→</span>
+            </a>
             <a href="/articles/instruction-debt" className="article-teaser-row">
               <span className="article-teaser-title">Instruction Debt</span>
               <span className="article-teaser-meta">Apr 8, 2026 &nbsp;→</span>
