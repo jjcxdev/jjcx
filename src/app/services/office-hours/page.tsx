@@ -33,7 +33,6 @@ export default function OfficeHoursPage() {
         <div className="container">
           <div className="article-content">
 
-            <div className="article-label">JJCX INC. &nbsp;·&nbsp; PRODUCTS</div>
             <h1 className="article-title">Office <span className="article-title-accent">Hours</span></h1>
 
             <p>

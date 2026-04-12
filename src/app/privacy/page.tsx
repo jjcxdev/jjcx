@@ -32,8 +32,7 @@ export default function PrivacyPolicy() {
         <div className="container">
           <div className="article-content">
 
-            <div className="section-label">JJCX Inc.</div>
-            <h1>Privacy Policy</h1>
+            <h1 className="article-title">Privacy Policy</h1>
             <p style={{ color: "var(--text-muted)", marginBottom: "48px" }}>Effective April 12, 2026</p>
 
             <h2>Who we are</h2>

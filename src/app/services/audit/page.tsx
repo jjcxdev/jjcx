@@ -33,7 +33,6 @@ export default function AuditPage() {
         <div className="container">
           <div className="article-content">
 
-            <div className="article-label">JJCX INC. &nbsp;·&nbsp; PRODUCTS</div>
             <h1 className="article-title">Annotation Program <span className="article-title-accent">Audit</span></h1>
 
             <p>
