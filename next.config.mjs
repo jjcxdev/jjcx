@@ -1,9 +1,12 @@
 import nextMdx from '@next/mdx'
+import remarkGfm from 'remark-gfm'
 
 const withMdx = nextMdx({
   // By default only the `.mdx` extension is supported.
   extension: /\.mdx?$/,
-  options: {/* otherOptions… */}
+  options: {
+    remarkPlugins: [remarkGfm],
+  }
 })
 
 const nextConfig = withMdx({
