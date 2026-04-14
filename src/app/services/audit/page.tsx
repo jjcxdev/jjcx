@@ -4,6 +4,7 @@ export const metadata: Metadata = {
   title: "Annotation Program Audit — JJCX Inc.",
   description:
     "Fixed-scope async audit of your annotation program. Written report with failure points and priority-ranked recommendations within five business days.",
+  alternates: { canonical: "https://www.jjcx.dev/services/audit" },
 };
 
 export default function AuditPage() {

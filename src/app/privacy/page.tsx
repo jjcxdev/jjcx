@@ -3,6 +3,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Privacy Policy | JJCX Inc.",
   description: "Privacy policy for JJCX Inc. consulting services and jjcx.dev.",
+  alternates: { canonical: "https://www.jjcx.dev/privacy" },
 };
 
 export default function PrivacyPolicy() {

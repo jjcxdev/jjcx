@@ -3,6 +3,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Terms of Service | JJCX Inc.",
   description: "Terms of service for JJCX Inc. consulting services and jjcx.dev.",
+  alternates: { canonical: "https://www.jjcx.dev/terms" },
 };
 
 export default function TermsOfService() {

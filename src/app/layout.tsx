@@ -19,7 +19,7 @@ const noto = Noto_Sans_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://jjcx.dev"),
+  metadataBase: new URL("https://www.jjcx.dev"),
   title: "JJCX Inc. — Annotation Operations & AI PM Consulting",
   description:
     "Fractional AI PM and annotation operations consulting. Specializing in Human-in-the-Loop workflows, annotation pipelines, and GenAI data programs.",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     title: "JJCX Inc. — Annotation Operations & AI PM Consulting",
     description:
       "I help AI labs and product teams build and run the human infrastructure behind generative AI.",
-    url: "https://jjcx.dev",
+    url: "https://www.jjcx.dev",
     siteName: "JJCX Inc.",
     locale: "en_CA",
     type: "website",

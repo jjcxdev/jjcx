@@ -4,6 +4,7 @@ export const metadata: Metadata = {
   title: "Office Hours — JJCX Inc.",
   description:
     "60-minute paid advisory session. Bring a specific annotation ops or HITL workflow problem and leave with a concrete direction.",
+  alternates: { canonical: "https://www.jjcx.dev/services/office-hours" },
 };
 
 export default function OfficeHoursPage() {

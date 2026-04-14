@@ -1,6 +1,7 @@
 export const metadata = {
   title: "Articles — JJCX Inc.",
   description: "Annotation operations, HITL programs, and AI PM — practitioner takes from Justin Chambers.",
+  alternates: { canonical: "https://www.jjcx.dev/articles" },
 };
 
 const articles = [

@@ -1,6 +1,7 @@
 export const metadata = {
   title: "Case Studies — JJCX Inc.",
   description: "Annotation operations and HITL program leadership — real problems, real fixes.",
+  alternates: { canonical: "https://www.jjcx.dev/work" },
 };
 
 const cases = [
